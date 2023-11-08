@@ -1,5 +1,6 @@
 ﻿namespace HelloWorld
 {
+    //new class
     class Program
     {
         static void Main(string[] args)
@@ -18,8 +19,6 @@
             return a + b;
         }
 
-
-        
         static int multiplicarDosNumeros(int a, int b){
             return a * b;
         }
