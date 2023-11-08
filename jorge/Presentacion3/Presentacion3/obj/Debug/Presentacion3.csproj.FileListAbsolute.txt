@@ -1,0 +1,6 @@
+c:\users\iamje\documents\visual studio 2015\Projects\Presentacion3\Presentacion3\bin\Debug\Presentacion3.exe.config
+c:\users\iamje\documents\visual studio 2015\Projects\Presentacion3\Presentacion3\bin\Debug\Presentacion3.exe
+c:\users\iamje\documents\visual studio 2015\Projects\Presentacion3\Presentacion3\bin\Debug\Presentacion3.pdb
+c:\users\iamje\documents\visual studio 2015\Projects\Presentacion3\Presentacion3\obj\Debug\Presentacion3.csprojResolveAssemblyReference.cache
+c:\users\iamje\documents\visual studio 2015\Projects\Presentacion3\Presentacion3\obj\Debug\Presentacion3.exe
+c:\users\iamje\documents\visual studio 2015\Projects\Presentacion3\Presentacion3\obj\Debug\Presentacion3.pdb
