@@ -10,7 +10,8 @@
             int respuesta = sumaDosNumeros(x, y);
             Console.WriteLine(respuesta);
         }
-
+        //suma de dos numeros
+        
         static int sumaDosNumeros(int a, int b){
             return a + b;
         }
