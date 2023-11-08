@@ -1,0 +1,15 @@
+using System.collections.Generic;
+using System.linq;
+using System.tex;
+using System.threading.tasks;
+
+namespace presentacion1
+{
+  class Program
+  {
+    static void main(string[]args)
+           // Este es un programa de hola mundo
+           /* este es un comentario 
+           de bloque */
+           Console.WriteLine("hola mundo");
+          console.readkey();
