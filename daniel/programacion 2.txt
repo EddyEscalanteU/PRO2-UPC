@@ -25,8 +25,51 @@ namespace MyApplication
     
     
       Console.WriteLine(3 + 3);
-    }
-  }
+
+
+using System;
+using System.collections.Generic;
+using System.linq;
+using System.tex;
+using System.threading.tasks;
+
+namespace presentacion1
+{
+  class Program
+  {
+    static void main(string[]args)
+           // Este es un programa de hola mundo
+           /* este es un comentario 
+           de bloque */
+           Console.WriteLine("hola mundo");
+          console.readkey()
+
+
+using System;
+using System.collections.generic;
+using System.ling;
+using System.threading.tasks;
+
+namespace Presentacion2
+{
+    class Program
+    { 
+      static void main(string[]args)
+      {
+        int i = 0;
+        decimal x = o,o m;
+        float f = 0,0f;
+        double d = 0,0D;
+        string cadena = "Hola mundo";
+        bool bandera = false;
+        
+}
+
+
+
+
+ }
+   }
 }
 
 
