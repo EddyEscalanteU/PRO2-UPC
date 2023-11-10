@@ -24,8 +24,8 @@ public class Mascota
         nombre = "sin nombre" ;
         edad = 0;
         nombrePropietario = "sin nombre"; 
-        color = ""; 
-        categoria = ""; 
+        color = "sin color"; 
+        categoria = "sin cantegoria"; 
     }
 
     public void DarNombre(string valor){
@@ -34,7 +34,7 @@ public class Mascota
 
     public void AsignarColor(string valor){
         color = valor; 
-        
+
     }
     
 }
