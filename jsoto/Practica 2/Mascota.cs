@@ -15,6 +15,7 @@ public class Mascota
     public string nombre;
     public int edad; 
     public string nombrePropietario;
+    public Persona propietario; 
     public string color;
     public string categoria;
 
@@ -34,7 +35,15 @@ public class Mascota
 
     public void AsignarColor(string valor){
         color = valor; 
+    }
 
+    public string Mostrar()
+    {
+        return "Mascota: { Nombre: " + nombre + ", "+
+        "Edad: " + edad + ", " +
+        "Propietario: " +  + ", " +
+        "Color: " + color +", " +
+        "Categoria: " + categoria + "}";
     }
     
 }
