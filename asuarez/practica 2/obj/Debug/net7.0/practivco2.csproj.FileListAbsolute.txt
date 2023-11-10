@@ -1,0 +1,14 @@
+D:\practica 2\bin\Debug\net7.0\practivco2.exe
+D:\practica 2\bin\Debug\net7.0\practivco2.deps.json
+D:\practica 2\bin\Debug\net7.0\practivco2.runtimeconfig.json
+D:\practica 2\bin\Debug\net7.0\practivco2.dll
+D:\practica 2\bin\Debug\net7.0\practivco2.pdb
+D:\practica 2\obj\Debug\net7.0\practivco2.GeneratedMSBuildEditorConfig.editorconfig
+D:\practica 2\obj\Debug\net7.0\practivco2.AssemblyInfoInputs.cache
+D:\practica 2\obj\Debug\net7.0\practivco2.AssemblyInfo.cs
+D:\practica 2\obj\Debug\net7.0\practivco2.csproj.CoreCompileInputs.cache
+D:\practica 2\obj\Debug\net7.0\practivco2.dll
+D:\practica 2\obj\Debug\net7.0\refint\practivco2.dll
+D:\practica 2\obj\Debug\net7.0\practivco2.pdb
+D:\practica 2\obj\Debug\net7.0\practivco2.genruntimeconfig.cache
+D:\practica 2\obj\Debug\net7.0\ref\practivco2.dll
