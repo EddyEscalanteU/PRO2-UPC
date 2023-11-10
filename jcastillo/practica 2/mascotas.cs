@@ -1,5 +1,5 @@
 //Realizar una clase con el nombre
-// "Mascotas", que tenga las siguientes propiedades: (Nombre, Edad, Nombrepropietario, color, Categoria). */
+//"Mascotas", que tenga las siguientes propiedades: (Nombre, Edad, Nombrepropietario, color, Categoria). */
 //Escribir los siguientes metodos:
 //Darnombre (String nombre)
 //asignarcolor (String color)
@@ -19,6 +19,7 @@ public class Mascota
         Propietario =new persona();
         Color = "sin color";
         Categoria = "sin categoria";
+        
     }    
 
     public void DarNombre(String valor)
