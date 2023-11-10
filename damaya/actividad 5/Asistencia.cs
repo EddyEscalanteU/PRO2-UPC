@@ -1,15 +1,15 @@
 public class Asistencia{
     public string Nombre;
     public string Carrera;
-    public string dia;
+    public string Fecha;
     public int codigo;
-    public int numero;
+    public int Numero;
     public Asistencia(){
         Nombre = "sin nombre";
         Carrera = "sin asignar";
-        dia = "viernes";
+        Fecha = "viernes";
         codigo = 0;
-        numero = 0;
+        Numero = 0;
     }
     public void DarNombre(string valor)
     {
