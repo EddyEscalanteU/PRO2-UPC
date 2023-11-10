@@ -24,4 +24,5 @@ public class Mascota {
     public void AsignarColor(string valor){
         color = valor;
     }
+    
 }
