@@ -6,15 +6,15 @@
 public class Mascota{
     public string Nombre;
     public int edad;
-    public string NombrePropietario;
+    public Persona Propietario;
     public string color;
     public string categoria;
-    
+
     public Mascota()
     {
         Nombre = "sin nombre";
         edad = 0;
-        NombrePropietario = "sin nombre";
+        Propietario = new Persona();
         color = "sin color";
         categoria = "sin categoria";
     }
@@ -24,5 +24,12 @@ public class Mascota{
     public void Asignarcolor(string valor){
         color = valor;
 
+    }
+    public string Mostrar(){
+        return "Mascota: { nombre: " + Nombre + ", " +
+        "Edad; " + edad + ", " +
+        "Propietario: " + Propietario.Mostrar() + ", " +
+        "Color: " + color + ", " +
+        "Categoria: " + Categoria + "}";
     }
 }
