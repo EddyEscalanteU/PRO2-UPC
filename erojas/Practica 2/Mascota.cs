@@ -3,12 +3,14 @@ namespace HelloWorld {
         public string Nombre;
         public int Edad;
         public string NombrePropietario;
+        //public Persona propietario;
         public string Color;
         public string Categoria;
         public Mascota(){
             Nombre = " ";
             Edad = 0;
             NombrePropietario = " ";
+           // propietario = new Persona();
             Color = " ";
             Categoria = " ";
 
@@ -18,6 +20,7 @@ namespace HelloWorld {
         }
         public void DarNombrePropietario(string valor){
             NombrePropietario = valor;
+           // propietario = valor
 
         }
         public void DarEdad(int valor){
@@ -28,6 +31,11 @@ namespace HelloWorld {
         }
         public void AsignarCategoria(string valor){
             Categoria = valor;
+        }
+
+        public string Mostrar(){
+            return
+            "Nombre: " + Nombre + "Edad: "+ " " + Edad + "NombrePropietario"+ NombrePropietario + " " + "Color: " + Color + " "+ "Categoria" + Categoria;
         }
 
 
