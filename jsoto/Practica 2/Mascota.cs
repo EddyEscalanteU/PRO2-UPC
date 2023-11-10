@@ -41,7 +41,7 @@ public class Mascota
     {
         return "Mascota: { Nombre: " + nombre + ", "+
         "Edad: " + edad + ", " +
-        "Propietario: " +  + ", " +
+        "Propietario: " +  ", " +
         "Color: " + color +", " +
         "Categoria: " + categoria + "}";
     }
