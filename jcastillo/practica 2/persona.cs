@@ -1,0 +1,25 @@
+public class persona{
+    private int carnet;
+    private String nombre;
+    private int edad;
+    public persona(){
+        carnet = 0;
+        nombre = "Sin nombre";
+        edad = 0;
+    }
+    public persona(int ci, String name, int myEdad){
+        carnet = ci;
+        nombre = name;
+        edad = myEdad;
+    }
+    public String obtenernombre(){
+        return nombre;
+    }
+
+    public String Mostrar(){
+        return " persaona { carnet: " + carnet + ", " +
+        "Nombre: " + nombre + ", " +
+        "Edad: " + edad + ", " + " } "
+    }
+
+}
