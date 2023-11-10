@@ -2,7 +2,7 @@
 {
     class Program 
     {
-        static void Main(string[] args)
+       public static void Main(string[] args)
         {
             Mascota mascota1 = new Mascota();
             Console.WriteLine(mascota1.nombre);
