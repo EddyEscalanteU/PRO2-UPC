@@ -9,7 +9,14 @@
             mascota1.DarNombre("Sin nombre");
             Console.WriteLine(mascota1.Nombre);
          }
+         public string mostrar (){
+            return "Nombre: " + Nombre + ", " +
+            "Edad: " + Edad + ", " + 
+            "Color: " + Nombre + ", " +
+            "Edad: " + Edad;
+         }
       }
+    
 
 
 }
