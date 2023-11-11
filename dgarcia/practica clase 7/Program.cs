@@ -20,7 +20,6 @@
             //Console.WriteLine("Char: " + caracter);
 
             C.MostrarCaracteres();
-
         }
     }
 }

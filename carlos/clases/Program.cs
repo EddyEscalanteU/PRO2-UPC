@@ -13,7 +13,7 @@
             ///Nro.MostrarDigitos();
             //Nro.MostrarDigPares();
 
-            Cadena C = new Cadena("Console.WriteLine");
+            Cadena C = new Cadena("tu papá");
             Console.WriteLine("Cadena: " + C.Cad);
 
             //char caracter = C.ObtenerCaracter(3);

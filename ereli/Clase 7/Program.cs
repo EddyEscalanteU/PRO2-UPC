@@ -1,6 +1,7 @@
 ﻿namespace ClaseEntero
 {
-    public class Program{
+    public class Program
+    {
         public static void Main(string[] args)
         {
             //Entero Nro = new Entero(21);
