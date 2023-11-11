@@ -29,6 +29,9 @@ namespace HelloWorld
         Console.Write("Categoria: ");
         Console.WriteLine(Firulais.Categoria);
 
+        // Mascota myMascota = new Mascota();
+        // Console.WriteLine(myMascota.Mostrar);
+
         Console.ReadKey();
 
     }
