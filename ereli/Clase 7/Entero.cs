@@ -1,45 +1,54 @@
-public class entero{
+﻿public class Entero
+{
     //Propiedades
     public int N;
+
     //Contructor
-    Public Entero(){
+    public Entero()
+    {
         N = 0;
     }
 
-    public Entero(int num){
+    public Entero(int num)
+    {
         N = num;
     }
-    // Metodos (Procedimientos/funciones)
-
-    public bool Espar(){     
+     
+    //Metodos (Procedimientos/Funciones)
+    public bool EsPar()
+    {
         if (N % 2 == 0)
         {
-            return true;            
+            return true;
         }
-        else 
+        else
         {
             return false;
         }
     }
 
-    public bool EsPar_Mejorado(){
+    public bool EsPar_Mejorado()
+    {
         return (N % 2 == 0);
     }
 
-    public bool EsMultiploN(int multiplo){
+    public bool EsMultiploN(int multiplo)
+    {
         return (N % multiplo == 0);
     }
 
-    public viod MostrarDigitos(){
+    public void MostrarDigitos()
+    {
         int NroAux = N;
-        while(NroAux != 0)
+        while (NroAux != 0)
         {
             int dig = NroAux % 10;
             Console.WriteLine("Dig: " + dig);
             NroAux = NroAux / 10;
         }
-        
-      public void MostrarDigPares()
+    }
+
+    public void MostrarDigPares()
     {
         int NroAux = N;
         while (NroAux != 0)
@@ -53,17 +62,4 @@ public class entero{
         }
     }
 
-     public void MostrarDigPares()
-    {
-        int NroAux = N;
-        while (NroAux != 0)
-        {
-            int dig = NroAux % 10;
-            if (dig % 2 == 0)
-            {
-                Console.WriteLine("Dig: " + dig);
-            }
-            NroAux = NroAux / 10;
-        }
-    }
 }
