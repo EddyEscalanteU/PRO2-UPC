@@ -5,7 +5,7 @@
         public static void Main(string[] args)
         {
            Entero Nro = new Entero(21);
-            Nro.N = 2541;
+            Nro.N = 3541;
             Console.WriteLine("N: " + Nro.N);
            //bool res = Nro.EsPar_Mejorado();
            //bool res = Nro.EsMultiploN(5);

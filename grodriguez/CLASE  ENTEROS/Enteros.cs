@@ -35,7 +35,8 @@ public class Entero{
 
            public void MostrarDigitos(){
             int NroAux = N;
-            while (NroAux / 10 != 0){ 
+            while (NroAux != 0)
+            { 
                 int dig = NroAux % 10;
                 Console.WriteLine("Dig: " + dig);
                 NroAux = NroAux / 10;
