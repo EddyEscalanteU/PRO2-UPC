@@ -5,30 +5,35 @@
 //AsignarMateria(string Materia)
 //DarNombre(string docente)
  
-public class Materia1
+public class Materia
 {
         public string Grupo;
         public string Materia;
         public string Docente;
         public int Hora;
-
-public Materia1()
+        public Materia()
 {
 
     Grupo = "sin grupo";
-    Materia = "sistema";
+    Materia = "sin nombre";
     Docente = "sin docente";
     Hora = 0;
 
 }
-public void DarNombre(string valor)
-{ 
-    Docente = valor;
-}
-public void AsignarMateria(string valor)
-{
-    Materia = valor;
-    }
+public Materia(string grupo, string materia1, string Docente1, int Hora1){
 
+    grupo = group;
+    materia = materia1
+    docente = Docente1
+    hora = hora1
+}
+ 
+public string Mostrar(){
+    retun "materia { grupo: " + Grupo + ", " +
+    "materia: " + materia + ", " +
+    "docente: " + docente + ", " +
+    "hora: " + hora + "}" +;
+
+}
 
 }

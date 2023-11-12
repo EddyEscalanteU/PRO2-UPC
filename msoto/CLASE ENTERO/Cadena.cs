@@ -1,25 +1,19 @@
-
-
-public Class cadena(
+public class Cadena{
+    //Propiedades
     public string Cad;
 
+    //Contructor
     public Cadena(){
-        Cad="";
+        Cad = "";
     }
-
-    public Cadena(string myCadena)
-    {
-        cad = myCadena,
-    }
-
     public Cadena(string myCadena)
     {
         Cad = myCadena;
     }
 
-    public char ObtenerCaradcter(int posicion)
+    public char ObtenerCaracter(int posicion)
     {
-        if (posicion < Cad.Length)
+        if (posicion < Cad.Length) 
         {
             return Cad[posicion];
         }
@@ -28,15 +22,11 @@ public Class cadena(
             return ' ';
         }
     }
-
     public void MostrarCaracteres()
     {
         for (int i = 0; i < Cad.Length; i++)
         {
-            Console.WriteLine("Char: " + Cad[i]);
+            console.WriteLine("Char: " + Cad[i]);
         }
     }
-
-
-
-)
+}

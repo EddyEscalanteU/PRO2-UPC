@@ -1,15 +1,10 @@
-
-
-public Class cadena(
+public class Cadena
+{
     public string Cad;
 
-    public Cadena(){
-        Cad="";
-    }
-
-    public Cadena(string myCadena)
+    public Cadena()
     {
-        cad = myCadena,
+        Cad = "";
     }
 
     public Cadena(string myCadena)
@@ -17,7 +12,7 @@ public Class cadena(
         Cad = myCadena;
     }
 
-    public char ObtenerCaradcter(int posicion)
+    public char ObtenerCaracter(int posicion)
     {
         if (posicion < Cad.Length)
         {
@@ -36,7 +31,4 @@ public Class cadena(
             Console.WriteLine("Char: " + Cad[i]);
         }
     }
-
-
-
-)
+}
