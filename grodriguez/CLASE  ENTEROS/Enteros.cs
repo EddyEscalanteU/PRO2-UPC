@@ -26,7 +26,24 @@ public class Entero{
             }
             public bool EsPar_Mejorado(){
         return (N % 2 == 0); 
+        
+        
            }
+           public bool EsMultiploN(int multiplo){
+            return (N % multiplo == 0);
+           }
+
+           public void MostrarDigitos(){
+            int NroAux = N;
+            while (NroAux / 10 != 0){ 
+                int dig = NroAux % 10;
+                Console.WriteLine("Dig: " + dig);
+                NroAux = NroAux / 10;
+
+            }
+                
+            
+    }
     }
 
 
