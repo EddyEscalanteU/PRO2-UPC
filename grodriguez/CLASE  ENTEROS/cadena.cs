@@ -9,7 +9,10 @@ public class Cadena{
 
     }
 
-    public Cadena();
+    public Cadena(string myCadena)
+    {
+        Cad = myCadena;
+    }
 
 
 
