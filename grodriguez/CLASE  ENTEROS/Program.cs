@@ -13,8 +13,9 @@
            // Console.WriteLine("EsMultiploN: " + res);
 
             //Nro.MostrarDigitos();
-            Nro.MostrarDigitosPares();
-
+            //Nro.MostrarDigitosPares();
+            Cadena C = new Cadena("UPC");
+            Console.WriteLine("Cadena: " + C.Cad);
         }
     }
 
