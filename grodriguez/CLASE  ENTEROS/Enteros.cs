@@ -43,11 +43,35 @@ public class Entero{
 
             }
                 
+        
+    }
+
+     
+            public void MostrarDigitosPares(){
+                int NroAux = N;
+            while (NroAux != 0)
+            { 
+                int dig = NroAux % 10;
+                if (dig % 2 == 0)
+                { 
+                Console.WriteLine("Dig: " + dig);
+                 }
+                NroAux = NroAux / 10;
+                 }
+
+             {
+                
+                    
+
+                    }
+                }
+             }    
+
+
             
-    }
-    }
-
-
-
 
     
+
+
+
+
