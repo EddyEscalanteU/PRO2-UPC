@@ -21,3 +21,10 @@ public class ClaseArray{
     }
 }
 
+    public void OrdenamientoBurbuja(){
+        for (int i = 1; i < ArrayEnteros.Length; i++)
+        {
+            }
+}
+
+
