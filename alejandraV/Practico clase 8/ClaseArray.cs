@@ -19,12 +19,20 @@ public class ClaseArray{
             Console.WriteLine(ArrayEnteros[i]);
         }
     }
-}
 
     public void OrdenamientoBurbuja(){
+        int n = ArrayEnteros.Length;
+
         for (int i = 1; i < ArrayEnteros.Length; i++)
         {
+            for (int j = 0; j < ArrayEnteros.Length -2; j++)
+            if (ArrayEnteros[j] > ArrayEnteros[j + 1])
+            {
+                int aux = ArrayEnteros[j];
+                ArrayEnteros[j] = ArrayEnteros[j + 1];
+                ArrayEnteros[j + 1] = aux;
             }
+        }
+    }
 }
-
 
