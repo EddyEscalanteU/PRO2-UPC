@@ -80,15 +80,4 @@ public class ClaseArray
         }
         ArrayEnteros = B.ArrayEnteros;
     }
-
-
-
-
-
-
-
-
-
-
-
 }
