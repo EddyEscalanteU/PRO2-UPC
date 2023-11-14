@@ -34,6 +34,6 @@
             //B.MultiplicarElementosArray();
             A.ElevarCuadrado();
             A.MostrarArray();
-                    }
+        }
     }
 }
