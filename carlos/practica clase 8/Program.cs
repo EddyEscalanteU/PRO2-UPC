@@ -1,4 +1,4 @@
-﻿namespace Clase8
+﻿﻿namespace Clase8
 {
     public class Program{
         public static void Main(string[] args)
@@ -10,6 +10,12 @@
             A.ArrayEnteros[3] = 2;
             A.ArrayEnteros[4] = 7;
             A.MostrarArray();
+            //--------------------------
+            ClaseArray B = new ClaseArray(3);
+            B.ArrayEnteros[0] = 10;
+            B.ArrayEnteros[1] = 90;
+            B.ArrayEnteros[2] = 100;
+            B.MostrarArray();
             //Console.WriteLine("-----------------------");
             //A.OrdenamientoBurbuja();
             //A.MostrarArray();
@@ -17,11 +23,17 @@
             //A.Intercalar_Uno();
             //A.MostrarArray();
             Console.WriteLine("-----------------------");
-            A.DeleteByPosition(1);
+            //A.DeleteByPosition(1);
+            //A.MostrarArray();
+            //A.DeleteByPosition(3);
+            //A.UnirArray(B);
+            //A.SumarElementosArray();
+            //B.SumarElementosArray();
+            //A.MostrarArray();
+            //A.MultiplicarElementosArray();
+            //B.MultiplicarElementosArray();
+            A.ElevarCuadrado();
             A.MostrarArray();
-            A.DeleteByPosition(3);
-            A.MostrarArray();
-            
-        }
+                    }
     }
 }
