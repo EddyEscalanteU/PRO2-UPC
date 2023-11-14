@@ -34,5 +34,40 @@ public class ClaseArray{
             }
         }
     }
+
+
+
+    public void IntercalarPrimerUltimo()
+    {
+        int n = ArrayEnteros.Length;
+        int aux = ArrayEnteros[0];
+        ArrayEnteros[0] = ArrayEnteros[0 - 1];
+        ArrayEnteros[n - 1] = aux;
+    }
+
+    public void Intercalar_Uno()
+    {
+        int n = ArrayEnteros.Length;
+        for(int i = 1; i < (n / 2) + 1; i++)
+        {
+            int aux =ArrayEnteros [i - 1];
+            ArrayEnteros[i - 1] = ArrayEnteros[n - 1];
+            ArrayEnteros[n - i] = aux;
+            //MostrarArray();
+        }
+    }
+
+    public void DeleteByPosition(int position)
+    {
+        int n = ArrayEnteros.Length;
+        for (int i = position; i < n - 1; i++)
+        {
+            int aux = ArrayEnteros[i];
+            
+        }
+    }
+
+
+
 }
 
