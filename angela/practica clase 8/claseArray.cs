@@ -1,17 +1,28 @@
 public class claseArray
-//propiedades
-public int[] ArrayEnteros;
+{
 
-//constructor
-public claseArray(){
-    ArrayEnteros = new int[0];
-}
+    //propiedades
+    public int[] ArrayEnteros;
 
-public claseArray(int cantidad){
-    ArrayEnteros = new int[cantidad];
-}
-//metodos (procedimiento/funciones)
-public void mostrarArray(){
+
+    //constructor
+    public claseArray()
+    {
+
+        ArrayEnteros = new int[0];
+    }
+
+    public claseArray(int cantidad)
+    {
+
+        ArrayEnteros = new int[cantidad];
+    }
+
+
+    //metodos (procedimiento/funciones)
+    public void mostrarArray()
+    {
+        string resp = "[";
     for (int i = 0; i < ArrayEnteros.length; i++)
     {
         console.WriteLine("posicion: " + i);

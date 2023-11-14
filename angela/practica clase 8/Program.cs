@@ -10,6 +10,18 @@
             A.ArrayEnteros[3] = 12;
 
             A.mostrarArray();
+            //console.WriteLine("--------------");
+            //A.ordenmientoBurbuja();
+            //A.mostrarArray();
+            //console.WriteLine("--------------");
+            //A.Intercalar_uno();
+            //A.mostrarArray();
+            console.WriteLine("---------------");
+            A.mostrarArray();
+            A.mostrarByPosicion(1);
+            A.mostrarArray();
+            A.mostrarByPosicion(3);
+            A.mostrarArray();
             
         }
     }
