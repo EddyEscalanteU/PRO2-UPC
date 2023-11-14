@@ -1,6 +1,6 @@
 public class ClaseArray
 {
-    string[] ArrayCadenas;
+    public string[] ArrayCadenas;
 
     public ClaseArray()
     {
