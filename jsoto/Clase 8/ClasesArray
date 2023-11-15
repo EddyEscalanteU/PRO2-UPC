@@ -34,4 +34,14 @@ public void MostrarArray()
         }
     }
 
+    public void IntercalarPirmeroUltimo()
+    {
+        int n = ArrayEnteros.Length;
+        
+        int aux = ArrayEnteros[0];
+        ArrayEnteros[0] = ArrayEnteros[n - 1];
+        ArrayEnteros[n - 1] = aux; 
+    }
+    
+
 }
