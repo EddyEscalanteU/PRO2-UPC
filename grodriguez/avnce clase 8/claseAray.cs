@@ -1,54 +1,52 @@
-using System. diagnostics.contracts;
+   using System.Diagnostics.Contracts;
 
-public class claseArray
-{
-     //propiedades
+  public class ClaseArray  
+{ 
+
+    //Propiedades
     public int[] ArrayEnteros;
 
-    //constructor
-    public claseArray()
+    //Constructor
+    public ClaseArray()
     {
         ArrayEnteros = new int[0];
     }
 
-    public claseArray(int cantidad);
+    public ClaseArray(int cantidad)
     {
-         ArrayEnteros = new int[cantidad];
+        ArrayEnteros = new int[cantidad];
     }
 
-    //metodos (procedimiento/funciones)
-    public void mostrarArray()
+    //Metodos (Procedimientos/Funciones)
+    public void MostrarArray()
     {
         string resp = "[";
-        for (int i = 0; i < ArrayEnteros.length; i++)
+        for (int i = 0; i < ArrayEnteros.Length; i++)
         {
             resp += ArrayEnteros[i] + ", ";
-        
         }
-        console.WriteLine( resp + "]"); 
+        Console.WriteLine(resp + "]");
     }
 
-    public void ordenmientoBurbuja()
+    public void OrdenamientoBurbuja()
     {
-        int n = ArrayEnteros.length;
+        int n = ArrayEnteros.Length;
 
-        for (int i = 1; j <= n - 2; j++)
+        for (int i = 1; i <= n; i++)
         {
-              if (ArrayEnteros[j] > ArrayEnteros[j + 1])
-            
+            for (int j = 0; j <= n - 2; j++)
             {
-                
-                int aux =ArrayEnteros[j];
-                ArrayEnteros[j] = ArrayEnteros [j + 1];
-                ArrayEnteros[j + 1] = aux;
+                if (ArrayEnteros[j] > ArrayEnteros[j + 1])
+                {
+                    int aux = ArrayEnteros[j];
+                    ArrayEnteros[j] = ArrayEnteros[j + 1];
+                    ArrayEnteros[j + 1] = aux;
+                }
             }
         }
-
     }
-    
-}
 
-public void IntercalarPrimeroUltimo()
+    public void IntercalarPrimeroUltimo()
     {
         int n = ArrayEnteros.Length;
 
@@ -133,7 +131,13 @@ public void IntercalarPrimeroUltimo()
         {
             ArrayEnteros[i] = (ArrayEnteros[i] * ArrayEnteros[i]);
         }
-    }
-
 }
 
+
+
+        
+    
+     
+     
+        
+     
