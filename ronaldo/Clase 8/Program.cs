@@ -12,6 +12,14 @@
             A.ArrayEnteros [3] = 2 ;
             A.ArrayEnteros [4] =7 ;
             A.MostrarArray();
+
+            //-------------------
+
+            claseArray B = new claseArray (3) ;
+            B.ArrayEnteros [0] = 10 ;
+            B.ArrayEnteros [1] = 90 ;
+            B.ArrayEnteros [2] = 100 ;
+            B.MostrarArray();
            // Console.WriteLine("----------------");
             //A.OrdenamientoBurbuja();
             //A.MostrarArray();
@@ -19,10 +27,19 @@
             //A.Intercalar_Uno();
             //A.MostrarArray();
             Console.WriteLine("----------------");
-            A.DeletebyPosition(1);
+            //A.DeletebyPosition(1);
+            //A.MostrarArray();
+            //A.DeletebyPosition(3);
+            //A.Unirray(B);
+            //A.SumarElmentoArray();
+            //B.SumarElmentoArray();
+            //A.MostrarArray();
+            //A.MultiplicarElmentoArray();
+            //B.MultiplicarElmentoArray();
+            A.ElevarCuadrado();
             A.MostrarArray();
-            A.DeletebyPosition(3);
-            A.MostrarArray();
+            B.ElevarCuadrado();
+            B.MostrarArray();
         }
     }
 }
