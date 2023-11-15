@@ -22,8 +22,7 @@ public class ClaseArray
         Console.WriteLine(resp + "]");
     }
 
-    public void GenerarAbcdario()
-    {
+    public void GenerarAbcdario(){
         for (int i = 97; i <= 122; i++)
         {
             int numero = i;
@@ -32,9 +31,8 @@ public class ClaseArray
         }
     }
 
-    public void GenerarAbcdarioMAYUS2()
-    {
-        int cantAbcdario = (90 - 65) + 1;
+    public void GenerarAbcdarioMAYUS2(){
+        int cantAbcdario = (90-65) + 1;
         ArrayCadenas = new string[cantAbcdario];
 
         for (int i = 65; i <= 90; i++)
@@ -42,14 +40,13 @@ public class ClaseArray
             int numero = i;
             char letra = (char)numero;
             //Console.WriteLine(numero + ": " + letra);
-            ArrayCadenas[i - 65] = letra + "";
+            ArrayCadenas[i - 65] = letra + ""; 
         }
         MostrarArray();
     }
-
-    public void GenerarAbcdarioMAYUS()
-    {
-        int cantAbcdario = (90 - 65) + 1;
+    
+    public void GenerarAbcdarioMAYUS(){
+        int cantAbcdario = (90-65) + 1;
         ClaseArray B = new ClaseArray(cantAbcdario);
 
         for (int i = 65; i <= 90; i++)
@@ -57,7 +54,7 @@ public class ClaseArray
             int numero = i;
             char letra = (char)numero;
             //Console.WriteLine(numero + ": " + letra);
-            B.ArrayCadenas[i - 65] = letra + "";
+            B.ArrayCadenas[i - 65] = letra + ""; 
         }
         B.MostrarArray();
     }
@@ -70,24 +67,21 @@ public class ClaseArray
         ArrayCadenas[n] = aux;
     }
 
-    public void Interseccion(string[] A, string[] B)
-    {
-        int k = 0;
-        for (int i = 0; i <= A.Length - 1; i++)
-        {
-            string dato = A[i];
-            //Console.WriteLine("------------: " + dato);
-            for (int j = 0; j <= B.Length - 1; j++)
-            {
-                string dato2 = B[j];
-                if (dato == dato2)
-                {
-                    ArrayCadenas[k] = dato2;
-                    k = k + 1;
-                    //Console.WriteLine(dato2);
-                }
-            }
-        }
-    }
+    https://www.mecanografia-online.com
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 }
