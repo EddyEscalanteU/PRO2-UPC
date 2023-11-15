@@ -1,16 +1,19 @@
-﻿﻿namespace MyNamespace{
+﻿namespace MyNamespace{
 
     public class Program{
         public static void Main(string[] args)
         {
             ClaseArray A = new ClaseArray(4);
-            /*
-            A.ArrayCadenas[0] = "H";
-            A.ArrayCadenas[1] = "o";
-            A.ArrayCadenas[2] = "l";
-            A.ArrayCadenas[3] = "a";
+            
+            A.ArrayCadenas[0] = "Hola";
+            A.ArrayCadenas[1] = "Mundo";
+            A.ArrayCadenas[2] = "UPC";
+            A.ArrayCadenas[3] = "SCZ";
             A.MostrarArray();
-            */
+
+            Console.WriteLine("-----------");
+            A.IntercalarPrimeroUltimo();
+            A.MostrarArray();
             
             /*
             char c0 = char.Parse(A.ArrayCadenas[0]);
@@ -37,8 +40,7 @@
             Console.WriteLine(char.Parse(str));//string to char
             */
 
-            A.GenerarAbcdarioMAYUS();
+            //A.GenerarAbcdarioMAYUS();
         }
     }
 }
-

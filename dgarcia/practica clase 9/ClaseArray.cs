@@ -58,6 +58,10 @@ public class ClaseArray
         }
         B.MostrarArray();
     }
-
-
+    public void IntercalarPrimeroUltimo(){
+        int n = ArrayCadenas.Length - 1;
+        string aux = ArrayCadenas[0];
+        ArrayCadenas[0] = ArrayCadenas[n];
+        ArrayCadenas[n] = aux;
+    }
 }
