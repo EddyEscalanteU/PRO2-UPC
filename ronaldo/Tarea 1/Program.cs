@@ -6,7 +6,7 @@
 
         static void Main(string[] args)
             {
-            Console.WriteLine("Hello, World!");
+            Console.WriteLine("Area Cuadrado");
             int resp = calcularAreaCuadrdo(10);
             Console.WriteLine(resp);
             }
