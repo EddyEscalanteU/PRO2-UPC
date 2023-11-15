@@ -1,4 +1,4 @@
-﻿namespace Clase8
+﻿namespace Actividad8
 {
     public class Program{
         public static void Main(string[] args)
@@ -16,23 +16,9 @@
             B.ArrayEnteros[1] = 90;
             B.ArrayEnteros[2] = 100;
             B.MostrarArray();
-            //Console.WriteLine("-----------------------");
-            //A.OrdenamientoBurbuja();
-            //A.MostrarArray();
-            //Console.WriteLine("-----------------------");
-            //A.Intercalar_Uno();
-            //A.MostrarArray();
+
             Console.WriteLine("-----------------------");
-            //A.DeleteByPosition(1);
-            //A.MostrarArray();
-            //A.DeleteByPosition(3);
-            //A.UnirArray(B);
-            //A.SumarElementosArray();
-            //B.SumarElementosArray();
-            //A.MostrarArray();
-            //A.MultiplicarElementosArray();
-            //B.MultiplicarElementosArray();
-            A.ElevarCuadrado();
+            A.UnirArray(B);
             A.MostrarArray();
         }
     }

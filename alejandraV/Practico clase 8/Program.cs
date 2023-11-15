@@ -10,6 +10,7 @@ namespace Clase8
             A.ArrayEnteros[3] = 12;
             //A.ArrayEnteros[4] = 111;//error
             A.MostrarArray();
+            Console.WriteLine
         }
     }
 }
