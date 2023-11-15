@@ -1,7 +1,8 @@
-using System.Diagnostics.Contracts;
+   using System.Diagnostics.Contracts;
 
-public class ClaseArray
-{
+  public class ClaseArray  
+{ 
+
     //Propiedades
     public int[] ArrayEnteros;
 
@@ -130,32 +131,13 @@ public class ClaseArray
         {
             ArrayEnteros[i] = (ArrayEnteros[i] * ArrayEnteros[i]);
         }
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
+
+
+
+        
+    
+     
+     
+        
+     
