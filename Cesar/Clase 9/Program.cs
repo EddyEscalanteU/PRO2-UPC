@@ -22,15 +22,10 @@
             C.Interseccion(A.ArrayCadenas, B.ArrayCadenas);
             C.MostrarArray();
 
-            //ClaseArray A = new ClaseArray(4);
-            /*
-            A.ArrayCadenas[0] = "H";
-            A.ArrayCadenas[1] = "o";
-            A.ArrayCadenas[2] = "l";
-            A.ArrayCadenas[3] = "a";
-            A.MostrarArray();
-            */
-            
+
+
+
+
             /*
             char c0 = char.Parse(A.ArrayCadenas[0]);
             char c1 = char.Parse(A.ArrayCadenas[1]);
@@ -56,10 +51,7 @@
             Console.WriteLine(char.Parse(str));//string to char
             */
 
-            A.GenerarAbcdarioMAYUS();
+            //A.GenerarAbcdarioMAYUS();
         }
-        ClaseArray A = new ClaseArray(4);           
-            
     }
 }
-

@@ -1,4 +1,4 @@
-﻿﻿namespace MyNamespace{
+﻿namespace MyNamespace{
 
     public class Program{
         public static void Main(string[] args)
@@ -22,15 +22,18 @@
             C.Interseccion(A.ArrayCadenas, B.ArrayCadenas);
             C.MostrarArray();
 
-            //ClaseArray A = new ClaseArray(4);
-            /*
-            A.ArrayCadenas[0] = "H";
-            A.ArrayCadenas[1] = "o";
-            A.ArrayCadenas[2] = "l";
-            A.ArrayCadenas[3] = "a";
-            A.MostrarArray();
-            */
-            
+            Console.WriteLine("-------GENERAR ABECEDARIO-------");
+            A.GenerarAbcdario();
+
+            Console.WriteLine("-------GENERAR ABECEDARIO MAYUSCULAS-------");
+            A.GenerarAbcdarioMAYUS();
+
+            Console.WriteLine("-------GENERAR ABECEDARIO MAYUSCULAS-------");
+            A.GenerarAbcdarioMAYUS2();
+
+
+
+
             /*
             char c0 = char.Parse(A.ArrayCadenas[0]);
             char c1 = char.Parse(A.ArrayCadenas[1]);
@@ -56,10 +59,7 @@
             Console.WriteLine(char.Parse(str));//string to char
             */
 
-            A.GenerarAbcdarioMAYUS();
+            //A.GenerarAbcdarioMAYUS();
         }
-        ClaseArray A = new ClaseArray(4);           
-            
     }
 }
-
