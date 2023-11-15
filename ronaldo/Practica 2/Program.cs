@@ -22,6 +22,10 @@
             Console.WriteLine(mascota1.categoria);
             Console.WriteLine("NOMBRE DEL PROPIETARIO");
             Console.WriteLine(mascota1.NombredelPropietario);
+
+            // metodo tostring(mostrar) : ver todo los datos en forma horizontal
+            Persona pedro = new Persona(123,"Pedro",10);
+            Console.WriteLine(pedro.Mostrar());
             
         }
     }

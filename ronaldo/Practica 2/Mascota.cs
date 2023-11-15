@@ -47,4 +47,15 @@ public class Mascota
         NombredelPropietario = valor ;
     }
 
+
+    public string Mostrar()
+    {
+        return"Nombre :"+ nombre +  "  ,  " +
+        "Edad :" + edad + " ,  " +
+        "Nombre Propietario :" + NombredelPropietario + "  ,  " +
+        "Color :" + color + "  ,  " +
+        "Categoria :" + categoria  ;
+
+    }
+
 }
