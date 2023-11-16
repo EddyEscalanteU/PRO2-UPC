@@ -21,6 +21,8 @@
         "Fecha: " + Fecha + ", " +
         "IdEstudiante: " + IdEstudiante + ", " +
         "IdMateria: " + IdMateria + " }";
+
+        
     }
 }
 
