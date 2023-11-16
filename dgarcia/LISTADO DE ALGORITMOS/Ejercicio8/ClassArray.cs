@@ -1,13 +1,13 @@
-public class ClaseArray
+public class ClaseArrayEquivalencias
 {
     public string[] ArrayCadenas;
 
-    public ClaseArray()
+    public ClaseArrayEquivalencias()
     {
         ArrayCadenas = new string[0];
     }
 
-    public ClaseArray(int cant)
+    public ClaseArrayEquivalencias(int cant)
     {
         ArrayCadenas = new string[cant];
     }

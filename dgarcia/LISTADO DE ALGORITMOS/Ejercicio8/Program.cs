@@ -3,7 +3,7 @@
     public class Program{
         public static void Main(string[] args)
         {
-            ClaseArray A = new ClaseArray(4);           
+            ClaseArrayEquivalencias A = new ClaseArrayEquivalencias(4);           
             A.ArrayCadenas[0] = "A";
             A.ArrayCadenas[1] = "k";
             A.ArrayCadenas[2] = "e";
