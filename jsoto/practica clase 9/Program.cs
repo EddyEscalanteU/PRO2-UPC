@@ -5,11 +5,18 @@
         public static void Main(string[] args)
         {
             ClaseArray A = new ClaseArray(4);
-            A.ArrayCadenas[0] = "Ho";
-            A.ArrayCadenas[1] = "la";
-            A.ArrayCadenas[2] = "Mun";
-            A.ArrayCadenas[3] = "do";
-           A.MostararArray();
+            A.ArrayCadenas[0] = "Ereli";
+            A.ArrayCadenas[1] = "Maria";
+            A.ArrayCadenas[2] = "Maria";
+            A.ArrayCadenas[3] = "joel";
+            A.MostararArray();
+
+            
+            A.ArrayCadenas[0] = "Ereli";
+            A.ArrayCadenas[1] = "Maria";
+            A.ArrayCadenas[2] = "Maria";
+            A.ArrayCadenas[3] = "joel";
+
 
            char c0 = char.Parse(A.ArrayCadenas[0]);
            char c1 = char.Parse(A.ArrayCadenas[1]);
