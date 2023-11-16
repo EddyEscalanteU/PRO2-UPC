@@ -1,4 +1,4 @@
-public class ClaseArray
+﻿public class ClaseArray
 {
     public string[] ArrayCadenas;
 
@@ -62,32 +62,6 @@ public class ClaseArray
         B.MostrarArray();
     }
 
-    public void IntercalarPrimeroUltimo()
-    {
-        int n = ArrayCadenas.Length - 1;
-        string aux = ArrayCadenas[0];
-        ArrayCadenas[0] = ArrayCadenas[n];
-        ArrayCadenas[n] = aux;
-    }
 
-    public void Interseccion(string[] A, string[] B)
-    {
-        int k = 0;
-        for (int i = 0; i <= A.Length - 1; i++)
-        {
-            string dato = A[i];
-            //Console.WriteLine("------------: " + dato);
-            for (int j = 0; j <= B.Length - 1; j++)
-            {
-                string dato2 = B[j];
-                if (dato == dato2)
-                {
-                    ArrayCadenas[k] = dato2;
-                    k = k + 1;
-                    //Console.WriteLine(dato2);
-                }
-            }
-        }
-    }
 
 }

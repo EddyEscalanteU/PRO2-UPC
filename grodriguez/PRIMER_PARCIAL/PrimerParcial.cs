@@ -2,6 +2,7 @@ public class ClaseArray
 {
     public string[] ArrayCadenas;
 
+    
     public ClaseArray()
     {
         ArrayCadenas = new string[0];
@@ -10,10 +11,10 @@ public class ClaseArray
     public ClaseArray(int cant)
     {
         ArrayCadenas = new string[cant];
-    }
+    }/*
 
-    public void MostrarArray()
-    {
+    //public void MostrarArray()/*
+    {/*
         string resp = "[";
         for (int i = 0; i < ArrayCadenas.Length; i++)
         {
@@ -47,7 +48,7 @@ public class ClaseArray
         MostrarArray();
     }
 
-    public void GenerarAbcdarioMAYUS()
+    /*public void GenerarAbcdarioMAYUS()
     {
         int cantAbcdario = (90 - 65) + 1;
         ClaseArray B = new ClaseArray(cantAbcdario);
@@ -60,7 +61,7 @@ public class ClaseArray
             B.ArrayCadenas[i - 65] = letra + "";
         }
         B.MostrarArray();
-    }
+    }*/
 
     public void IntercalarPrimeroUltimo()
     {
