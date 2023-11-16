@@ -1,14 +1,11 @@
-public class ClaseArray
-{
-    public string[] ArrayCadenas;
+public class ClaseArray{
 
-    public ClaseArray()
-    {
+    public string[] ArrayCadenas;
+    public ClaseArray(){
         ArrayCadenas = new string[0];
     }
 
-    public ClaseArray(int cant)
-    {
+    public ClaseArray(int cant){
         ArrayCadenas = new string[cant];
     }
 
@@ -18,12 +15,12 @@ public class ClaseArray
         for (int i = 0; i < ArrayCadenas.Length; i++)
         {
             resp += ArrayCadenas[i] + ", ";
+
         }
-        Console.WriteLine(resp + "]");
+        Console.WriteLine(resp + "]"); 
     }
 
-    public void GenerarAbcdario()
-    {
+    public void GenerarAbcedario(){
         for (int i = 97; i <= 122; i++)
         {
             int numero = i;
@@ -32,38 +29,35 @@ public class ClaseArray
         }
     }
 
-    public void GenerarAbcdarioMAYUS2()
-    {
-        int cantAbcdario = (90 - 65) + 1;
-        ArrayCadenas = new string[cantAbcdario];
-
+    public void GenerarAbcedarioMAYUS(){
+        ArrayCadenas = new string[(90-65) + 1];
         for (int i = 65; i <= 90; i++)
         {
             int numero = i;
             char letra = (char)numero;
             //Console.WriteLine(numero + ": " + letra);
             ArrayCadenas[i - 65] = letra + "";
+
         }
         MostrarArray();
+
+        
     }
-
-    public void GenerarAbcdarioMAYUS()
-    {
-        int cantAbcdario = (90 - 65) + 1;
+    public void GenerarAbcedarioMAYUS2(){
+        int cantAbcdario = (90-65) + 1;
         ClaseArray B = new ClaseArray(cantAbcdario);
-
         for (int i = 65; i <= 90; i++)
         {
             int numero = i;
             char letra = (char)numero;
             //Console.WriteLine(numero + ": " + letra);
             B.ArrayCadenas[i - 65] = letra + "";
+
         }
         B.MostrarArray();
     }
 
-    public void IntercalarPrimeroUltimo()
-    {
+    public void IntercalarPrimeroUltimo(){
         int n = ArrayCadenas.Length - 1;
         string aux = ArrayCadenas[0];
         ArrayCadenas[0] = ArrayCadenas[n];
@@ -88,6 +82,7 @@ public class ClaseArray
                 }
             }
         }
-    }
 
+    }
+    
 }

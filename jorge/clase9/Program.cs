@@ -22,6 +22,14 @@
             C.Interseccion(A.ArrayCadenas, B.ArrayCadenas);
             C.MostrarArray();
 
+            Console.WriteLine("-------GENERAR ABECEDARIO-------");
+            A.GenerarAbcdario();
+
+            Console.WriteLine("-------GENERAR ABECEDARIO MAYUSCULAS-------");
+            A.GenerarAbcdarioMAYUS();
+
+            Console.WriteLine("-------GENERAR ABECEDARIO MAYUSCULAS-------");
+            A.GenerarAbcdarioMAYUS2();
 
 
 
