@@ -19,6 +19,8 @@
         "Carnet: " + Carnet + ", " +
         "Genero: " + Genero + ", " +
         "Edad: " + Edad + "}";
+
+        
     }
 }
 
