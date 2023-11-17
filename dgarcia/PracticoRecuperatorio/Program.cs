@@ -37,6 +37,7 @@ public class Program
             
         C.BuscarElementoArrayCadenas(C.ArrayCadenas);
 
+        //8.- Dado un array de cadenas retornar un array de enteros con su equivalencia en ASCII
         Console.WriteLine("------------------------- ");
         Console.WriteLine("Ejercicio8 ");
 
@@ -61,6 +62,6 @@ public class Program
             Console.WriteLine((int)c0);
             Console.WriteLine((int)c1);
             Console.WriteLine((int)c2);
-            Console.WriteLine((int)c3);
+            Console.WriteLine((int)c3);           
     }
 }
