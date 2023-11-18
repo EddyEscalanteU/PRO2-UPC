@@ -81,6 +81,7 @@ public class MatrizEnteros
                 dato = dato + 1;
             }
         }
+   
     }
 
 
