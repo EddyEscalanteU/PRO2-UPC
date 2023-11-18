@@ -6,11 +6,11 @@ namespace MyNamespace
     {
         public static void Main()
         {
-            int[] arr1 = new int[] { 2, 4, 6, 8, 10 };
-            int[] arr2 = new int[] { 2, 7, 10 };
+            int[] arrA = new int[] { 2, 4, 6, 8, 10 };
+            int[] arrB = new int[] { 2, 7, 10 };
 
-            var diff = arr1.Except(arr2);
-            Console.WriteLine("La diferencia es: " + String.Join(", ", diff));   
+            var diff = arrA.Except(arrB);
+            Console.WriteLine("La diferencia entre A y B es: " + String.Join(", ", diff));   
         }
     }
 }
