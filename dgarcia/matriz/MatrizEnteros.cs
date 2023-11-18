@@ -1,16 +1,9 @@
 public class MatrizEnteros
 {
-    //Elemento de la Matriz
-    public int[,] M;
-
-    //Cantidad de filas
-    public int fila;
-
-    //Cantidad de columnas
-    public int columna;
-
-    //Valor por defecto
-    public int defaultValue = -1;
+    public int[,] M; //Elemento de la Matriz
+    public int fila;//Cantidad de filas
+    public int columna;//Cantidad de columnas
+    public int defaultValue = 99;//Valor por defecto
 
     //El constructor vacio
     public MatrizEnteros()
@@ -25,19 +18,19 @@ public class MatrizEnteros
     {
         //Dimensionar la matriz
         M = new int[cantX, cantY];
-        fila = cantX;
-        columna = cantY;
+        columna = cantX;
+        fila = cantY;
     }
 
     //Cargar la matriz con valores por defecto
     public void CargarMatrizDefault()
     {
         //Dar valores por defecto a la matriz
-        for (int x = 0; x < fila; x++)
+        for (int x = 0; x < columna; x++)
         {
-            for (int y = 0; y < columna; y++)
+            for (int y = 0; y < fila; y++)
             {
-                M[x, y] = defaultValue;
+                M[y, x] = defaultValue;
             }
         }
     }
@@ -46,11 +39,11 @@ public class MatrizEnteros
     public void MostrarMatriz()
     {
         string res = "";
-        for (int x = 0; x < fila; x++)
+        for (int x = 0; x < columna; x++)
         {
-            for (int y = 0; y < columna; y++)
+            for (int y = 0; y < fila; y++)
             {
-                int dato = M[x, y];
+                int dato = M[y, x];
                 res = res + dato + " , ";
             }
             res = res + "\n";
@@ -58,5 +51,87 @@ public class MatrizEnteros
         Console.WriteLine(res);
     }
 
+    public void Insertar(int posX, int posY, int ele)
+    {
+        M[posX, posY] = ele;
+    }
 
+
+    public void LlenarMatriz_v1()
+    {
+        int dato = 1;
+        for (int x = 0; x < columna; x++)
+        {
+            for (int y = 0; y < fila; y++)
+            {
+                M[x, y] = dato;
+            }
+            dato = dato + 1;
+        }
+    }
+
+    public void LlenarMatriz_v2()
+    {
+        int dato = 1;
+        for (int x = 0; x < columna; x++)
+        {
+            for (int y = 0; y < fila; y++)
+            {
+                M[x, y] = dato;
+                dato = dato + 1;
+            }
+        }
+    }
+
+    public void LlenarMatriz_v3()
+    {
+        int dato = 16;
+        for (int x = 0; x < columna; x++)
+        {
+            for (int y = 0; y < fila; y++)
+            {
+                M[x, y] = dato;
+                dato = dato - 1;
+            }
+        }
+    }
+
+    public void LlenarMatriz_v4()
+    {
+        int dato = 1;
+        for (int x = 0; x < columna; x++)
+        {
+            for (int y = 0; y < fila; y++)
+            {
+                M[x, y] = dato;
+                dato = dato + 1;
+            }
+            dato = 1;
+        }
+    }
+    public void LlenarMatriz_v5()
+    {
+        int dato = 4;
+        for (int x = 0; x < columna; x++)
+        {
+            for (int y = 0; y < fila; y++)
+            {
+                M[x, y] = dato;
+                dato = dato - 1;
+            }
+            dato = 4;
+        }
+    }
+    public void LlenarMatriz_v6()
+    {
+        int dato = 4;
+        for (int x = 0; x < columna; x++)
+        {
+            for (int y = 0; y < fila; y++)
+            {
+                M[x, y] = dato;
+            }
+            dato = dato - 1;
+        }
+    }
 }
