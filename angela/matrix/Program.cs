@@ -1,4 +1,4 @@
-﻿namespace Programacion2
+﻿﻿namespace Programacion2
 {
     public class Matrices
     {
@@ -28,9 +28,9 @@
             Matriz.M[3, 3] =5;
             Matriz.MostrarMatriz();
             Console.WriteLine("---------------------------");
-            //Matriz.LlenarMatriz_v1();
-            //Matriz.MostrarMatriz();
-            Matriz.LlenarMatriz_v4();
+            Matriz.LlenarMatriz_v1();
+            Matriz.MostrarMatriz();
+            Matriz.LlenarMatriz_v2();
             Matriz.MostrarMatriz();
             Console.WriteLine("---------------------------");
 
