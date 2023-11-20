@@ -95,43 +95,20 @@ public class MatrizEnteros
             }
         }
     }
-
+    
     public void LlenarMatriz_v4()
     {
-        int dato = 1;
-        for (int x = 0; x < columna; x++)
-        {
-            for (int y = 0; y < fila; y++)
-            {
-                M[x, y] = dato;
-                dato = dato + 1;
-            }
-            dato = 1;
-        }
-    }
-    public void LlenarMatriz_v5()
-    {
         int dato = 4;
         for (int x = 0; x < columna; x++)
         {
             for (int y = 0; y < fila; y++)
             {
                 M[x, y] = dato;
-                dato = dato - 1;
-            }
-            dato = 4;
-        }
-    }
-    public void LlenarMatriz_v6()
-    {
-        int dato = 4;
-        for (int x = 0; x < columna; x++)
-        {
-            for (int y = 0; y < fila; y++)
-            {
-                M[x, y] = dato;
+                
             }
             dato = dato - 1;
         }
     }
+
+
 }

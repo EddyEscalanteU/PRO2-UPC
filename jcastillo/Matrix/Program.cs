@@ -30,21 +30,10 @@
             Console.WriteLine("---------------------------");
             Matriz.LlenarMatriz_v1();
             Matriz.MostrarMatriz();
+            Console.WriteLine("---------------------------");
             Matriz.LlenarMatriz_v2();
             Matriz.MostrarMatriz();
-            Console.WriteLine("---------------------------");
-            Matriz.LlenarMatriz_v3();
-            Matriz.MostrarMatriz();
-            Console.WriteLine("---------------------------");
-            Matriz.LlenarMatriz_v4();
-            Matriz.MostrarMatriz();
-            Console.WriteLine("---------------------------");
-            Matriz.LlenarMatriz_v5();
-            Matriz.MostrarMatriz();
-            Console.WriteLine("---------------------------");
-            Matriz.LlenarMatriz_v6();
-            Matriz.MostrarMatriz();
-            Console.WriteLine("---------------------------");
+
 
         }
     }
