@@ -33,7 +33,7 @@
             //Matriz.MostrarMatriz();
             */
             Console.WriteLine("---------------------------");
-            Matriz.LlenarMatrizTriangulo_v2();
+            Matriz.MatrizSerie_MasUno();
             Matriz.MostrarMatriz();
             Console.WriteLine("---------------------------");
 
