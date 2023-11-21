@@ -269,5 +269,26 @@ public class MatrizEnteros
             }
         }
     }
+    public void MatrizSerie_Domino()
+    {
+        int datoPrevioA= 0;
+        int datoPrevioB= 7;
+        
+        int dato = 0;
+        for (int x = 0; x < columna; x++)
+        {
+            for (int y = 0; y < fila; y++)
+            {
+                dato = datoPrevioA + 1;
+                
+                
+                M[x, y] = dato;
+               
+                datoPrevioA = datoPrevioB;
+                datoPrevioB = dato;
+                
+            }
+        }
+    }
 
 }
