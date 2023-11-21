@@ -44,9 +44,9 @@
             /*Matriz.LlenarMatrizTriangulo_v3();
              Matriz.MostrarMatriz();
             Console.WriteLine("---------------------------");*/
-
-            Matriz.LlenarMatrizTriangulo_v2();
-             Matriz.MostrarMatriz();
+              Console.WriteLine("---------------------------");
+            Matriz.MatrizSerie_Domino();
+            Matriz.MostrarMatriz();
             Console.WriteLine("---------------------------");
 
         }
