@@ -176,5 +176,79 @@ public class MatrizEnteros
             triangulo--;
         }
     }
-    
+    public void LlenarMatrizRectangulo_v1()
+    {
+        int dato = 7;
+        for (int x = 0; x < columna; x++)
+        {
+            for (int y = 0; y < fila; y++)
+            {
+                if (y <= (fila / 2))
+                {
+                    M[x, y] = dato;
+                }
+            }
+        }
+    }
+    public void LlenarMatrizRectangulo_v2()
+    {
+        int dato = 7;
+        for (int x = 0; x < columna; x++)
+        {
+            for (int y = 0; y < fila; y++)
+            {
+                if (y >= (fila / 2))
+                {
+                    M[x, y] = dato;
+                }
+            }
+        }
+    }
+    public void LlenarMatrizRectangulo_v3()
+    {
+        int dato = 7;
+        for (int x = 0; x < columna; x++)
+        {
+            if (x <= (columna / 2))
+            {
+                for (int y = 0; y < fila; y++)
+                {
+                    M[x, y] = dato;
+                }
+            }
+        }
+    }
+    public void LlenarMatrizRectangulo_v4()
+    {
+        int dato = 7;
+        for (int x = 0; x < columna; x++)
+        {
+            if (x >= (columna / 2))
+            {
+                for (int y = 0; y < fila; y++)
+                {
+                    M[x, y] = dato;
+                }
+            }
+        }
+    }
+
+    public void MatrizSerie_MasUno()
+    {
+        int datoPrevioA= 0;
+        int datoPrevioB= 1;
+        int dato = 0;
+        for (int x = 0; x < columna; x++)
+        {
+            for (int y = 0; y < fila; y++)
+            {
+                dato = datoPrevioA + datoPrevioB;
+                M[x, y] = dato;
+               
+                datoPrevioA = datoPrevioB;
+                datoPrevioB = dato;
+            }
+        }
+    }
+
 }
