@@ -25,6 +25,7 @@
             Matriz.MostrarMatriz();
             Matriz.LlenarMatriz_V4();
             Matriz.MostrarMatriz();
+            Console.WriteLine("------------------------------------");
             Matriz.LlenarMatriz_V5();
             Matriz.MostrarMatriz();
 
