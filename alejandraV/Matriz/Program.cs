@@ -4,10 +4,10 @@ namespace Programacion2
     {
         public static void Main(string[] args)
         {
-            /*MatrizEnteros Matriz = new MatrizEnteros(5, 5);
+            MatrizEnteros Matriz = new MatrizEnteros(5, 5);
             Matriz.defaultValue = 0;
             Matriz.CargarMatrizDefault();
-            Matriz.MostrarMatriz(); */
+            Matriz.MostrarMatriz();
             /*
             Console.WriteLine("---------------------------");
             Matriz.M[2, 1] = 5;         //opcion 1
@@ -32,12 +32,10 @@ namespace Programacion2
             //Matriz.LlenarMatriz_v1();
             //Matriz.MostrarMatriz();
             */
-            //Console.WriteLine("---------------------------");
-            Matriz.LlenarMatrizTriangulo_v1();
-            //Matriz.MostrarMatriz();
-            //Console.WriteLine("---------------------------");
-
-
+            Console.WriteLine("---------------------------");
+            Matriz.LlenarMatrizTriangulo_v2();
+            Matriz.MostrarMatriz();
+            Console.WriteLine("---------------------------");
 
 
         }
