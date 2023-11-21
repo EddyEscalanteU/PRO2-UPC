@@ -162,7 +162,7 @@ public class MatrizEnteros
     }
      public void LlenarMatrizTriangulo_v2()
     {
-        int triangulo = 1;
+        int triangulo = fila;
         int dato = 7;
         for (int x = 0; x < columna; x++)
         {
