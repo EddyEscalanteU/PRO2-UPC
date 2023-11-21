@@ -83,4 +83,98 @@ public class MatrizEnteros
         }
     }
 
+    public void LlenarMatriz_v3()
+    {
+        int dato = 16;
+        for (int x = 0; x < columna; x++)
+        {
+            for (int y = 0; y < fila; y++)
+            {
+                M[x, y] = dato;
+                dato = dato - 1;
+            }
+        }
+    }
+
+    public void LlenarMatriz_v4()
+    {
+        int dato = 4;
+        for (int x = 0; x < columna; x++)
+        {
+            for (int y = 0; y < fila; y++)
+            {
+                M[x, y] = dato;
+
+            }
+            dato = dato - 1;
+        }
+    }
+    public void LlenarMatrizTriangulo_v1()
+    {
+        int triangulo = 1;
+        int dato = 7;
+        for (int x = 0; x < columna; x++)
+        {
+            for (int y = 0; y < fila; y++)
+            {
+                if (y < triangulo)
+                {
+                    M[x, y] = dato;
+                }
+            }
+            triangulo++;
+        }
+    }
+
+     public void LlenarMatrizTriangulo_v4()
+    {
+        int triangulo = 5;
+        int dato = 7;
+        for (int x = 0; x < columna; x++)
+        {
+            for (int y = 0; y < fila; y++)
+            {
+                if (y < triangulo)
+                {
+                    M[x, y] = dato;
+                }
+            }
+            triangulo--;
+        }
+    }
+        public void LlenarMatrizTriangulo_v3()
+    {
+        int triangulo = 1;
+        int dato = 7;
+        for (int x = 0; x < columna; x++)
+        {
+            for (int y = 0; y < fila; y++)
+            {
+                if (y >= triangulo -1)
+                {
+                    M[x, y] = dato;
+                }
+               
+            }
+             triangulo++;
+        }
+
+    }
+     public void LlenarMatrizTriangulo_v2()
+    {
+        int triangulo = fila;
+        int dato = 7;
+        for (int x = 0; x < columna; x++)
+        {
+            for (int y = 0; y < fila; y++)
+            {
+                if (y >=  triangulo -1)
+                {
+                    M[x, y] = dato;
+                }
+            }
+            triangulo--;
+        }
+    }
+    
 }
