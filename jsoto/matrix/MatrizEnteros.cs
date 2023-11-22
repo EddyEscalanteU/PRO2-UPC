@@ -126,9 +126,9 @@ public class MatrizEnteros
         }
     }
 
-    public void LlenarMatrizTriangulo_v4()
+     public void LlenarMatrizTriangulo_v4()
     {
-        int triangulo = fila;
+        int triangulo = 5;
         int dato = 7;
         for (int x = 0; x < columna; x++)
         {
@@ -142,7 +142,7 @@ public class MatrizEnteros
             triangulo--;
         }
     }
-    public void LlenarMatrizTriangulo_v3()
+        public void LlenarMatrizTriangulo_v3()
     {
         int triangulo = 1;
         int dato = 7;
@@ -150,16 +150,17 @@ public class MatrizEnteros
         {
             for (int y = 0; y < fila; y++)
             {
-                if (y >= triangulo - 1)
+                if (y >= triangulo -1)
                 {
                     M[x, y] = dato;
                 }
+               
             }
-            triangulo++;
+             triangulo++;
         }
-    }
 
-    public void LlenarMatrizTriangulo_v2()
+    }
+     public void LlenarMatrizTriangulo_v2()
     {
         int triangulo = fila;
         int dato = 7;
@@ -167,7 +168,7 @@ public class MatrizEnteros
         {
             for (int y = 0; y < fila; y++)
             {
-                if (y >= triangulo - 1)
+                if (y >=  triangulo -1)
                 {
                     M[x, y] = dato;
                 }
@@ -249,8 +250,7 @@ public class MatrizEnteros
             }
         }
     }
-
-    public void MatrizSerie_Mas2()
+ public void MatrizSerie_MasDos()
     {
         int datoPrevioA= 0;
         int datoPrevioB= 1;
@@ -265,23 +265,23 @@ public class MatrizEnteros
                
                 datoPrevioA = datoPrevioB;
                 datoPrevioB = datoPrevioC;
-                datoPrevioC = dato;
+                datoPrevioC = dato; 
             }
         }
     }
-
-    public void MatrizSerie_Mas3()
+    public void MatrizSerie_Domino()
     {
         int datoPrevioA= 0;
         int datoPrevioB= 7;
-       
-        int dato = 1;
-        int datoB = 1;
+        
+        int dato = 0;
         for (int x = 0; x < columna; x++)
         {
             for (int y = 0; y < fila; y++)
             {
-                dato = datoPrevioA + datoPrevioB;
+                dato = datoPrevioA + 1;
+                
+                
                 M[x, y] = dato;
                
                 datoPrevioA = datoPrevioB;
@@ -290,8 +290,5 @@ public class MatrizEnteros
             }
         }
     }
-
-
-
 
 }
