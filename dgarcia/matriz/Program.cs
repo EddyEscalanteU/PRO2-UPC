@@ -33,7 +33,7 @@
             //Matriz.MostrarMatriz();
             */
             Console.WriteLine("---------------------------");
-            Matriz.MatrizSerie_Domino();
+            Matriz.MatrizSerie_DominoRecursivo();
             Matriz.MostrarMatriz();
             Console.WriteLine("---------------------------");
 
