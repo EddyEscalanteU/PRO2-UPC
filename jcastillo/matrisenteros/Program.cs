@@ -33,7 +33,12 @@
             //Matriz.MostrarMatriz();
             */
             Console.WriteLine("---------------------------");
-            Matriz.MatrizSerie_Mas3();
+            Matriz.MatrizSerie_MasTres();
+            Matriz.MostrarMatriz();
+            Console.WriteLine("---------------------------");
+
+            Console.WriteLine("---------------------------");
+            Matriz.MatrizSerie_Domino();
             Matriz.MostrarMatriz();
             Console.WriteLine("---------------------------");
 
