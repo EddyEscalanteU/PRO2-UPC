@@ -234,27 +234,27 @@ public class MatrizEnteros
 
     public void MatrizSerie_MasUno()
     {
-        int datoPrevioA = 0;
-        int datoPrevioB = 1;
-        int datoPrevioC = 0;
+        int datoP_A = 0;
+        int datoP_B = 1;
+        int datoP_C = 0;
         int dato = 0;
         for (int x = 0; x < columna; x++)
         {
             for (int y = 0; y < fila; y++)
             {
-                dato = datoPrevioA + datoPrevioB + datoPrevioC;
+                dato = datoP_A + datoP_B + datoP_C;
                 M[x, y] = dato;
 
-                datoPrevioA = datoPrevioB;
-                datoPrevioB = datoPrevioC;
-                datoPrevioC = dato;
+                datoP_A = datoP_B;
+                datoP_B = datoP_C;
+                datoP_C = dato;
             }
         }
     }
     public void MatrizSerie_Domino()
     {
-        int datoA = 1;
-        int datoB = 6;
+        int datoa = 1;
+        int datob = 6;
         bool cambiar = true;
         for (int x = 0; x < columna; x++)
         {
@@ -262,12 +262,12 @@ public class MatrizEnteros
             {
                 if (cambiar)
                 {
-                    M[x, y] = datoA;
-                    datoA++;
+                    M[x, y] = datoa;
+                    datoa++;
                     cambiar = false;
                 }else{
-                    M[x, y] = datoB;
-                    datoB--;
+                    M[x, y] = datob;
+                    datob--;
                     cambiar = true;
                 }
 
