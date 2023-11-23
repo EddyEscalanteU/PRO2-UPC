@@ -86,15 +86,15 @@
             }
         }
 
+        static int i = 1;
         public static void GenerarSerieV1Recursivo(int N){
-            int i = 1;
             if(N == 0){
                 return;
             }else{
-                GenerarSerieV1Recursivo(N - 1); 
                 int serie = i + 5;
-                Console.WriteLine("Serie: " + serie);
-                i = serie;    
+                Console.WriteLine("Serie: " + serie); 
+                i = serie; 
+                GenerarSerieV1Recursivo(N - 1); 
             }
         }
 
