@@ -1,4 +1,4 @@
-﻿public class MatrizEnteros
+public class MatrizEnteros
 {
     public int[,] M; //Elemento de la Matriz
     public int fila;//Cantidad de filas
@@ -95,7 +95,7 @@
             }
         }
     }
-
+    
     public void LlenarMatriz_v4()
     {
         int dato = 4;
@@ -104,12 +104,12 @@
             for (int y = 0; y < fila; y++)
             {
                 M[x, y] = dato;
-
+                
             }
             dato = dato - 1;
         }
     }
-    public void LlenarMatrizTriangulo_v1()
+     public void LlenarMatrizTriangulo_v1()
     {
         int triangulo = 1;
         int dato = 7;
@@ -175,99 +175,9 @@
             triangulo--;
         }
     }
-    public void LlenarMatrizRectangulo_v1()
-    {
-        int dato = 7;
-        for (int x = 0; x < columna; x++)
-        {
-            for (int y = 0; y < fila; y++)
-            {
-                if (y <= (fila / 2))
-                {
-                    M[x, y] = dato;
-                }
-            }
-        }
-    }
-    public void LlenarMatrizRectangulo_v2()
-    {
-        int dato = 7;
-        for (int x = 0; x < columna; x++)
-        {
-            for (int y = 0; y < fila; y++)
-            {
-                if (y >= (fila / 2))
-                {
-                    M[x, y] = dato;
-                }
-            }
-        }
-    }
-    public void LlenarMatrizRectangulo_v3()
-    {
-        int dato = 7;
-        for (int x = 0; x < columna; x++)
-        {
-            if (x <= (columna / 2))
-            {
-                for (int y = 0; y < fila; y++)
-                {
-                    M[x, y] = dato;
-                }
-            }
-        }
-    }
-    public void LlenarMatrizRectangulo_v4()
-    {
-        int dato = 7;
-        for (int x = 0; x < columna; x++)
-        {
-            if (x >= (columna / 2))
-            {
-                for (int y = 0; y < fila; y++)
-                {
-                    M[x, y] = dato;
-                }
-            }
-        }
-    }
-
-    public void MatrizSerie_MasUno()
-    {
-        int datoPrevioA= 0;
-        int datoPrevioB= 1;
-        int dato = 0;
-        for (int x = 0; x < columna; x++)
-        {
-            for (int y = 0; y < fila; y++)
-            {
-                dato = datoPrevioA + datoPrevioB;
-                M[x, y] = dato;
-               
-                datoPrevioA = datoPrevioB;
-                datoPrevioB = dato;
-            }
-        }
-    }
-
-    public void MatrizSerie_MasDos()
-    {
-        int datoPrevioA= 0;
-        int datoPrevioB= 1;
-        //int datoPrevioC= 1;
-        int dato = 6;
-        for (int x = 0; x < columna; x++)
-        {
-            for (int y = 0; y < fila; y++)
-            {
-                dato = datoPrevioA + datoPrevioB;
-                M[x, y] = dato;
-               
-                datoPrevioA = datoPrevioB;
-                datoPrevioB = dato;
-            }
-        }
-    }
-
+    
 
 }
+    
+
+
