@@ -10,8 +10,8 @@
         
         Console.WriteLine("-------------------");
         
-        Inscrito NuevoIncrito = new Inscrito();
-        Console.WriteLine(NuevoIncrito.Mostrar());
+        //Inscrito NuevoIncrito = new Inscrito();
+        //Console.WriteLine(NuevoIncrito.Mostrar());
 
         Console.WriteLine("-------------------");
 
