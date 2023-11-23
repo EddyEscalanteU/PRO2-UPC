@@ -1,4 +1,4 @@
-﻿﻿namespace Programacion2
+﻿﻿﻿namespace Programacion2
 {
     public class Program
     {
