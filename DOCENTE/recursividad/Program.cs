@@ -6,7 +6,7 @@
         {
            //long f = Factorial(64);
            //Console.WriteLine(f);
-           MostrarDigParesRecursivo(1151814);
+           GenerarSerieV1Recursivo(10);
         }   
         
         public static long Factorial(long n){
@@ -75,6 +75,28 @@
             }
         }
 
+
+        public static void GenerarSerieV1Iterativo(int N){
+            int i = 1;
+            while(N > 0){
+                int serie = i + 5;
+                Console.WriteLine("Serie: " + serie); 
+                i = serie;  
+                N = N - 1;             
+            }
+        }
+
+        public static void GenerarSerieV1Recursivo(int N){
+            int i = 1;
+            if(N == 0){
+                return;
+            }else{
+                GenerarSerieV1Recursivo(N - 1); 
+                int serie = i + 5;
+                Console.WriteLine("Serie: " + serie);
+                i = serie;    
+            }
+        }
 
 
     }
