@@ -2,16 +2,20 @@ using System.Data;
 
 public class MatrizEnteros
 {
+
+    //Elemeto de la matriz
     public int [,] M;
 
+    //cantidad de filas
     public int fila;
 
+    //cantidad de columnas
     public int columna;
 
-    //ejemplo con un variable si nos piden
-
+    //valor por defecto 
     public int defaultValue = 5;
 
+    // el constructor vacio
     public MatrizEnteros()
     {
         M = new int[0,0] ;
@@ -19,14 +23,17 @@ public class MatrizEnteros
         columna = 0 ;
     }
 
+    // El cosntructor dandole la cantidad en X y Y
     public MatrizEnteros (int cantX , int cantY)
     {
-        // Dimensionar la matriz en este caso seria cantX y cantY
+    // Dimensionar la matriz en este caso seria cantX y cantY
 
         M= new int [cantX,cantY];
         fila = cantX;
         columna =  cantY;
     }
+
+    //Carga la matriz  con valores por defecto
     public void CargarMatrizDeafault()
     {
     // Dar valores por defecto ala matriz ya que aca estamos haciento una matriz de ceros (0) j seria X y k seria y
@@ -40,7 +47,7 @@ public class MatrizEnteros
         }
     }
 
-    // aca es para mostrar la matriz un poco mas estetico o mejor
+    // Mostrar el contenido de la matriz
 
     public void MostraMatriz()
     {
