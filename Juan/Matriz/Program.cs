@@ -1,6 +1,4 @@
-﻿﻿namespace Programacion2
-{
-    public class Matrices
+﻿public class Matrices
     {
         public static void Main(string[] args)
         {
@@ -42,4 +40,3 @@
 
         }
     }
-}

@@ -1,4 +1,4 @@
-﻿﻿namespace Programacion2
+﻿namespace Programacion2
 {
     public class Matrices
     {
@@ -32,8 +32,18 @@
             //Matriz.LlenarMatriz_v1();
             //Matriz.MostrarMatriz();
             */
+            /*Console.WriteLine("---------------------------");
+            Matriz.LlenarMatrizTriangulo_v1();
+            Matriz.MostrarMatriz();
             Console.WriteLine("---------------------------");
-            Matriz.MatrizSerie_Domino();
+            Matriz.LlenarMatrizTriangulo_v2();
+            Matriz.MostrarMatriz(); 
+            Console.WriteLine("---------------------------"); 
+            Matriz.LlenarMatrizTriangulo_v3();
+            Matriz.MostrarMatriz();
+            Console.WriteLine("---------------------------");
+             Console.WriteLine("---------------------------");*/
+            Matriz.MatrizSerie_MasTres();
             Matriz.MostrarMatriz();
             Console.WriteLine("---------------------------");
 
