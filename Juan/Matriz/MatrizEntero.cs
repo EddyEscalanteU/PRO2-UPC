@@ -234,64 +234,46 @@ public class MatrizEnteros
 
     public void MatrizSerie_MasUno()
     {
-        int datoPrevioA= 0;
-        int datoPrevioB= 1;
+        int datoP_A = 0;
+        int datoP_B = 1;
+        int datoP_C = 0;
         int dato = 0;
         for (int x = 0; x < columna; x++)
         {
             for (int y = 0; y < fila; y++)
             {
-                dato = datoPrevioA + datoPrevioB;
+                dato = datoP_A + datoP_B + datoP_C;
                 M[x, y] = dato;
-               
-                datoPrevioA = datoPrevioB;
-                datoPrevioB = dato;
+
+                datoP_A = datoP_B;
+                datoP_B = datoP_C;
+                datoP_C = dato;
             }
         }
     }
-
-    public void MatrizSerie_Mas2()
+    public void MatrizSerie_Domino()
     {
-        int datoPrevioA= 0;
-        int datoPrevioB= 1;
-        int datoPrevioC= 0;
-        int dato = 0;
+        int datoa = 1;
+        int datob = 6;
+        bool cambiar = true;
         for (int x = 0; x < columna; x++)
         {
             for (int y = 0; y < fila; y++)
             {
-                dato = datoPrevioA + datoPrevioB + datoPrevioC;
-                M[x, y] = dato;
-               
-                datoPrevioA = datoPrevioB;
-                datoPrevioB = datoPrevioC;
-                datoPrevioC = dato;
+                if (cambiar)
+                {
+                    M[x, y] = datoa;
+                    datoa++;
+                    cambiar = false;
+                }else{
+                    M[x, y] = datob;
+                    datob--;
+                    cambiar = true;
+                }
+
             }
         }
     }
-
-    public void MatrizSerie_Mas3()
-    {
-        int datoPrevioA= 0;
-        int datoPrevioB= 7;
-       
-        int dato = 1;
-        int datoB = 1;
-        for (int x = 0; x < columna; x++)
-        {
-            for (int y = 0; y < fila; y++)
-            {
-                dato = datoPrevioA + datoPrevioB;
-                M[x, y] = dato;
-               
-                datoPrevioA = datoPrevioB;
-                datoPrevioB = dato;
-                
-            }
-        }
-    }
-
-
 
 
 }

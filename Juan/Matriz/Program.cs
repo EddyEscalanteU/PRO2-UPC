@@ -1,6 +1,4 @@
-﻿namespace Programacion2
-{
-    public class Matrices
+﻿public class Matrices
     {
         public static void Main(string[] args)
         {
@@ -33,7 +31,7 @@
             //Matriz.MostrarMatriz();
             */
             Console.WriteLine("---------------------------");
-            Matriz.MatrizSerie_Mas3();
+            Matriz.MatrizSerie_Domino();
             Matriz.MostrarMatriz();
             Console.WriteLine("---------------------------");
 
@@ -42,4 +40,3 @@
 
         }
     }
-}

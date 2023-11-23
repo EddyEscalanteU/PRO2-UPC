@@ -217,6 +217,7 @@ public class MatrizEnteros
             }
         }
     }
+
     public void LlenarMatrizRectangulo_v4()
     {
         int dato = 7;
@@ -250,7 +251,7 @@ public class MatrizEnteros
         }
     }
 
-    public void MatrizSerie_Mas2()
+    public void MatrizSerie_MasDos()
     {
         int datoPrevioA= 0;
         int datoPrevioB= 1;
@@ -270,28 +271,28 @@ public class MatrizEnteros
         }
     }
 
-    public void MatrizSerie_Mas3()
+    public void MatrizSerie_Domino()
     {
-        int datoPrevioA= 0;
-        int datoPrevioB= 7;
-       
-        int dato = 1;
-        int datoB = 1;
+        int datoA = 1;
+        int datoB = 6;
+        bool cambiar = true;
         for (int x = 0; x < columna; x++)
         {
             for (int y = 0; y < fila; y++)
             {
-                dato = datoPrevioA + datoPrevioB;
-                M[x, y] = dato;
-               
-                datoPrevioA = datoPrevioB;
-                datoPrevioB = dato;
-                
+                if (cambiar)
+                {
+                    M[x, y] = datoA;
+                    datoA++;
+                    cambiar = false;
+                }else{
+                    M[x, y] = datoB;
+                    datoB--;
+                    cambiar = true;
+                }
+
             }
         }
     }
-
-
-
 
 }
