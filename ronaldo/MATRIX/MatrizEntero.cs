@@ -90,7 +90,7 @@ public class MatrizEnteros
     public void LlenarMatriz_v2()
     {
         int dato =1;
-                for (int x = 0; x < columna ; x++)
+        for (int x = 0; x < columna ; x++)
         {
             for (int y = 0; y < fila ; y++)
             {
@@ -98,6 +98,50 @@ public class MatrizEnteros
                 dato = dato + 1;
             }
         
+        }
+    }
+
+        public void LlenarMatriz_v3()
+    {
+        // aca pusimos 16 por los espacios de la matriz dada que es e 4x4=16 es por eso ese numero
+        int dato =16;
+        for (int x = 0; x < columna ; x++)
+        {
+            for (int y = 0; y < fila ; y++)
+            {
+                M[x,y]= dato;
+                dato = dato - 1;
+            }
+        
+        }
+    }
+        public void LlenarMatriz_v4()
+    {
+        
+        int dato =4;
+        for (int x = 0; x < columna ; x++)
+        {
+            for (int y = 0; y < fila ; y++)
+            {
+                M[x,y]= dato;
+                dato = dato - 1;
+            }
+            dato = 4 ;
+        }
+    }
+
+    public void LlenarMatriz_v5()
+    {
+        
+        int dato =4;
+        for (int x = 0; x < columna ; x++)
+        {
+            for (int y = 0; y < fila ; y++)
+            {
+                M[x,y]= dato;
+            }
+            //aca saca esta formula fuera del formula de forn para poder tener en vertical del 4 al 1 osea al reves en la matriz
+            dato = dato - 1;
         }
     }
 

@@ -38,9 +38,26 @@
             Matriz.MostraMatriz(); 
 
             Console.WriteLine("---------------------------");
-            
+
             Matriz.LlenarMatriz_v2();
             Matriz.MostraMatriz(); 
+
+            Console.WriteLine("---------------------------");
+// aca seria  como la version 2 pero este cuenta del 1 dependiendo la matriz pero comienza al reves 
+            Matriz.LlenarMatriz_v3();
+            Matriz.MostraMatriz();
+
+            Console.WriteLine("---------------------------");
+
+            Matriz.LlenarMatriz_v4();
+            Matriz.MostraMatriz();
+
+            Console.WriteLine("---------------------------");
+
+            Matriz.LlenarMatriz_v5();
+            Matriz.MostraMatriz();
+
+            Console.WriteLine("---------------------------");
         }
 
     }
