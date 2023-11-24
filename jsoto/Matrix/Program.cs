@@ -41,9 +41,24 @@
             //MC.LlenarMatriz_v1();
             //MC.Insertar(0, 0, "Torre");
             for(int i = 0; i < 4; i++){
-             MC.Insertar(1, 0, "Torre");
+                //Serie X
+                int x = 0;
+                if(i < 2){
+                    x = 0;
+                }else{
+                    x = 7;
+                }
+
+                //Serie Y
+                int y = 0;
+                if(i == 0 || i == 3){
+                    y = 0;
+                }else{
+                    y = 7;
+                }
+                //Console.WriteLine(x +  " --- " + y);
+                MC.Insertar(x, y, "Torre");
             }
-            MC.Insertar(1, 0, "Caballo");
             MC.Insertar(2, 0, "Alfil");
             MC.Insertar(4, 7, "Reyna");
             MC.Insertar(3, 0, "Reyna");
@@ -62,6 +77,10 @@
 
            MC.Insertar(3, 7, "Rey");
 
+            MC.Insertar(1, 0, "Caballo");
+            MC.Insertar(6, 0, "Caballo");
+            MC.Insertar(1, 7, "Caballo");
+            MC.Insertar(6, 7, "Caballo");
 
 
             MC.MostrarMatriz();
