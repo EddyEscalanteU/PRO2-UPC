@@ -1,16 +1,17 @@
-﻿﻿namespace Programacion2
+﻿﻿﻿namespace Programacion2
 {
     public class Matrices
     {
         public static void Main(string[] args)
         {
-            MatrizEnteros Matriz = new MatrizEnteros(4, 4);
-            //M.defaultValue = 7;
+            MatrizEnteros Matriz = new MatrizEnteros(5, 5);
+            Matriz.defaultValue = 0;
             Matriz.CargarMatrizDefault();
             Matriz.MostrarMatriz();
+            /*
             Console.WriteLine("---------------------------");
             Matriz.M[2, 1] = 5;         //opcion 1
-           // Matriz.Insertar(2, 1, 5);   //opcion 2
+            // Matriz.Insertar(2, 1, 5);   //opcion 2
             Matriz.M[3,2] = 3;
             Matriz.M[3, 0] = 7;
             Matriz.M[1, 3] = 3;
@@ -28,9 +29,11 @@
             Matriz.M[3, 3] =5;
             Matriz.MostrarMatriz();
             Console.WriteLine("---------------------------");
-            Matriz.LlenarMatriz_v1();
-            Matriz.MostrarMatriz();
-            Matriz.LlenarMatriz_v2();
+            //Matriz.LlenarMatriz_v1();
+            //Matriz.MostrarMatriz();
+            */
+            Console.WriteLine("---------------------------");
+            Matriz.MatrizSerie_Domino();
             Matriz.MostrarMatriz();
             Console.WriteLine("---------------------------");
 
