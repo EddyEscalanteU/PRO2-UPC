@@ -112,9 +112,14 @@
             //Matriz.MatrizSerie_MaselAnteriorDato();
             //Matriz.MostraMatriz();
 
+            //Console.WriteLine("---------------------------");
+
+            //Matriz.MatrizSerie_MaselAnteriorDato_2();
+            //Matriz.MostraMatriz();
+
             Console.WriteLine("---------------------------");
 
-            Matriz.MatrizSerie_MaselAnteriorDato_2();
+            Matriz.MatrizSerie_MaselAnteriorDato_3();
             Matriz.MostraMatriz();
 
             Console.WriteLine("---------------------------");

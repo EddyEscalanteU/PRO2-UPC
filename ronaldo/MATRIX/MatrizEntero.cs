@@ -348,4 +348,24 @@ public class MatrizEnteros
             }
         }
     }
+
+    public void MatrizSerie_MaselAnteriorDato_3()
+    {   
+        int datoPrevioA = 0;
+        int datoPrevioB = 1;
+        int datoPrevioC = 0;
+        int dato = 0;
+        for (int x = 0; x < columna ; x++)
+        {
+            for (int y = 0; y < fila ; y++)            
+            {
+                dato = datoPrevioA + datoPrevioB + datoPrevioC;
+                M[x,y]= dato;
+
+                datoPrevioA = datoPrevioB;
+                datoPrevioB = datoPrevioC;
+                datoPrevioC = dato ;
+            }
+        }
+    }
 }
