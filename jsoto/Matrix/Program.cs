@@ -1,4 +1,4 @@
-﻿namespace Programacion2
+namespace Programacion2
 {
     public class Matrices
     {
@@ -83,10 +83,27 @@
             MC.Insertar(6, 7, "Caballo");
 
 
-            MC.MostrarMatriz();
+             for(int i = 0; i < 4; i++){
+                //Serie X
+                int x = 0;
+                if(i < 2){
+                    x = 1;
+                }else{
+                    x = 6;
+                }
+
+                //Serie Y
+                int y = 0;
+                if(i == 0 || i == 3){
+                    y = 0;
+                }else{
+                    y = 7;
+                }
+                //Console.WriteLine(x +  " --- " + y);
+                MC.Insertar(x, y, "Caballo");
 
 
-
+            }   
         }
     }
 }
