@@ -6,8 +6,22 @@
         {
            //long f = Factorial(64);
            //Console.WriteLine(f);
-           MostrarDigMultiplosMIterativo(78568168, 9);
+           MostrarDigMultiplosMRecursivo(78568168, 8);
         }  
+        public static void MostrarDigMultiplosMRecursivo(int N, int M)
+        {
+            int NroAux = N;
+            if(NroAux == 0){
+                return;
+            }else
+            {
+                int dig = NroAux % 10;
+                if(dig % M == 0){
+                    Console.WriteLine("Dig: " + dig);
+                }
+                MostrarDigMultiplosMRecursivo(NroAux / 10, M );
+            }
+        }
 
         public static void MostrarDigMultiplosMIterativo(int N, int M)
         {
