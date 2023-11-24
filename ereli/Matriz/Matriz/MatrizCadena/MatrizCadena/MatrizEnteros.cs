@@ -1,3 +1,9 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
 public class MatrizEnteros
 {
     public int[,] M; //Elemento de la Matriz
@@ -66,7 +72,7 @@ public class MatrizEnteros
             {
                 M[x, y] = dato;
             }
-            dato = dato + 5;
+            dato = dato + 1;
         }
     }
 
@@ -265,7 +271,9 @@ public class MatrizEnteros
                     M[x, y] = datoA;
                     datoA++;
                     cambiar = false;
-                }else{
+                }
+                else
+                {
                     M[x, y] = datoB;
                     datoB--;
                     cambiar = true;
@@ -274,21 +282,24 @@ public class MatrizEnteros
             }
         }
     }
-public static class Factoriales
-{
-    public static int CalcularFactorial(int n)
+    public static class Factoriales
     {
-        if (n <= 0){
-            return 0;//ERROR
+        public static int CalcularFactorial(int n)
+        {
+            if (n <= 0)
+            {
+                return 0;//ERROR
+            }
+            if (n == 0 || n == 1)
+            {
+                return 1;
+            }
+            else
+            {
+                return n * CalcularFactorial(n - 1);
+            }
+
         }
-        if (n == 0 || n == 1){
-            return 1;
-        }
-        else{
-            return n * CalcularFactorial(n - 1);
-        }
-            
     }
-}
 
 }
