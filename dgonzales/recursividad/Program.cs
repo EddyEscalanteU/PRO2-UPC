@@ -1,4 +1,6 @@
-﻿﻿namespace Programacion2
+﻿using System.Security.Cryptography.X509Certificates;
+
+namespace Programacion2
 {
     public class Program
     {
@@ -7,6 +9,8 @@
            //long f = Factorial(64);
            //Console.WriteLine(f);
            GenerarSerieV1Recursivo(10);
+           
+
         }   
         
         public static long Factorial(long n){
@@ -21,6 +25,9 @@
                     Console.WriteLine(n + " Llamada a la recursion " + fact);
                     return fact;
                     //Console.WriteLine("Despues de la recursion");
+                    GenerarSerieV1Recursivo(N - 1);
+                
+                    
                 }
             }
         }  
@@ -88,16 +95,38 @@
          static int i = 1;
         public static void GenerarSerieV1Recursivo(int N){
            
+            
+            if(N == 0){
+                return ;
+            }else{
+                 
+                int serie = i + 5;
+                Console.WriteLine("Serie: " + serie);
+                i = serie;
+                GenerarSerieV1Recursivo(N - 1);   
+                
+
+                
+            }
+               static int A = 0;
+        static int B = 7;
+         public static void GenerarSerieV1Recursivo(int N){
+            
             if(N == 0){
                 return;
             }else{
-               
-                int serie = i + 5;
-                Console.WriteLine("Serie: " + serie); 
-                i = serie; 
-                GenerarSerieV1Recursivo(N - 1);  
+                GenerarSerieV1Recursivo(N - 1); 
+                int serie1 = A + 1;
+                int serie2 = B - 1;
+                Console.WriteLine("Serie: " + serie1);
+                Console.WriteLine("Serie: " + serie2);
+                A = serie1;    
+                B = serie2;
             }
-              
         }
+            
+        }
+
+
     }
 }
