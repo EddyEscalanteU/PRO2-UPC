@@ -94,17 +94,11 @@ public class MatrizCadenas{
             Insertar(x, y, peonAux);
     }
 
-    public void MoverBlackAlfil(int x, int y, int cant, bool opcion){ 
-        string alfilAux = Obtener(x, y);
-        Insertar(x, y, defaultValue);
-
-        if(opcion){
-            x = x - cant;
-            y = y - cant;
-        }else{
-            x = x + cant;
-            y = y - cant;
-        }
-        Insertar(x, y, alfilAux);
-    }
+    public void MoverCaballo(int x, int y){     
+            string CaballoAux = Obtener(x, y);
+            Insertar(x, y, defaultValue);
+            y = y + 1;
+            x = x + 1;
+            Insertar(x, y, CaballoAux);
+    }        
 }
