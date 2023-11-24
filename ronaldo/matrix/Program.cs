@@ -4,10 +4,10 @@
     {
         public static void  Main(string[] args)
         {
-            MatrizEnteros Matriz = new MatrizEnteros(5,5);
-            Matriz.defaultValue = 0;
-            Matriz.CargarMatrizDeafault();
-            Matriz.MostraMatriz();
+            //MatrizEnteros Matriz = new MatrizEnteros(5,5);
+            //Matriz.defaultValue = 0;
+            //Matriz.CargarMatrizDeafault();
+            //Matriz.MostraMatriz();
 
             /*
 
@@ -117,13 +117,45 @@
             //Matriz.MatrizSerie_MaselAnteriorDato_2();
             //Matriz.MostraMatriz();
 
-            Console.WriteLine("---------------------------");
+            //Console.WriteLine("---------------------------");
 
-            Matriz.MatrizSerie_MaselAnteriorDato_3();
-            Matriz.MostraMatriz();
+            //Matriz.MatrizSerie_MaselAnteriorDato_3();
+            //Matriz.MostraMatriz();
+            
+            MatrizCadenas MC = new MatrizCadenas(8,8);
+            MC.CargarMatrizDeafault();
+            //MC.LlenarMatriz_v1();
+            //MC.Insertar(0, 0 ,"Torre");
+            for (int i = 0; i < 4; i++)
+            {
+                MC.Insertar(1, 0 , "Torres");
+            }
+            MC.Insertar(1, 0 ,"caballlo");
+            MC.Insertar(2, 0 , "Alfil");
+            MC.Insertar(4, 7 , "Reyna");
+            MC.Insertar(3, 0 , "Reyna");
 
-            Console.WriteLine("---------------------------");
-        }
+            for (int i = 0; i < 8 ; i++)
+            {
+                MC.Insertar(i,6,"Peon");
+            }
+            MC.Insertar(0, 1 ,"Peon");
+            MC.Insertar(1, 1 ,"Peon");
+            MC.Insertar(2, 1 ,"Peon");
+            MC.Insertar(3, 1 ,"Peon");
+            MC.Insertar(4, 1 ,"Peon");
+            MC.Insertar(5, 1 ,"Peon");
+            MC.Insertar(6, 1 ,"Peon");
+            MC.Insertar(7, 1 ,"Peon");
+
+            MC.Insertar(3, 7 ,"Rey");
+
+
+
+            MC.MostraMatriz();
+
+
+}
 
     }
 }
