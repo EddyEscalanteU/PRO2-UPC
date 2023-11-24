@@ -2,7 +2,7 @@ public class MatrizCadenas{
     public string[,] M; //Elemento de la Matriz
     public int fila;//Cantidad de filas
     public int columna;//Cantidad de columnas
-    public string defaultValue = "▒";//Valor por defecto
+    public string defaultValue = "▒▒▒▒▒▒▒";//Valor por defecto
 
     //El constructor dandole la cantidad X y Y
     public MatrizCadenas(int cantX, int cantY)
@@ -42,6 +42,10 @@ public class MatrizCadenas{
         Console.WriteLine(res);
     }
     
+    public string Obtener(int posX, int posY)
+    {
+        return M[posX, posY];
+    }
     public void Insertar(int posX, int posY, string ele)
     {
         int cant = CantCaracteres(ele);
@@ -74,5 +78,19 @@ public class MatrizCadenas{
             dato = dato + "_" + i;
             i++;
         }
+    }
+
+    public void MoverBlackPeon(int x, int y){     
+            string peonAux = Obtener(x, y);
+            Insertar(x, y, defaultValue);
+            y = y - 1;
+            Insertar(x, y, peonAux);
+    }
+    
+    public void MoverWhitePeon(int x, int y){     
+            string peonAux = Obtener(x, y);
+            Insertar(x, y, defaultValue);
+            y = y + 1;
+            Insertar(x, y, peonAux);
     }
 }
