@@ -276,32 +276,23 @@ public class MatrizEnteros
             }
         }
     }
-    public void MatrizSerie_DominoRecursivo()
+    public static class Factoriales
     {
-        int datoA = 1;
-        int datoB = 6;
-        bool cambiar = true;
-        AuxDominioRecursivo(0, 0, datoA, datoB, cambiar);
-    }
-
-    private void AuxDominioRecursivo(int x, int y, int datoA, int datoB, bool cambiar)
-    {
-        if (x < columna && y < fila)
+        public static int CalcularFactorial(int n)
         {
-            if (cambiar)
+            if (n <= 0)
             {
-                M[x, y] = datoA;
-                AuxDominioRecursivo(x, y + 1, datoA + 1, datoB, !cambiar);
+                return 0;//ERROR
+            }
+            if (n == 0 || n == 1)
+            {
+                return 1;
             }
             else
             {
-                M[x, y] = datoB;
-                AuxDominioRecursivo(x, y + 1, datoA, datoB - 1, !cambiar);
+                return n * CalcularFactorial(n - 1);
             }
         }
-        else if (x + 1 < columna)
-        {
-            AuxDominioRecursivo(x + 1, 0, datoA, datoB, cambiar);
-        }
     }
+
 }

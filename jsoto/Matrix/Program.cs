@@ -1,4 +1,4 @@
-namespace Programacion2
+﻿namespace Programacion2
 {
     public class Matrices
     {
@@ -59,7 +59,6 @@ namespace Programacion2
                 //Console.WriteLine(x +  " --- " + y);
                 MC.Insertar(x, y, "Torre");
             }
-            MC.Insertar(2, 0, "Alfil");
             MC.Insertar(4, 7, "Reyna");
             MC.Insertar(3, 0, "Reyna");
             for(int i = 0; i < 8; i++){
@@ -77,11 +76,12 @@ namespace Programacion2
 
            MC.Insertar(3, 7, "Rey");
 
+           /* 
             MC.Insertar(1, 0, "Caballo");
             MC.Insertar(6, 0, "Caballo");
             MC.Insertar(1, 7, "Caballo");
             MC.Insertar(6, 7, "Caballo");
-
+            */
 
              for(int i = 0; i < 4; i++){
                 //Serie X
@@ -101,9 +101,24 @@ namespace Programacion2
                 }
                 //Console.WriteLine(x +  " --- " + y);
                 MC.Insertar(x, y, "Caballo");
+            }
+            MC.Insertar(2, 0, "Alfil");
+            MC.Insertar(5, 0, "Alfil");
+            MC.Insertar(2, 7, "Alfil");
+            MC.Insertar(5, 7, "Alfil");
+
+            //MoverPeon
+            //string peonAux = MC.Obtener(2, 6);
+            //MC.Insertar(2, 6, MC.defaultValue);
+            //MC.Insertar(2, (6-1), peonAux);
+            MC.MoverBlackPeon(2, 6);
+            MC.MoverBlackPeon(5, 6);
+            MC.MoverBlackPeon(5, 5);
+
+            MC.MostrarMatriz();
 
 
-            }   
+
         }
     }
 }

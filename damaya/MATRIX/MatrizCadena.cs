@@ -42,10 +42,6 @@ public class MatrizCadenas{
         Console.WriteLine(res);
     }
     
-    public string Obtener(int posX, int posY)
-    {
-        return M[posX, posY];
-    }
     public void Insertar(int posX, int posY, string ele)
     {
         int cant = CantCaracteres(ele);
@@ -78,19 +74,5 @@ public class MatrizCadenas{
             dato = dato + "_" + i;
             i++;
         }
-    }
-
-    public void MoverBlackPeon(int x, int y){     
-            string peonAux = Obtener(x, y);
-            Insertar(x, y, defaultValue);
-            y = y - 1;
-            Insertar(x, y, peonAux);
-    }
-    
-    public void MoverWhitePeon(int x, int y){     
-            string peonAux = Obtener(x, y);
-            Insertar(x, y, defaultValue);
-            y = y + 1;
-            Insertar(x, y, peonAux);
     }
 }
