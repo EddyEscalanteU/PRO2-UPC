@@ -226,4 +226,126 @@ public class MatrizEnteros
         }
     }
 
+        public void LlenarMatrizRectangulo_v1()
+    {
+        int dato = 7 ;
+        for (int x = 0; x < columna ; x++)
+        {
+            for (int y = 0; y < fila ; y++)
+            {
+                if (y <(fila/2)+1)
+                {
+                    M[x,y]= dato;
+                }
+            
+            }
+        }
+    }
+
+    public void LlenarMatrizRectangulo_v2()
+    {
+        int dato = 7 ;
+        for (int x = 0; x < columna ; x++)
+        {
+            for (int y = 0; y < fila ; y++)
+            {
+                if (y >= (fila/2))
+                {
+                    M[x,y]= dato;
+                }
+            
+            }
+        }
+    }
+
+    public void LlenarMatrizRectangulo_v3()
+    {
+        int dato = 7 ;
+        for (int x = 0; x < columna ; x++)
+        {
+            if (x <= (fila/2))
+            {
+                for (int y = 0; y < fila ; y++)            
+                {
+                    M[x,y]= dato;
+                }
+            
+            }
+        }
+    }
+
+    public void LlenarMatrizRectangulo_v4()
+    {
+        int dato = 7 ;
+        for (int x = 0; x < columna ; x++)
+        {
+            if (x >= (fila/2))
+            {
+                for (int y = 0; y < fila ; y++)            
+                {
+                    M[x,y]= dato;
+                }
+            
+            }
+        }
+    }
+
+    public void MatrizSerie_MasUno()
+    {
+        int dato = 1;
+        for (int x = 0; x < columna ; x++)
+        {
+            for (int y = 0; y < fila ; y++)            
+            {
+                M[x,y]= dato;
+                dato ++;
+            }
+        }
+    }
+
+    public void MatrizSerie_Masdos()
+    {
+        int dato = 1;
+        for (int x = 0; x < columna ; x++)
+        {
+            for (int y = 0; y < fila ; y++)            
+            {
+                M[x,y]= dato;
+                dato = dato + 2;
+            }
+        }
+    }
+
+    public void MatrizSerie_MaselAnteriorDato()
+    {   
+        int datoPrevio = 0;
+        int dato = 1;
+        for (int x = 0; x < columna ; x++)
+        {
+            for (int y = 0; y < fila ; y++)            
+            {
+                M[x,y]= dato;
+                dato = datoPrevio + dato;
+                datoPrevio = dato;
+            }
+        }
+    }
+
+        public void MatrizSerie_MaselAnteriorDato_2()
+    {   
+        int datoPrevioA = 0;
+        int datoPrevioB = 1;
+        int dato = 0;
+        for (int x = 0; x < columna ; x++)
+        {
+            for (int y = 0; y < fila ; y++)            
+            {
+                dato = datoPrevioA + datoPrevioB;
+                M[x,y]= dato;
+
+                datoPrevioA = datoPrevioB;
+                datoPrevioB = dato;
+            }
+        }
+    }
 }

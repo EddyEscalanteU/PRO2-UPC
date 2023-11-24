@@ -77,9 +77,44 @@
             //Matriz.LlenarMatrizTriangulo_v4();
             //Matriz.MostraMatriz();
 
+            //Console.WriteLine("---------------------------");
+
+            //Matriz.LlenarMatrizTriangulo_v3();
+            //Matriz.MostraMatriz();
+
+            //Console.WriteLine("---------------------------");
+
+            //Matriz.LlenarMatrizRectangulo_v1();
+            //Matriz.MostraMatriz();
+
+            //Console.WriteLine("---------------------------");
+
+            //Matriz.LlenarMatrizRectangulo_v2();
+            //Matriz.MostraMatriz();
+
+            //Console.WriteLine("---------------------------");
+
+            //Matriz.LlenarMatrizRectangulo_v4();
+            //Matriz.MostraMatriz();
+
+            //Console.WriteLine("---------------------------");
+
+            //Matriz.MatrizSerie_MasUno();
+            //Matriz.MostraMatriz();
+
+            //Console.WriteLine("---------------------------");
+
+            //Matriz.MatrizSerie_Masdos();
+            //Matriz.MostraMatriz();
+
+            //Console.WriteLine("---------------------------");
+
+            //Matriz.MatrizSerie_MaselAnteriorDato();
+            //Matriz.MostraMatriz();
+
             Console.WriteLine("---------------------------");
 
-            Matriz.LlenarMatrizTriangulo_v3();
+            Matriz.MatrizSerie_MaselAnteriorDato_2();
             Matriz.MostraMatriz();
 
             Console.WriteLine("---------------------------");
