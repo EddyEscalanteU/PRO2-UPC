@@ -93,4 +93,12 @@ public class MatrizCadenas{
             y = y + 1;
             Insertar(x, y, peonAux);
     }
+
+    public void MoverCaballo(int x, int y){     
+            string CaballoAux = Obtener(x, y);
+            Insertar(x, y, defaultValue);
+            y = y + 1;
+            x = x + 1;
+            Insertar(x, y, CaballoAux);
+    }        
 }
