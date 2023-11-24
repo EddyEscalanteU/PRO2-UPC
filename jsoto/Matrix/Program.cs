@@ -7,7 +7,7 @@
             MatrizEnteros Matriz = new MatrizEnteros(5, 5);
             Matriz.defaultValue = 0;
             Matriz.CargarMatrizDefault();
-            /*Matriz.MostrarMatriz();/*
+            Matriz.MostrarMatriz();
             /*
             Console.WriteLine("---------------------------");
             Matriz.M[2, 1] = 5;         //opcion 1
@@ -32,22 +32,13 @@
             //Matriz.LlenarMatriz_v1();
             //Matriz.MostrarMatriz();
             */
-            /*Console.WriteLine("---------------------------");
-            Matriz.LlenarMatrizTriangulo_v1();
-            Matriz.MostrarMatriz();
-            Console.WriteLine("---------------------------");*/
-
-            /*Matriz.LlenarMatrizTriangulo_v4();
-            Matriz.MostrarMatriz();
-            Console.WriteLine("---------------------------");*/
-
-            /*Matriz.LlenarMatrizTriangulo_v3();
-             Matriz.MostrarMatriz();
-            Console.WriteLine("---------------------------");*/
-              Console.WriteLine("---------------------------");
+            Console.WriteLine("---------------------------");
             Matriz.MatrizSerie_Domino();
             Matriz.MostrarMatriz();
             Console.WriteLine("---------------------------");
+
+
+
 
         }
     }
