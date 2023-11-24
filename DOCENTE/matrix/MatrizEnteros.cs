@@ -66,7 +66,7 @@ public class MatrizEnteros
             {
                 M[x, y] = dato;
             }
-            dato = dato + 1;
+            dato = dato + 5;
         }
     }
 
