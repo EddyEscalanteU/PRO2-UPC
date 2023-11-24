@@ -6,8 +6,24 @@
         {
            //long f = Factorial(64);
            //Console.WriteLine(f);
-           GenerarSerieV1Recursivo(10);
+           MostrarDigMultiplosNiterativo(109898, 8);
         }   
+
+        public static void MostrarDigMultiplosNiterativo(int N, int M)
+        {
+            int NroAux = N;
+            
+            if(NroAux == 0){
+                return;
+            }else{
+                int dig = NroAux % 10;
+                if(dig % M == 0){
+                    Console.WriteLine("Dig: " + dig);
+                }
+                MostrarDigMultiplosNiterativo(NroAux / 10, M);
+            }
+
+        }
         
         public static long Factorial(long n){
             if(n < 0){
@@ -86,18 +102,16 @@
             }
         }
 
+        static int i = 1;
         public static void GenerarSerieV1Recursivo(int N){
-            // int i = 1;
             if(N == 0){
                 return;
             }else{
-                Console.WriteLine("antes => N: "+ N);
+                int serie = i + 5;
+                Console.WriteLine("Serie: " + serie); 
+                i = serie; 
                 GenerarSerieV1Recursivo(N - 1); 
-                Console.WriteLine("después=> N: " + serie);
-                i = serie;    
-               
             }
-             
         }
 
 
