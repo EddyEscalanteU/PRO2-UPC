@@ -1,4 +1,11 @@
-public class MatrizCadenas{
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+public class MatrizCadenas
+{
     public string[,] M; //Elemento de la Matriz
     public int fila;//Cantidad de filas
     public int columna;//Cantidad de columnas
@@ -41,7 +48,7 @@ public class MatrizCadenas{
         }
         Console.WriteLine(res);
     }
-    
+
     public string Obtener(int posX, int posY)
     {
         return M[posX, posY];
@@ -50,16 +57,19 @@ public class MatrizCadenas{
     {
         int cant = CantCaracteres(ele);
         string espacios = "";
-        if(cant <= 7){
+        if (cant <= 7)
+        {
             int difCaracteres = 7 - cant;
-            for(int i = 0; i < difCaracteres; i++){
+            for (int i = 0; i < difCaracteres; i++)
+            {
                 espacios = espacios + " ";
             }
         }
         M[posX, posY] = ele + espacios;
     }
 
-    public int CantCaracteres(string dato){
+    public int CantCaracteres(string dato)
+    {
         return dato.Length;
     }
 
@@ -80,25 +90,19 @@ public class MatrizCadenas{
         }
     }
 
-    public void MoverBlackPeon(int x, int y){     
-            string peonAux = Obtener(x, y);
-            Insertar(x, y, defaultValue);
-            y = y - 1;
-            Insertar(x, y, peonAux);
-    }
-    
-    public void MoverWhitePeon(int x, int y){     
-            string peonAux = Obtener(x, y);
-            Insertar(x, y, defaultValue);
-            y = y + 1;
-            Insertar(x, y, peonAux);
+    public void MoverBlackPeon(int x, int y)
+    {
+        string peonAux = Obtener(x, y);
+        Insertar(x, y, defaultValue);
+        y = y - 1;
+        Insertar(x, y, peonAux);
     }
 
-    public void MoverCaballo(int x, int y){
-        string caballoAux = Obtener(x, y);
+    public void MoverWhitePeon(int x, int y)
+    {
+        string peonAux = Obtener(x, y);
         Insertar(x, y, defaultValue);
-        y = y + 2;
-        Insertar(x, y, caballoAux);
+        y = y + 1;
+        Insertar(x, y, peonAux);
     }
-    
 }
