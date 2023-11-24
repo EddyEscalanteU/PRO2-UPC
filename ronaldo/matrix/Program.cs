@@ -62,9 +62,24 @@
             Console.WriteLine("---------------------------");
             */
 
+            //Console.WriteLine("---------------------------");
+
+           // Matriz.LlenarMatrizTriangulo_v1();
+            //Matriz.MostraMatriz();
+
+            //Console.WriteLine("---------------------------");
+
+            //Matriz.LlenarMatrizTriangulo_v2();
+            //Matriz.MostraMatriz();
+
+            //Console.WriteLine("---------------------------");
+
+            //Matriz.LlenarMatrizTriangulo_v4();
+            //Matriz.MostraMatriz();
+
             Console.WriteLine("---------------------------");
 
-            Matriz.LlenarMatrizTriangulo_v1();
+            Matriz.LlenarMatrizTriangulo_v3();
             Matriz.MostraMatriz();
 
             Console.WriteLine("---------------------------");
