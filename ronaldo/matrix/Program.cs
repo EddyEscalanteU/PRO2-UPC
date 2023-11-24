@@ -4,10 +4,12 @@
     {
         public static void  Main(string[] args)
         {
-            MatrizEnteros Matriz = new MatrizEnteros(4,4);
-            //M.defaultValue = 7;
+            MatrizEnteros Matriz = new MatrizEnteros(5,5);
+            Matriz.defaultValue = 0;
             Matriz.CargarMatrizDeafault();
             Matriz.MostraMatriz();
+
+            /*
 
             Console.WriteLine("---------------------------");
 
@@ -55,6 +57,14 @@
             Console.WriteLine("---------------------------");
 
             Matriz.LlenarMatriz_v5();
+            Matriz.MostraMatriz();
+
+            Console.WriteLine("---------------------------");
+            */
+
+            Console.WriteLine("---------------------------");
+
+            Matriz.LlenarMatrizTriangulo_v1();
             Matriz.MostraMatriz();
 
             Console.WriteLine("---------------------------");

@@ -144,5 +144,25 @@ public class MatrizEnteros
             dato = dato - 1;
         }
     }
+// aca tenemos la forma triangulo inversea que empieza desde arriba hacia abajo con un matriz(5,5)
+    public void LlenarMatrizTriangulo_v1()
+    {
+        // aca damos los valores que tendran en esa matriz con el cual se formara el triangulo son de forma 1
+        //la forma esta dibujado en el cuaderno
+        int triangulo = 1;
+        int dato = 7 ;
+        for (int x = 0; x < columna ; x++)
+        {
+            for (int y = 0; y < fila ; y++)
+            {
+                if(y < triangulo)
+                {
+                    M[x,y]= dato;
+                }
+                
+            }
+            triangulo++;
+        }
+    }
 
 }
