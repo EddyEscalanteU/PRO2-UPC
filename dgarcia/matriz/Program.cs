@@ -4,10 +4,14 @@
     {
         public static void Main(string[] args)
         {
-            //MatrizEnteros Matriz = new MatrizEnteros(5, 5);
-            //Matriz.defaultValue = 0;
-            //Matriz.CargarMatrizDefault();
-            //Matriz.MostrarMatriz();
+            MatrizEnteros Matriz = new MatrizEnteros(5, 5);
+            Matriz.defaultValue = 0;
+            Matriz.CargarMatrizDefault();
+            Matriz.MostrarMatriz();
+            Console.WriteLine("---------------------------");
+            
+            Matriz.LlenarMatrizTriangulo_v1();
+            Matriz.MostrarMatriz();
             /*
             Console.WriteLine("---------------------------");
             Matriz.M[2, 1] = 5;         //opcion 1
@@ -36,6 +40,7 @@
             //Matriz.MatrizSerie_Domino();
             //Matriz.MostrarMatriz();
             //Console.WriteLine("---------------------------");
+            /*
             MatrizCadenas MC = new MatrizCadenas(8, 8);
             MC.CargarMatrizDefault();
             //MC.LlenarMatriz_v1();
@@ -59,7 +64,6 @@
                 //Console.WriteLine(x +  " --- " + y);
                 MC.Insertar(x, y, "Torre");
             }
-            MC.Insertar(2, 0, "Alfil");
             MC.Insertar(4, 7, "Reyna");
             MC.Insertar(3, 0, "Reyna");
             for(int i = 0; i < 8; i++){
@@ -77,11 +81,14 @@
 
            MC.Insertar(3, 7, "Rey");
 
+           
             //MC.Insertar(1, 0, "Caballo");
             //MC.Insertar(6, 0, "Caballo");
             //MC.Insertar(1, 7, "Caballo");
-            //MC.Insertar(6, 7, "Caballo");
-            for(int i = 0; i < 4; i++){
+            ///MC.Insertar(6, 7, "Caballo");
+        
+
+             for(int i = 0; i < 4; i++){
                 //Serie X
                 int x = 0;
                 if(i < 2){
@@ -100,7 +107,26 @@
                 //Console.WriteLine(x +  " --- " + y);
                 MC.Insertar(x, y, "Caballo");
             }
+            MC.Insertar(2, 0, "Alfil");
+            MC.Insertar(5, 0, "Alfil");
+            MC.Insertar(2, 7, "Alfil");
+            MC.Insertar(5, 7, "Alfil");
+
+            //MoverPeon
+            //string peonAux = MC.Obtener(2, 6);
+            //MC.Insertar(2, 6, MC.defaultValue);
+            //MC.Insertar(2, (6-1), peonAux);
+            MC.MoverBlackPeon(1, 6);
+            MC.MoverBlackPeon(3, 6);
+            MC.MoverBlackPeon(5, 6);
+            MC.MoverBlackPeon(5, 5);
+
+            MC.MoverBlackAlfil(2, 7, 2, true);
+
             MC.MostrarMatriz();
+
+*/
+
         }
     }
 }
