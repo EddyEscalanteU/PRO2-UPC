@@ -1,8 +1,10 @@
+using System.Runtime.CompilerServices;
+
 public class MatrizCadenas{
     public string[,] M; //Elemento de la Matriz
     public int fila;//Cantidad de filas
     public int columna;//Cantidad de columnas
-    public string defaultValue = "▒";//Valor por defecto
+    public string defaultValue = "▒▒▒▒▒▒▒";//Valor por defecto
 
     //El constructor dandole la cantidad X y Y
     public MatrizCadenas(int cantX, int cantY)
@@ -103,5 +105,13 @@ public class MatrizCadenas{
             y = y - cant;
         }
         Insertar(x, y, alfilAux);
+    }
+    public void MoverBlackHorse(int x, int y, int cantX, int cantY){ 
+        string HorseAux = Obtener(x, y);
+        Insertar(x, y, defaultValue);
+
+        int nuevaX = x + cantX;
+        int nuevaY = y + cantY;
+        Insertar(nuevaX,nuevaY , HorseAux);
     }
 }

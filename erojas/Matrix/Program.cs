@@ -3,7 +3,7 @@
     public class Matrices
     {
         public static void Main(string[] args)
-        {
+        {   /*
             MatrizEnteros Matriz = new MatrizEnteros(5, 5);
             Matriz.defaultValue = 0;
             Matriz.CargarMatrizDefault();
@@ -12,10 +12,11 @@
             
             Matriz.LlenarMatrizTriangulo_v1();
             Matriz.MostrarMatriz();
+            */
             /*
             Console.WriteLine("---------------------------");
             Matriz.M[2, 1] = 5;         //opcion 1
-            // Matriz.Insertar(2, 1, 5);   //opcion 2
+            Matriz.Insertar(2, 1, 5);   //opcion 2
             Matriz.M[3,2] = 3;
             Matriz.M[3, 0] = 7;
             Matriz.M[1, 3] = 3;
@@ -33,14 +34,14 @@
             Matriz.M[3, 3] =5;
             Matriz.MostrarMatriz();
             Console.WriteLine("---------------------------");
-            //Matriz.LlenarMatriz_v1();
-            //Matriz.MostrarMatriz();
+            Matriz.LlenarMatriz_v1();
+            Matriz.MostrarMatriz();
+            
+            Console.WriteLine//("---------------------------");
+            Matriz.MatrizSerie_Domino();
+            Matriz.MostrarMatriz();
+            Console.WriteLine("---------------------------");
             */
-            //Console.WriteLine//("---------------------------");
-            //Matriz.MatrizSerie_Domino();
-            //Matriz.MostrarMatriz();
-            //Console.WriteLine("---------------------------");
-            /*
             MatrizCadenas MC = new MatrizCadenas(8, 8);
             MC.CargarMatrizDefault();
             //MC.LlenarMatriz_v1();
@@ -122,10 +123,12 @@
             MC.MoverBlackPeon(5, 5);
 
             MC.MoverBlackAlfil(2, 7, 2, true);
+            MC.MoverBlackHorse(1, 7, 1, -2);
+            MC.MoverBlackHorse(6, 7, -1, -2);
 
             MC.MostrarMatriz();
 
-*/
+
 
         }
     }
