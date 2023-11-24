@@ -1,0 +1,6 @@
+﻿namespace EXamen{
+    class Program
+    {
+        
+    }
+}

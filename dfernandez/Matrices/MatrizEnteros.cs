@@ -234,24 +234,61 @@ public class MatrizEnteros
 
     public void MatrizSerie_MasUno()
     {
-        int datoPrevioA= 1;
-        int datoPrevioB= -1;
-        int datoPrevioC= 1;
-        int datoPrevioD= 1;
-        
+        int datoPrevioA = 0;
+        int datoPrevioB = 1;
+        int datoPrevioC = 0;
         int dato = 0;
         for (int x = 0; x < columna; x++)
         {
             for (int y = 0; y < fila; y++)
             {
-                dato = datoPrevioA + datoPrevioB + datoPrevioC + datoPrevioD;
+                dato = datoPrevioA + datoPrevioB + datoPrevioC;
                 M[x, y] = dato;
-               
-                datoPrevioA = datoPrevioB = datoPrevioC = datoPrevioD;
-                datoPrevioD = dato;
+
+                datoPrevioA = datoPrevioB;
+                datoPrevioB = datoPrevioC;
+                datoPrevioC = dato;
             }
         }
     }
+    public void MatrizSerie_Domino()
+    {
+        int datoA = 1;
+        int datoB = 6;
+        bool cambiar = true;
+        for (int x = 0; x < columna; x++)
+        {
+            for (int y = 0; y < fila; y++)
+            {
+                if (cambiar)
+                {
+                    M[x, y] = datoA;
+                    datoA++;
+                    cambiar = false;
+                }else{
+                    M[x, y] = datoB;
+                    datoB--;
+                    cambiar = true;
+                }
 
+            }
+        }
+    }
+public static class Factoriales
+{
+    public static int CalcularFactorial(int n)
+    {
+        if (n <= 0){
+            return 0;//ERROR
+        }
+        if (n == 0 || n == 1){
+            return 1;
+        }
+        else{
+            return n * CalcularFactorial(n - 1);
+        }
+            
+    }
+}
 
 }
