@@ -9,6 +9,8 @@ namespace Programacion2
            //long f = Factorial(64);
            //Console.WriteLine(f);
            GenerarSerieV1Recursivo(10);
+           
+
         }   
         
         public static long Factorial(long n){
@@ -23,6 +25,9 @@ namespace Programacion2
                     Console.WriteLine(n + " Llamada a la recursion " + fact);
                     return fact;
                     //Console.WriteLine("Despues de la recursion");
+                    GenerarSerieV1Recursivo(N - 1);
+                
+                    
                 }
             }
         }  
@@ -103,6 +108,22 @@ namespace Programacion2
 
                 
             }
+               static int A = 0;
+        static int B = 7;
+         public static void GenerarSerieV1Recursivo(int N){
+            
+            if(N == 0){
+                return;
+            }else{
+                GenerarSerieV1Recursivo(N - 1); 
+                int serie1 = A + 1;
+                int serie2 = B - 1;
+                Console.WriteLine("Serie: " + serie1);
+                Console.WriteLine("Serie: " + serie2);
+                A = serie1;    
+                B = serie2;
+            }
+        }
             
         }
 
