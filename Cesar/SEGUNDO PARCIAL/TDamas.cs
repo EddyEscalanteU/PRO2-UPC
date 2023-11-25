@@ -4,12 +4,12 @@ class Program2
 {
     static void Main()
     {
-        // Crear y mostrar el tablero con fichas en palabras
-        string[,] tablero = CrearTableroConFichas();
+       
+        string[,] tablero = CrearTablero();
         MostrarTablero(tablero);
     }
 
-    static string[,] CrearTableroConFichas()
+    static string[,] CrearTablero()
     {
         string[,] tablero = new string[8, 8];
 
@@ -17,20 +17,20 @@ class Program2
         {
             for (int columna = 0; columna < 8; columna++)
             {
-                // Alternar entre espacios en blanco y fichas en el tablero
+                
                 if ((fila + columna) % 2 == 0)
                 {
-                    tablero[fila, columna] = "  "; // Espacio en blanco
+                    tablero[fila, columna] = "  "; 
                 }
                 else
                 {
-                    // Poner nombres a las fichas (puedes personalizar esto)
+                    
                     if (fila < 3)
-                        tablero[fila, columna] = "Blanco"; // Ficha blanca
+                        tablero[fila, columna] = "Blanco"; 
                     else if (fila > 4)
-                        tablero[fila, columna] = "Rojo"; // Ficha negra
+                        tablero[fila, columna] = "Rojo"; 
                     else
-                        tablero[fila, columna] = "  "; // Espacio en blanco en el medio
+                        tablero[fila, columna] = "  "; 
                 }
             }
         }

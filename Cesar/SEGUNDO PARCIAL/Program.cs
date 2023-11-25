@@ -1,11 +1,11 @@
-﻿using System;
+﻿﻿using System;
 
 class Program
 {
    /* static void Main()
     {
         // Puedes ingresar el número que desees para probar la función
-        int numero = 12345;
+        int numero = 123456789;
         MostrarDigImparesRecursivos(numero);
     }
 
@@ -34,4 +34,3 @@ class Program
         }
     }
 }
-
