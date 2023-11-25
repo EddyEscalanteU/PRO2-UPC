@@ -62,10 +62,7 @@ public class MatrizCadenas
     public int CantCaracteres(string dato){
         return dato.Length;
     }
-    public void Insertar(int posX, int posY, int ele)
-    {
-        M[posX, posY] = ele;
-    }
+    
 
 
     
