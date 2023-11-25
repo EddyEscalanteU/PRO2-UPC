@@ -1,0 +1,14 @@
+C:\Users\alumno\Desktop\Segundo_parcial\bin\Debug\net7.0\Segundo_parcial.exe
+C:\Users\alumno\Desktop\Segundo_parcial\bin\Debug\net7.0\Segundo_parcial.deps.json
+C:\Users\alumno\Desktop\Segundo_parcial\bin\Debug\net7.0\Segundo_parcial.runtimeconfig.json
+C:\Users\alumno\Desktop\Segundo_parcial\bin\Debug\net7.0\Segundo_parcial.dll
+C:\Users\alumno\Desktop\Segundo_parcial\bin\Debug\net7.0\Segundo_parcial.pdb
+C:\Users\alumno\Desktop\Segundo_parcial\obj\Debug\net7.0\Segundo_parcial.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alumno\Desktop\Segundo_parcial\obj\Debug\net7.0\Segundo_parcial.AssemblyInfoInputs.cache
+C:\Users\alumno\Desktop\Segundo_parcial\obj\Debug\net7.0\Segundo_parcial.AssemblyInfo.cs
+C:\Users\alumno\Desktop\Segundo_parcial\obj\Debug\net7.0\Segundo_parcial.csproj.CoreCompileInputs.cache
+C:\Users\alumno\Desktop\Segundo_parcial\obj\Debug\net7.0\Segundo_parcial.dll
+C:\Users\alumno\Desktop\Segundo_parcial\obj\Debug\net7.0\refint\Segundo_parcial.dll
+C:\Users\alumno\Desktop\Segundo_parcial\obj\Debug\net7.0\Segundo_parcial.pdb
+C:\Users\alumno\Desktop\Segundo_parcial\obj\Debug\net7.0\Segundo_parcial.genruntimeconfig.cache
+C:\Users\alumno\Desktop\Segundo_parcial\obj\Debug\net7.0\ref\Segundo_parcial.dll
