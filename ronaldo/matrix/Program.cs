@@ -1,4 +1,6 @@
-﻿namespace Programacion2
+﻿using System.ComponentModel;
+
+namespace Programacion2
 {
     public class Matrices
     {
@@ -128,10 +130,33 @@
             //MC.Insertar(0, 0 ,"Torre");
             for (int i = 0; i < 4; i++)
             {
-                MC.Insertar(1, 0 , "Torres");
+                int x = 0;
+                //serie x
+                if(i < 2)
+                {
+                    x = 0;
+                }
+                else
+                {
+                    x = 7;
+                }
+
+                //serie y
+                int y = 0;
+                if(i == 0 || i == 3)
+                {
+                    y = 0;
+                }
+                else
+                {
+                    y = 7;
+                }
+
+                //Console.WriteLine(x +  "---" + y);
+            
+            MC.Insertar(x,y,"Torre");
+                
             }
-            MC.Insertar(1, 0 ,"caballlo");
-            MC.Insertar(2, 0 , "Alfil");
             MC.Insertar(4, 7 , "Reyna");
             MC.Insertar(3, 0 , "Reyna");
 
@@ -149,13 +174,54 @@
             MC.Insertar(7, 1 ,"Peon");
 
             MC.Insertar(3, 7 ,"Rey");
+            MC.Insertar(4, 0 ,"Rey");
+
+            //MC.Insertar(1, 0 ,"caballlo");
+            //MC.Insertar(6, 0 ,"caballlo");
+            //MC.Insertar(1, 7 ,"caballlo");
+            //MC.Insertar(6, 7 ,"caballlo");
+
+            for (int i = 0; i < 4; i++)
+            {
+                int x = 0;
+                //serie x
+                if(i < 2)
+                {
+                    x = 1;
+                }
+                else
+                {
+                    x = 6;
+                }
+
+                //serie y
+                int y = 0;
+                if(i == 0 || i == 3)
+                {
+                    y = 0;
+                }
+                else
+                {
+                    y = 7;
+                }
+            
+            MC.Insertar(x,y,"caballo");
+                
+            }
+                MC.Insertar(2, 0 , "Alfil");
+                MC.Insertar(5, 0 , "Alfil");
+                MC.Insertar(2, 7 , "Alfil");
+                MC.Insertar(5, 7 , "Alfil");
+
+
+                //MOver un Peon
+                string PeonAux =MC.Obtener(2,6);
+                MC.Insertar(2,6,MC.defaultValue);
+                MC.Insertar(2,(6-1) , PeonAux);
 
 
 
             MC.MostraMatriz();
-
-
-}
-
+        }
     }
 }
