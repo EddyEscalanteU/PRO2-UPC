@@ -9,33 +9,135 @@ namespace Programacion2
 
             MatrizCadenas MC = new MatrizCadenas(8,8);
             MC.CargarMatrizDeafault();
+            for (int i = 0; i < 4; i++)
+            {
+                int x = 0;
+                //serie x
+                if(i < 2)
+                {
+                    x = 1;
+                }
+                else
+                {
+                    x = 3;
+                }
 
-            MC.Insertar(1,0,"BLANCO");
-            MC.Insertar(3,0,"BLANCO");
-            MC.Insertar(5,0,"BLANCO");
-            MC.Insertar(7,0,"BLANCO");
+                //serie y
+                int y = 0;
+
+                if(i == 0 || i == 3)
+                {
+                    y = 0;
+                }
+                else
+                {
+                    y = 2;
+                }
+            
+            MC.Insertar(x,y,"BLANCO");
+                
+            }
+            for (int i = 0; i < 4; i++)
+            {
+                int x = 0;
+                //serie x
+                if(i < 2)
+                {
+                    x = 5;
+                }
+                else
+                {
+                    x = 7;
+                }
+
+                //serie y
+                int y = 0;
+
+                if(i == 0 || i == 3)
+                {
+                    y = 0;
+                }
+                else
+                {
+                    y = 2;
+                }
+            
+            MC.Insertar(x,y,"BLANCO");
+                
+            }
+
+
+
             MC.Insertar(0,1,"BLANCO");
             MC.Insertar(2,1,"BLANCO");
             MC.Insertar(4,1,"BLANCO");
             MC.Insertar(6,1,"BLANCO");
-            MC.Insertar(1,2,"BLANCO");
-            MC.Insertar(3,2,"BLANCO");
-            MC.Insertar(5,2,"BLANCO");
-            MC.Insertar(7,2,"BLANCO");
 
 
-            MC.Insertar(0,5,"ROJO");
-            MC.Insertar(2,5,"ROJO");
-            MC.Insertar(4,5,"ROJO");
-            MC.Insertar(6,5,"ROJO");
+            for (int i = 0; i < 4; i++)
+            {
+                int x = 0;
+                //serie x
+                if(i < 2)
+                {
+                    x = 0;
+                }
+                else
+                {
+                    x = 2;
+                }
+
+                //serie y
+                int y = 0;
+
+                if(i == 0 || i == 3)
+                {
+                    y = 5;
+                }
+                else
+                {
+                    y = 7;
+                }
+            
+            MC.Insertar(x,y,"ROJO");
+                
+            }
+            for (int i = 0; i < 4; i++)
+            {
+                int x = 0;
+                //serie x
+                if(i < 2)
+                {
+                    x = 4;
+                }
+                else
+                {
+                    x = 6;
+                }
+
+                //serie y
+                int y = 0;
+
+                if(i == 0 || i == 3)
+                {
+                    y = 5;
+                }
+                else
+                {
+                    y = 7;
+                }
+            
+            MC.Insertar(x,y,"ROJO");
+                
+            }
+
+
+
             MC.Insertar(1,6,"ROJO");
             MC.Insertar(3,6,"ROJO");
             MC.Insertar(5,6,"ROJO");
             MC.Insertar(7,6,"ROJO");
-            MC.Insertar(0,7,"ROJO");
-            MC.Insertar(2,7,"ROJO");
-            MC.Insertar(4,7,"ROJO");
-            MC.Insertar(6,7,"ROJO");
+
             Console.WriteLine("-----------------------------------------------------------------------------");
             MC.MostraMatriz();
 
