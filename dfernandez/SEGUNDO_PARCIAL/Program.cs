@@ -2,7 +2,7 @@
     class Program
     {
 
-        //primer examen
+        //Convertir el siguiente algoritmo interativo a su equivalente de manera recursiva
         public static void Main(string[] args)
         {
             MostrarDigImparesIterativo(7829367);
@@ -23,6 +23,7 @@
             }
         }
 
-        //
+        //segundo examen
+        
     }
 }    
