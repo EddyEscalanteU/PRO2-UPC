@@ -1,0 +1,14 @@
+C:\Users\Dell\Desktop\PRACTICO2\obj\Debug\net7.0\PRACTICO2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dell\Desktop\PRACTICO2\obj\Debug\net7.0\PRACTICO2.AssemblyInfoInputs.cache
+C:\Users\Dell\Desktop\PRACTICO2\obj\Debug\net7.0\PRACTICO2.AssemblyInfo.cs
+C:\Users\Dell\Desktop\PRACTICO2\obj\Debug\net7.0\PRACTICO2.csproj.CoreCompileInputs.cache
+C:\Users\Dell\Desktop\PRACTICO2\bin\Debug\net7.0\PRACTICO2.exe
+C:\Users\Dell\Desktop\PRACTICO2\bin\Debug\net7.0\PRACTICO2.deps.json
+C:\Users\Dell\Desktop\PRACTICO2\bin\Debug\net7.0\PRACTICO2.runtimeconfig.json
+C:\Users\Dell\Desktop\PRACTICO2\bin\Debug\net7.0\PRACTICO2.dll
+C:\Users\Dell\Desktop\PRACTICO2\bin\Debug\net7.0\PRACTICO2.pdb
+C:\Users\Dell\Desktop\PRACTICO2\obj\Debug\net7.0\PRACTICO2.dll
+C:\Users\Dell\Desktop\PRACTICO2\obj\Debug\net7.0\refint\PRACTICO2.dll
+C:\Users\Dell\Desktop\PRACTICO2\obj\Debug\net7.0\PRACTICO2.pdb
+C:\Users\Dell\Desktop\PRACTICO2\obj\Debug\net7.0\PRACTICO2.genruntimeconfig.cache
+C:\Users\Dell\Desktop\PRACTICO2\obj\Debug\net7.0\ref\PRACTICO2.dll
