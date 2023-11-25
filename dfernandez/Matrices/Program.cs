@@ -4,13 +4,13 @@
     {
         public static void Main(string[] args)
         {
-            //MatrizEnteros Matriz = new MatrizEnteros(5, 5);
-            //Matriz.defaultValue = 0;
-            //Matriz.CargarMatrizDefault();
-            //Matriz.MostrarMatriz();
-            /*
+            MatrizEnteros Matriz = new MatrizEnteros(5, 5);
+            Matriz.defaultValue = 0;
+            Matriz.CargarMatrizDefault();
+            Matriz.MostrarMatriz();
+            
             Console.WriteLine("---------------------------");
-            Matriz.M[2, 1] = 5;         //opcion 1
+            /*Matriz.M[2, 1] = 5;         //opcion 1
             // Matriz.Insertar(2, 1, 5);   //opcion 2
             Matriz.M[3,2] = 3;
             Matriz.M[3, 0] = 7;
@@ -30,13 +30,13 @@
             Matriz.MostrarMatriz();
             Console.WriteLine("---------------------------");
             //Matriz.LlenarMatriz_v1();
-            //Matriz.MostrarMatriz();
-            */
+            //Matriz.MostrarMatriz();*/
+            
             //Console.WriteLine//("---------------------------");
-            //Matriz.MatrizSerie_Domino();
+            Matriz.MatrizSerie_Domino();
             //Matriz.MostrarMatriz();
             //Console.WriteLine("---------------------------");
-            MatrizCadenas MC = new MatrizCadenas(8, 8);
+            /*MatrizCadenas MC = new MatrizCadenas(8, 8);
             MC.CargarMatrizDefault();
             //MC.LlenarMatriz_v1();
             //MC.Insertar(0, 0, "Torre");
@@ -76,12 +76,12 @@
 
            MC.Insertar(3, 7, "Rey");
 
-           /* 
+           
             MC.Insertar(1, 0, "Caballo");
             MC.Insertar(6, 0, "Caballo");
             MC.Insertar(1, 7, "Caballo");
             MC.Insertar(6, 7, "Caballo");
-            */
+            
 
              for(int i = 0; i < 4; i++){
                 //Serie X
@@ -118,7 +118,7 @@
             MC.MoverBlackCaballo(0, 4);
             MC.MostrarMatriz();
 
-
+*/
         }
     }
 }
