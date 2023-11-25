@@ -3,7 +3,7 @@ public class MatrizCadenas
     public string [,] M;
     public int fila;
     public int columna;
-    public string defaultValue = "▒";
+    public string defaultValue = "▒▒▒▒▒▒▒";
 
      // El cosntructor dandole la cantidad en X y Y
     public MatrizCadenas (int cantX , int cantY)
@@ -47,6 +47,12 @@ public class MatrizCadenas
 
         Console.WriteLine(res);
     }
+
+    public string Obtener( int posX, int posY)
+    {
+        return M[posX,posY];
+    }
+
 
     public void Insertar( int posX, int posY, string element)// en elemnt ponemos string poque mi matriz es cadena
     {
