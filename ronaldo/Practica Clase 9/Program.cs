@@ -1,4 +1,6 @@
-﻿namespace Mynamespace;
+﻿using System.ComponentModel;
+
+namespace Mynamespace;
 
 public class Program
 {
@@ -6,13 +8,25 @@ public class Program
     {
         ClaseArray A = new ClaseArray(4);
 
-        /*
-            A.ArrayCadenas[0]="H";
-            A.ArrayCadenas[1]="o";
-            A.ArrayCadenas[2]="l";
-            A.ArrayCadenas[3]="a";
+        
+            A.ArrayCadenas[0]="Ereli";
+            A.ArrayCadenas[1]="Maria";
+            A.ArrayCadenas[2]="Ines";
+            A.ArrayCadenas[3]="Joel";
             A.MostrarArray();
-        */
+            Console.WriteLine("--------------------");
+            ClaseArray B = new ClaseArray(5);
+            B.ArrayCadenas[0]="Douglass";
+            B.ArrayCadenas[1]="Ereli";
+            B.ArrayCadenas[2]="Suares";
+            B.ArrayCadenas[3]="Maria";
+            B.ArrayCadenas[4]="Joel";
+            B.MostrarArray();
+            
+            ClaseArray C = new ClaseArray(4);
+            C.Interseccion(A.ArrayCadenas,B.ArrayCadenas);
+            C.MostrarArray();
+        
             
             /*
             char c0 = char.Parse(A.ArrayCadenas[0]);
@@ -42,6 +56,7 @@ public class Program
             */
 
             //A.GenerarAbecedario();
-            A.GeneraAbecedarioMayuscula();
+            //A.GeneraAbecedarioMayuscula();
+        
     }
 }
