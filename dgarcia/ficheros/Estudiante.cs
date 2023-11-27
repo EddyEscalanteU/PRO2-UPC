@@ -33,8 +33,8 @@ public class Estudiante
     }
 
     //metodos (Procedimientos o funciones)
-
     //funcion
+    //Carnet
     public int GetCarnet(){
         return Carnet;
     }
@@ -43,6 +43,7 @@ public class Estudiante
         Carnet = myCarnet;
     }
 
+    //CodigoEstudiante
     public int GetCodigoEstudiante(){
         return CodigoEstudiante;
     }
@@ -50,6 +51,7 @@ public class Estudiante
         CodigoEstudiante = myCodigoEstudiante;
     }
 
+    //Nombre
     public string GetNombre(){
         return Nombre;
     }
@@ -57,6 +59,7 @@ public class Estudiante
         Nombre = myNombre;
     }
 
+    //ApellidoPaterno
     public string GetApellidoPaterno(){
         return ApellidoPaterno;
     }
@@ -64,6 +67,7 @@ public class Estudiante
         ApellidoPaterno = myApellidoPaterno;
     }
 
+    //ApellidoMaterno
     public string GetApellidoMaterno(){
         return ApellidoMaterno;
     }
@@ -71,6 +75,7 @@ public class Estudiante
         ApellidoMaterno = myApellidoMaterno;
     }
 
+    //Edad
     public int GetEdad(){
         return Edad;
     }
