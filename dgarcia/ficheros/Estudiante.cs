@@ -70,4 +70,11 @@ public class Estudiante
     public void SetApellidoMaterno(string myApellidoMaterno){
         ApellidoMaterno = myApellidoMaterno;
     }
+
+    public int GetEdad(){
+        return Edad;
+    }
+    public void SetEdad(int myEdad){
+        Edad = myEdad;
+    }
 }
