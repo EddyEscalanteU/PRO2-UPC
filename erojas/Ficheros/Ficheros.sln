@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ficheros", "Ficheros.csproj", "{7FA353F3-0F24-4ED4-8EAE-2E7BB399ADAA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7FA353F3-0F24-4ED4-8EAE-2E7BB399ADAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FA353F3-0F24-4ED4-8EAE-2E7BB399ADAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FA353F3-0F24-4ED4-8EAE-2E7BB399ADAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FA353F3-0F24-4ED4-8EAE-2E7BB399ADAA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0FC3C86E-0291-4A3B-8D6E-D0AAAF5994AC}
+	EndGlobalSection
+EndGlobal
