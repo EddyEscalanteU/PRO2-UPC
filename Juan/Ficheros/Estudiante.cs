@@ -6,7 +6,7 @@ public class Estudiante
     private string apellidoPaterno;
     private string apellidoMaterno;
     private int edad;
-    //Constructor
+    //-------------------------Constructor
     public Estudiante()
     {
         carnet = 0;
@@ -16,7 +16,7 @@ public class Estudiante
         apellidoMaterno = "";
         edad = 0;
     }
-    //Parametro
+    //-----------------------------Parametro
     public Estudiante(int mycarnet, int mycodigoEstudiante, string mynombre, string myapellidoPaterno, string myapellidoMaterno, int myEdad)
     {
         carnet = mycarnet;
