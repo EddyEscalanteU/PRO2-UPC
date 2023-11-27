@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "Segundo_parcial/1.0.0": {
+        "runtime": {
+          "Segundo_parcial.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Segundo_parcial/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
