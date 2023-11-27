@@ -20,7 +20,13 @@ public class Estudiante
         Edad = 0;
         
     }
-    public Estudiante(int myCarnet, int myCodigoEstudiante, string myNombre, string myApellidoPaterno, string myApellidoMaterno, int myedad)
+    public Estudiante(
+        int myCarnet, 
+        int myCodigoEstudiante, 
+        string myNombre, 
+        string myApellidoPaterno, 
+        string myApellidoMaterno, 
+        int myedad)
     {
         Carnet = myCarnet;
         CodigoEstudiante = myCodigoEstudiante;
