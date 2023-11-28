@@ -36,7 +36,7 @@ public class Estudiante{
         return CodigoEstudiante;
     }
     public void SetCodigoEstudiante(int MyCodigoEstudiante){
-        Carnet = CodigoEstudiante;
+        Carnet = MyCodigoEstudiante;
     }
     public string GetNombre(){
         return Nombre;
@@ -62,5 +62,15 @@ public class Estudiante{
     public void SetEdad(int MyEdad){
         Edad = MyEdad;
     }
-    
+    public void Mostrar(){
+        string resultado = "Estudiante: [";
+        resultado+= "Carnet = " + GetCarnet() + " ;\n";
+        resultado+= "CodigoEstudiante = " + GetCodigoEstudiante() + " ;\n";
+        resultado+= "Nombre = " + GetNombre() + " ;\n";
+        resultado+= "ApelidoPaterno = " + GetApellidoPaterno() + " ;\n";
+        resultado+= "ApelidoMaterno = " + GetApelidoMaterno() + " ;\n";
+        resultado+= "Edad = " + GetEdad() + " ;\n";
+        resultado+= "]";
+        Console.WriteLine(resultado);
+    }
 }
