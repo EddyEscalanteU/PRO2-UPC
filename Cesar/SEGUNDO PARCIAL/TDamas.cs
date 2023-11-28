@@ -2,15 +2,19 @@ using System;
 
 class Program2
 {
+    
+    
     static void Main()
     {
        
         string[,] tablero = CrearTablero();
         MostrarTablero(tablero);
+        
     }
 
     static string[,] CrearTablero()
     {
+        
         string[,] tablero = new string[8, 8];
 
         for (int fila = 0; fila < 8; fila++)
@@ -20,7 +24,7 @@ class Program2
                 
                 if ((fila + columna) % 2 == 0)
                 {
-                    tablero[fila, columna] = "  "; 
+                    tablero[fila, columna] = "▒▒▒▒▒▒▒  "; 
                 }
                 else
                 {
@@ -30,7 +34,7 @@ class Program2
                     else if (fila > 4)
                         tablero[fila, columna] = "Rojo"; 
                     else
-                        tablero[fila, columna] = "  "; 
+                        tablero[fila, columna] = "▒▒▒▒▒▒▒  "; 
                 }
             }
         }

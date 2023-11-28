@@ -2,10 +2,10 @@
 
 class Program
 {
-   static void Main()
+   /* static void Main()
     {
         // Puedes ingresar el número que desees para probar la función
-        int numero = 12345;
+        int numero = 1247569845;
         MostrarDigImparesRecursivos(numero);
     }
 
@@ -19,6 +19,18 @@ class Program
                 Console.WriteLine("Dig: " + dig);
             }
             MostrarDigImparesRecursivos(N / 10);
+        }
+    }*/
+
+    static void MostrarTablero(string[,] tablero)
+    {
+        for (int fila = 0; fila < 8; fila++)
+        {
+            for (int columna = 0; columna < 8; columna++)
+            {
+                Console.Write(tablero[fila, columna]);
+            }
+            Console.WriteLine();
         }
     }
 }
