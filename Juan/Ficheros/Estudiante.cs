@@ -31,7 +31,7 @@ public class Estudiante
     {
         return carnet;
     }
-    
+
     public void SetCarnet(int mycarnet)
     {
         carnet = mycarnet;
@@ -85,6 +85,18 @@ public class Estudiante
     public void SetEdad(int myEdad)
     {
         edad = myEdad;
+    }
+    public void Mostrar(){
+        string resultado = "Estudiante: [\n";
+        resultado+= "Carnet = " + GetCarnet() + " ;\n";
+        resultado+= "CodigoEstudiante = " + GetCodigoEstudiante()+ " ;\n";
+        resultado+= "Nombre = " + GetNombre() + " ;\n";
+        resultado+= "ApellidoPaterno = " + GetApellidoPaterno() + " ;\n";
+        resultado+= "ApellidoMaterno = " + GetApellidoMaterno() + " ;\n";
+        resultado+= "Edad = " + GetEdad()+ " ;\n";
+        resultado+= "]";
+        Console.WriteLine(resultado);
+
     }
 }
 

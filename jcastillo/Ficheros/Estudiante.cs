@@ -1,8 +1,9 @@
+using System.Security.Cryptography.X509Certificates;
 using Microsoft.VisualBasic;
 
 public class Estudiante
 {
-    //atributos
+    //Atributos
     private int Carnet;
     private int CodigoEstudiante;
     private string Nombre;
@@ -10,7 +11,7 @@ public class Estudiante
     private string ApellidoMaterno;
     private int Edad;
 
-    //constructor
+    //Constructor
     public Estudiante()
     {
         Carnet = 0;
@@ -21,7 +22,14 @@ public class Estudiante
         Edad = 0;
     }
 
-    public Estudiante(int myCarnet, int myCodigoEstudiante, string myNombre, string myApellidoPaterno, string myApellidoMaterno, int myEdad)
+    public Estudiante(
+        int myCarnet,
+        int myCodigoEstudiante,
+        string myNombre,
+        string myApellidoPaterno,
+        string myApellidoMaterno,
+        int myEdad
+    )
     {
         Carnet = myCarnet;
         CodigoEstudiante = myCodigoEstudiante;
@@ -29,57 +37,74 @@ public class Estudiante
         ApellidoPaterno = myApellidoPaterno;
         ApellidoMaterno = myApellidoMaterno;
         Edad = myEdad;
-
     }
 
-    //metodos (Procedimientos o funciones)
+    //Metodos(Procedimientos o Funciones)
+    //-----------------------Carnet
     //funcion
-    //Carnet
-    public int GetCarnet(){
+    public int GetCarnet()
+    {
         return Carnet;
     }
-    //procedimiento 
-    public void SetCarnet(int myCarnet){
+
+    //procedimiento
+    public void SetCarnet(int myCarnet)
+    {
         Carnet = myCarnet;
     }
 
-    //CodigoEstudiante
-    public int GetCodigoEstudiante(){
+    //-----------------------CodigoEstudiante
+    public int GetCodigoEstudiante()
+    {
         return CodigoEstudiante;
     }
-    public void SetCodigoEstudiante(int myCodigoEstudiante){
+
+    public void SetCodigoEstudiante(int myCodigoEstudiante)
+    {
         CodigoEstudiante = myCodigoEstudiante;
     }
 
-    //Nombre
-    public string GetNombre(){
+    //-----------------------Nombre
+    public string GetNombre()
+    {
         return Nombre;
     }
-    public void SetNombre(string myNombre){
+
+    public void SetNombre(string myNombre)
+    {
         Nombre = myNombre;
     }
 
-    //ApellidoPaterno
-    public string GetApellidoPaterno(){
+    //-----------------------ApellidoPaterno
+    public string GetApellidoPaterno()
+    {
         return ApellidoPaterno;
     }
-    public void SetApellidoPaterno(string myApellidoPaterno){
+
+    public void SetApellidoPaterno(string myApellidoPaterno)
+    {
         ApellidoPaterno = myApellidoPaterno;
     }
 
-    //ApellidoMaterno
-    public string GetApellidoMaterno(){
+    //-----------------------ApellidoMaterno
+    public string GetApellidoMaterno()
+    {
         return ApellidoMaterno;
     }
-    public void SetApellidoMaterno(string myApellidoMaterno){
+
+    public void SetApellidoMaterno(string myApellidoMaterno)
+    {
         ApellidoMaterno = myApellidoMaterno;
     }
 
-    //Edad
-    public int GetEdad(){
+    //-----------------------Edad
+    public int GetEdad()
+    {
         return Edad;
     }
-    public void SetEdad(int myEdad){
+
+    public void SetEdad(int myEdad)
+    {
         Edad = myEdad;
     }
 
