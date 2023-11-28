@@ -77,9 +77,9 @@ public class Estudiante{
     {
          return Edad
     }
-    public void SetCarnet(int myCarnet)
+    public void SetCarnet(int myEdad)
     {
-        carnet = myCarnet;
+        Edad = myEdad;
     }
      return Edad;
 
