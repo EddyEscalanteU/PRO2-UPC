@@ -43,25 +43,38 @@ public string GetNombre(){
 public void SetNombre(string myNombre){
     Nombre = myNombre;
 }
-public string GetApellidopaterno(string myApellidoPaterno){
+public string GetApellidoPaterno(){
     return ApellidoPaterno;
 
 }
 public void SetApellidoPaterno(string myApellidoPaterno){
 ApellidoPaterno = myApellidoPaterno;
 }
-public string GetApellidoMaterno(string myApellidoMaterno){
+public string GetApellidoMaterno(){
     return ApellidoMaterno;
 
 }
 public void SetApellidoMaterno(string myApellidoMaterno){
 ApellidoMaterno = myApellidoMaterno;
 }
-public int GetEdad(int myEdad){
+public int GetEdad(){
     return Edad;
 }
 public void SetEdad(int myEdad){
     Edad = myEdad;
 }
+public void Mostrar(){
+    string resultado = "Estudiante: [\n";
+    resultado+= "Carnet = "  + GetCarnet() +";\n";
+     resultado+= "CodigoEstudiante = "  + GetCodigoEstudiante() +";\n";
+     resultado+= "Nombre = "  + GetNombre() +";\n";
+     resultado+= "ApellidoPaterno = "  + GetApellidoPaterno() +";\n";
+     resultado+= "ApellidoMaterno = "  + GetApellidoMaterno() +";\n";
+     resultado+= "Edad = "  + GetEdad() +";\n";
 
+
+
+
+
+}
 }
