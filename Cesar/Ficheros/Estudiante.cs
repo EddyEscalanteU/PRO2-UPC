@@ -1,106 +1,119 @@
-public class Estudiante{
+public class Estudiante
+{
+    //Atributos
     private int Carnet;
     private int CodigoEstudiante;
     private string Nombre;
     private string ApellidoPaterno;
     private string ApellidoMaterno;
     private int Edad;
-    
-    public Estudiante(){
 
+    //Constructor
+    public Estudiante()
+    {
         Carnet = 0;
         CodigoEstudiante = 0;
         Nombre = "";
         ApellidoPaterno = "";
         ApellidoMaterno = "";
         Edad = 0;
-
     }
 
-    public Estudiante(int mycarnet, int mycestudiante, string mynombre, string myapaterno, string myamaterno, int myedad ){
-
-       Carnet = mycarnet;
-       CodigoEstudiante = mycestudiante;
-       Nombre = mynombre;
-       ApellidoPaterno = myapaterno;
-       ApellidoMaterno = myamaterno;
-       Edad = myedad;
-
+    public Estudiante(
+        int myCarnet,
+        int myCodigoEstudiante,
+        string myNombre,
+        string myApellidoPaterno,
+        string myApellidoMaterno,
+        int myEdad
+    )
+    {
+        Carnet = myCarnet;
+        CodigoEstudiante = myCodigoEstudiante;
+        Nombre = myNombre;
+        ApellidoPaterno = myApellidoPaterno;
+        ApellidoMaterno = myApellidoMaterno;
+        Edad = myEdad;
     }
 
+    //Metodos(Procedimientos o Funciones)
+    //-----------------------Carnet
+    //funcion
     public int GetCarnet()
     {
         return Carnet;
     }
 
-    public void SetCarnet( int mycarnet)
+    //procedimiento
+    public void SetCarnet(int myCarnet)
     {
-        Carnet = mycarnet;
+        Carnet = myCarnet;
     }
 
+    //-----------------------CodigoEstudiante
     public int GetCodigoEstudiante()
     {
         return CodigoEstudiante;
     }
 
-    public void SetCodigoEstudiante( int mycestudiante)
+    public void SetCodigoEstudiante(int myCodigoEstudiante)
     {
-        CodigoEstudiante = mycestudiante;
+        CodigoEstudiante = myCodigoEstudiante;
     }
 
+    //-----------------------Nombre
     public string GetNombre()
     {
         return Nombre;
     }
 
-    public void SetNombre( string mynombre)
+    public void SetNombre(string myNombre)
     {
-        Nombre= mynombre;
+        Nombre = myNombre;
     }
 
+    //-----------------------ApellidoPaterno
     public string GetApellidoPaterno()
     {
         return ApellidoPaterno;
     }
 
-    public void SetApellidoPaterno( string myapaterno)
+    public void SetApellidoPaterno(string myApellidoPaterno)
     {
-       ApellidoPaterno = myapaterno;
+        ApellidoPaterno = myApellidoPaterno;
     }
 
+    //-----------------------ApellidoMaterno
     public string GetApellidoMaterno()
     {
         return ApellidoMaterno;
     }
 
-    public void SetApellidoMaterno( string myamaterno)
+    public void SetApellidoMaterno(string myApellidoMaterno)
     {
-        ApellidoMaterno = myamaterno;
+        ApellidoMaterno = myApellidoMaterno;
     }
 
+    //-----------------------Edad
     public int GetEdad()
     {
         return Edad;
     }
 
-    public void SetEdad( int myedad)
+    public void SetEdad(int myEdad)
     {
-        Edad = myedad;
+        Edad = myEdad;
     }
 
-    public void Mostrar (){
+    public void Mostrar(){
         string resultado = "Estudiante: [\n";
-        resultado+= "Carnet = " + GetCarnet() + ";\n";
-        resultado+= "CodigoEstudiante = " + GetCodigoEstudiante() + ";\n";
-        resultado+= "Nombre = " + GetNombre() + ";\n";
-        resultado+= "ApellidoPaterno = " + GetApellidoPaterno() + ";\n";
-        resultado+= "ApellidoMaterno = " + GetApellidoMaterno() + ";\n";
-        resultado+= "Edad = " + GetEdad() + ";\n";  
+        resultado+= "Carnet = " + GetCarnet() + " ;\n";
+        resultado+= "CodigoEstudiante = " + GetCodigoEstudiante() + " ;\n";
+        resultado+= "Nombre = " + GetNombre() + " ;\n";
+        resultado+= "ApellidoPaterno = " + GetApellidoPaterno() + " ;\n";
+        resultado+= "ApellidoMaterno = " + GetApellidoMaterno() + " ;\n";
+        resultado+= "Edad = " + GetEdad() + " ;\n";
         resultado+= "]";
-
-
+        Console.WriteLine(resultado);
     }
-
-
-
 }
