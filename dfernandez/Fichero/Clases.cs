@@ -1,37 +1,34 @@
 using System.Security.Cryptography.X509Certificates;
 
 public class Estudiante{
-    private string Nombre;
-    private string Apellido;
-    private int Edad;
-    private int CodigoEstudiante;
     private int Carnet;
+    private int CodigoEstudiante;
+    private string Nombre;
     private string ApellidoPaterno;
     private string ApellidoMaterno;
+    private int Edad;
 
     public Estudiante(){
-        Nombre = "Douglas";
-        Apellido = "Fernandez Matos";
-        Edad = 19;
-        CodigoEstudiante = 9595866;
         Carnet = 9775810;
-        ApellidoPaterno = "Fernandez";
-        ApellidoMaterno = "Matos";
+        CodigoEstudiante = 9595866;
+        Nombre = " ";
+        ApellidoPaterno = " ";
+        ApellidoMaterno = " ";
+        Edad = 19;
 
     }
     public Estudiante(
-        string MyNombre, 
-        string MyApellido, 
-        int MyEdad,
-        int MyCodigoEstudiante, 
         int MyCarnet, 
+        int MyCodigoEstudiante,
+        string MyNombre, 
         string MyApellidoPaterno, 
-        string MyApellidoMaterno)
+        string MyApellidoMaterno,
+        int MyEdad)
+        
     {
         Carnet = MyCarnet;
         CodigoEstudiante = MyCodigoEstudiante;
         Nombre = MyNombre;
-        Apellido = MyApellido;
         ApellidoPaterno = MyApellidoPaterno;
         ApellidoMaterno = MyApellidoMaterno;
         Edad = MyEdad;
@@ -57,15 +54,7 @@ public class Estudiante{
         CodigoEstudiante = MyCodigoEstudiante;
 
     }
-    public int GetEdad()
-    {
-        return Edad;
 
-    }
-    public void setEdad(int MyEdad)
-    {
-        Edad = MyEdad;
-    }
     public string GetNombre()
     {
         return Nombre;
@@ -74,16 +63,6 @@ public class Estudiante{
     public void setNombre(string MyNombre)
     {
         Nombre = MyNombre;
-
-    }
-    public string GetApellido()
-    {
-        return Apellido;
-
-    }
-    public void setApellido(string MyApellido)
-    {
-        Nombre = MyApellido;
 
     }
     public string GetApellidoPaterno()
@@ -105,6 +84,26 @@ public class Estudiante{
     {
         Nombre = MyApellidoMaterno;
 
+    }
+        public int GetEdad()
+    {
+        return Edad;
+
+    }
+    public void setEdad(int MyEdad)
+    {
+        Edad = MyEdad;
+    }
+    public void Mostrar(){
+        string resultado = "Estudiante: [";
+        resultado+= "Carnet = " + GetCarnet() + " ; \n";
+        resultado+= "CodigoEstudiante = " + GetCodigoEstudiante() + " ; \n";
+        resultado+= "Nombre = " + GetNombre() + " ; \n";
+        resultado+= "ApellidoPaterno = " + GetApellidoPaterno() + " ; \n";
+        resultado+= "ApellidoMaterno = " + GetApellidoMaterno() + " ; \n";
+        resultado+= "Edad = " + GetEdad() + " ; \n";
+        resultado+= "]";
+        Console.WriteLine(resultado);
     }
 
 }
