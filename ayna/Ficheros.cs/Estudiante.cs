@@ -17,7 +17,7 @@ public class Estudiante{
         ApellidoMaterno = "";
         Edad = 0;
     }
-    public Estudiante(int myCarnet, myCodigoEstudiante, string myNombre, myApellidoPaterno, myApellidoMaterno, int myEdad){
+    public Estudiante(int myCarnet, int myCodigoEstudiante, string myNombre, string myApellidoPaterno, string myApellidoMaterno, int myEdad){
    
         carnet = myCarnet;
         codigoEstudiante = myCodigoEstudiante;
@@ -30,7 +30,7 @@ public class Estudiante{
 //----------------------------Carnet
     public int GetCarnet()
     {
-         return carnet
+         return carnet;
     }
     public void SetCarnet(int myCarnet)
     {
@@ -39,7 +39,7 @@ public class Estudiante{
 //-----------------------------CodigoEstudiante
      public int GetCodigoEstudiante()
      {
-        return codigoEstudiante
+        return codigoEstudiante;
      }
      Public void SetCodigoEstudiante(int myCodigoEstudiante)
      {
@@ -48,7 +48,7 @@ public class Estudiante{
 //------------------------------Nombre
      public string GetNombre()
      {
-        return Nombre
+        return Nombre;
      }
      Public void SetNombre(string myNombre)
      {
@@ -57,7 +57,7 @@ public class Estudiante{
 //----------------------------ApellidoPaterno
  public string GetApellidoPaterno()
      {
-        return ApellidoPaterno
+        return ApellidoPaterno;
      }
      Public void SetApellidoPaterno(string myApellidoPaterno)
      {
@@ -66,7 +66,7 @@ public class Estudiante{
 //----------------------------ApellidoMaterno
        public string GetApellidoMaterno()
      {
-        return ApellidoMaterno
+        return ApellidoMaterno;
      }
      Public void SetApellidoMaterno(string myApellidoMaterno)
      {
@@ -75,7 +75,7 @@ public class Estudiante{
 //---------------------------Edad
     public int GetEdad()
     {
-         return Edad
+         return Edad;
     }
     public void SetCarnet(int myEdad)
     {
