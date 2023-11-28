@@ -1,2 +1,8 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿namespace program{
+    class Program{
+        public static void Main(string[] args){
+            Estudiante e1 = new Estudiante(123, 456,"Juan", "AppP", "AppM", 18);
+            e1.Mostrar();
+        }
+    }
+}
