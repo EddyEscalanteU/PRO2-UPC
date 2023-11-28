@@ -32,10 +32,14 @@
         int filas = 5;
         int columnas = 5;
 
+        var X = 1;
+        var  y = 7;
+        var  z = 1;
+
 
         int[,] matriz = new int[filas, columnas];
 
-        int contador = 1;
+        int contador = 2;
         for (int i = 0; i < filas; i++)
         {
             for (int j = 0; j < columnas; j++)
