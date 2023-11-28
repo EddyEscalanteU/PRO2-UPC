@@ -17,7 +17,7 @@ public class Estudiante{
         ApellidoMaterno = "";
         Edad = 11;
     }
-    public Estudiante(int myCarnet, myCodigoEstudiante, string myNombre, myApellidoPaterno, myApellidoMaterno, int myEdad){
+    public Estudiante(int myCarnet, int myCodigoEstudiante, string myNombre, string myApellidoPaterno, string myApellidoMaterno, int myEdad){
    
         carnet = myCarnet;
         codigoEstudiante = myCodigoEstudiante;
@@ -28,59 +28,70 @@ public class Estudiante{
        
     //Metodos(procedimientos o funcion)
 //----------------------------Carnet
-    public int GetCarnet()
-    {
-         return carnet
-    }
-    public void SetCarnet(int myCarnet)
-    {
-        carnet = myCarnet;
-    }
+public int GetCarnet()
+        {
+            return carnet;
+        }
+        public void SetCarnet(int myCarnet)
+        {
+            carnet = myCarnet;
+        }
 //-----------------------------CodigoEstudiante
-     public int GetCodigoEstudiante()
-     {
-        return codigoEstudiante
-     }
-     Public void SetCodigoEstudiante(int myCodigoEstudiante)
-     {
-        codigoEstudiante = myCodigoEstudiante;
-     }
+public int GetCodigoEstudiante()
+        {
+            return codigoEstudiante;
+        }
+        public void SetCodigoEstudiante(int myCodigoEstudiante)
+        {
+            codigoEstudiante = myCodigoEstudiante;
+        }
 //------------------------------Nombre
-     public string GetNombre()
-     {
-        return Nombre
-     }
-     Public void SetNombre(string myNombre)
-     {
-        Nombre = myNombre;
-     }
+public string GetNombre()
+        {
+            return Nombre;
+        }
+        Public void SetNombre(string myNombre)
+        {
+            Nombre = myNombre;
+        }
 //----------------------------ApellidoPaterno
  public string GetApellidoPaterno()
-     {
-        return ApellidoPaterno
-     }
-     Public void SetApellidoPaterno(string myApellidoPaterno)
-     {
-        ApellidoPaterno = myApellidoPaterno;
-     }
+        {
+            return ApellidoPaterno;
+        }
+        public void SetApellidoPaterno(string myApellidoPaterno)
+        {
+            ApellidoPaterno = myApellidoPaterno;
+        }
 //----------------------------ApellidoMaterno
-       public string GetApellidoMaterno()
-     {
-        return ApellidoMaterno
-     }
-     Public void SetApellidoMaterno(string myApellidoMaterno)
-     {
-        ApellidoMaterno = myApellidoMaterno;
-     } 
+public string GetApellidoMaterno()
+        {
+            return ApellidoMaterno;
+        }
+        public void SetApellidoMaterno(string myApellidoMaterno)
+        {
+            ApellidoMaterno = myApellidoMaterno;
+        } 
 //---------------------------Edad
-    public int GetEdad()
-    {
-         return Edad
-    }
-    public void SetEdad(int myEdad)
-    {
-        Edad = myEdad;
-    }
-
-     }
+public int GetEdad()
+        {
+            return Edad;
+        }
+        public void SetEdad(int myEdad)
+        {
+            Edad = myEdad;
+        }
+    
+public void Mostrar(){
+            string resultado ="Estudiante: [";
+            resultado+= "Carnet = " +GetCarnet() + " ;\n";
+            resultado+= "CodigoEstudiante = " +GetCodigoEstudiante() + " ;\n";
+            resultado+= "Nombre = " +GetNombre() + " ;\n";
+            resultado+= "ApellidoPaterno = " +GetApellidoPaterno() + " ;\n";
+            resultado+= "ApellidoMaterno = " +GetApellidoMaterno() + " ;\n";
+            resultado+= "Edad = " +GetEdad() + " ;\n";
+            resultado+= "]";
+            console.WriteLine(resultado);
+        }
+    } 
 }
