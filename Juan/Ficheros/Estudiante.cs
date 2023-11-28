@@ -31,6 +31,7 @@ public class Estudiante
     {
         return carnet;
     }
+    
     public void SetCarnet(int mycarnet)
     {
         carnet = mycarnet;
