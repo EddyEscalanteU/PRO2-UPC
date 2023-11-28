@@ -11,10 +11,10 @@ public class Estudiante{
     public Estudiante(){
 
         carnet = 0;
-        codigoEstudiante = 7;
+        codigoEstudiante = 0;
         Nombre = "Nelson";
         ApellidoPaterno = " ";
-        ApellidoMaterno = "";
+        ApellidoMaterno = " ";
         Edad = 0;
     }
     public Estudiante(int myCarnet, int myCodigoEstudiante, string myNombre, string myApellidoPaterno, string myApellidoMaterno, int myEdad){
@@ -25,14 +25,14 @@ public class Estudiante{
         ApellidoPaterno = myApellidoPaterno;
         ApellidoMaterno = myApellidoMaterno;
         Edad = myEdad;
-       
+    }
     //Metodos(procedimientos o funcion)
 //----------------------------Carnet
     public int GetCarnet()
     {
          return carnet;
     }
-    public void SetCarnet(int myCarnet)
+    public void GetCarnet(int myCarnet)
     {
         carnet = myCarnet;
     }
@@ -41,7 +41,7 @@ public class Estudiante{
      {
         return codigoEstudiante;
      }
-     Public void SetCodigoEstudiante(int myCodigoEstudiante)
+     public void SetCodigoEstudiante(int myCodigoEstudiante)
      {
         codigoEstudiante = myCodigoEstudiante;
      }
@@ -50,7 +50,7 @@ public class Estudiante{
      {
         return Nombre;
      }
-     Public void SetNombre(string myNombre)
+     public void SetNombre(string myNombre)
      {
         Nombre = myNombre;
      }
@@ -59,7 +59,7 @@ public class Estudiante{
      {
         return ApellidoPaterno;
      }
-     Public void SetApellidoPaterno(string myApellidoPaterno)
+     public void SetApellidoPaterno(string myApellidoPaterno)
      {
         ApellidoPaterno = myApellidoPaterno;
      }
@@ -68,7 +68,7 @@ public class Estudiante{
      {
         return ApellidoMaterno;
      }
-     Public void SetApellidoMaterno(string myApellidoMaterno)
+     public void SetApellidoMaterno(string myApellidoMaterno)
      {
         ApellidoMaterno = myApellidoMaterno;
      } 
@@ -77,11 +77,22 @@ public class Estudiante{
     {
          return Edad;
     }
-    public void SetCarnet(int myEdad)
+    public void SetEdad(int myEdad)
     {
         Edad = myEdad;
     }
-     return Edad;
-
+     
+     public void Mostrar(){
+        string resultado = "Estudiante: [\n";
+        resultado+= "Carnet = " + GetCarnet() + " ;\n";
+        resultado+= "CodigoEstudiante = " + GetCodigoEstudiante() + " ;\n";
+        resultado+= "Nombre = " + GetNombre() + " ;\n";
+        resultado+= "ApellidoPaterno = " + GetApellidoPaterno() + " ;\n";
+        resultado+= "ApellidoMaterno = " + GetApellidoMaterno() + " ;\n";
+        resultado+= "Edad = " + GetEdad() + " ;\n";
+        resultado+= "]";
+        Console.WriteLine(resultado);
      }
+
 }
+
