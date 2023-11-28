@@ -1,4 +1,4 @@
-﻿﻿﻿namespace Programacion2
+﻿namespace Programacion2
 {
     public class Matrices
     {
@@ -7,6 +7,10 @@
             //MatrizEnteros Matriz = new MatrizEnteros(5, 5);
             //Matriz.defaultValue = 0;
             //Matriz.CargarMatrizDefault();
+            //Matriz.MostrarMatriz();
+            //Console.WriteLine("---------------------------");
+            
+           // Matriz.MatrizSerie_Domino();
             //Matriz.MostrarMatriz();
             /*
             Console.WriteLine("---------------------------");
@@ -36,6 +40,7 @@
             //Matriz.MatrizSerie_Domino();
             //Matriz.MostrarMatriz();
             //Console.WriteLine("---------------------------");
+            /*
             MatrizCadenas MC = new MatrizCadenas(8, 8);
             MC.CargarMatrizDefault();
             //MC.LlenarMatriz_v1();
@@ -76,12 +81,12 @@
 
            MC.Insertar(3, 7, "Rey");
 
-           /* 
-            MC.Insertar(1, 0, "Caballo");
-            MC.Insertar(6, 0, "Caballo");
-            MC.Insertar(1, 7, "Caballo");
-            MC.Insertar(6, 7, "Caballo");
-            */
+           
+            //MC.Insertar(1, 0, "Caballo");
+            //MC.Insertar(6, 0, "Caballo");
+            //MC.Insertar(1, 7, "Caballo");
+            ///MC.Insertar(6, 7, "Caballo");
+        
 
              for(int i = 0; i < 4; i++){
                 //Serie X
@@ -111,13 +116,16 @@
             //string peonAux = MC.Obtener(2, 6);
             //MC.Insertar(2, 6, MC.defaultValue);
             //MC.Insertar(2, (6-1), peonAux);
-            MC.MoverBlackPeon(2, 6);
+            MC.MoverBlackPeon(1, 6);
+            MC.MoverBlackPeon(3, 6);
             MC.MoverBlackPeon(5, 6);
             MC.MoverBlackPeon(5, 5);
 
+            MC.MoverBlackAlfil(2, 7, 2, true);
+
             MC.MostrarMatriz();
 
-
+*/
 
         }
     }
