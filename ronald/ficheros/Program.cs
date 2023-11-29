@@ -52,6 +52,11 @@ namespace ProgramacionDos{
 
             f.WriteLine(path1, student1);
             f.WriteLine(path2, student2);
+
+            string[] estudianteFichero = f.ReadAllLinesV2(path1);
+            Estudiante e3 = new Estudiante();
+            e3.ArrayToEstudiante(estudianteFichero);
+            e3.Mostrar();
         }
     }
 }
