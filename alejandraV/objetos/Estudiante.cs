@@ -23,12 +23,12 @@ namespace MyNamespaceNamespace
 
         public string GetCodigoEstudiante()
         {
-            return codigoEstudiante;
+            return MicodigoEstudiante;
         }
 
         public void SetCodigoEstudiante(string value)
         {
-            codigoEstudiante = value;
+            MicodigoEstudiante = value;
         }
 
         public string GetNombre()
@@ -70,5 +70,20 @@ namespace MyNamespaceNamespace
         {
             edad = value;
         }
+
+        public void Mostrar(){
+
+            string resultado = "Estudiante: [/n";
+            resultado+= "Carnet= " + GetCarnet() + ";";
+            resultado+= "CodigoEstudiante = " + GetCodigoEstudiante() + ";/n";
+            resultado+= "Nombre = " + GetNombre() + ";/n";
+            resultado+= "ApellidoPaterno = " + GetApellidoPaterno() + ";/n";
+            resultado+= "ApellidoPaterno = " + GetApellidoMaterno() + ";/n";
+            resultado+= "Edad = " + GetEdad() + ";/n";
+            resultado+= "]";
+
+        }
+
+
     }
 }
