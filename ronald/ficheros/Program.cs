@@ -12,7 +12,7 @@ namespace ProgramacionDos{
             e1.Mostrar();
             e2.Mostrar();
             */
-            string path = "D:/GitHub/PRO2-UPC/DOCENTE/ficheros/archivo.txt";
+            string path = "D:/UPC/Github/PRO2-UPC/ronald/ficheros/archivo.txt";
             Fichero f =  new Fichero(path);
 
             //string texto = f.ReadAllText(path);
