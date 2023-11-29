@@ -1,4 +1,4 @@
-namespace ProgramacionDos{
+﻿namespace ProgramacionDos{
     public class Program{
         public static void Main(string[] args)
         {
@@ -12,7 +12,7 @@ namespace ProgramacionDos{
             e1.Mostrar();
             e2.Mostrar();
             */
-            string path = "D:/UPC/Github/PRO2-UPC/ronald/ficheros/archivo.txt";
+            string path = "D:/GitHub/PRO2-UPC/DOCENTE/ficheros/archivo.txt";
             Fichero f =  new Fichero(path);
 
             //string texto = f.ReadAllText(path);
@@ -47,16 +47,12 @@ namespace ProgramacionDos{
             string[] student1 = e1.EstudianteToArray();
             string[] student2 = e2.EstudianteToArray();
   
-            string path1 = "D:/UPC/Github/PRO2-UPC/ronald/ficheros/" + e1.GetNombre() + ".txt";
-            string path2 = "D:/UPC/Github/PRO2-UPC/ronald/ficheros/" + e2.GetNombre() + ".txt";
+            string path1 = "D:/GitHub/PRO2-UPC/DOCENTE/ficheros/" + e1.GetNombre() + ".txt";
+            string path2 = "D:/GitHub/PRO2-UPC/DOCENTE/ficheros/" + e2.GetNombre() + ".txt";
 
             f.WriteLine(path1, student1);
             f.WriteLine(path2, student2);
-
-            string[] estudianteFichero = f.ReadAllLinesV2(path1);
-            Estudiante e3 = new Estudiante();
-            e3.ArrayToEstudiante(estudianteFichero);
-            e3.Mostrar();
         }
     }
 }
+
