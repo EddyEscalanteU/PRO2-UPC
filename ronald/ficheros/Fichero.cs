@@ -57,4 +57,9 @@ public class Fichero
             Console.WriteLine("El archivo no existe Path: " + path);
         }
     }
+
+    public string[] ReadAllLinesV2(string path)
+    {
+        return File.ReadAllLines(path);
+    }
 }
