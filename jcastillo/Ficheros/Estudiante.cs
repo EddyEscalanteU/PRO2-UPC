@@ -1,6 +1,3 @@
-using System.Security.Cryptography.X509Certificates;
-using Microsoft.VisualBasic;
-
 public class Estudiante
 {
     //Atributos
@@ -118,5 +115,32 @@ public class Estudiante
         resultado+= "Edad = " + GetEdad() + " ;\n";
         resultado+= "]";
         Console.WriteLine(resultado);
+    }
+
+    public string[] EstudianteToArray(){
+        string[] myArray = new string[6];
+        myArray[0] = GetCarnet() + "";
+        myArray[1] = GetCodigoEstudiante() + "";
+        myArray[2] = GetNombre();
+        myArray[3] = GetApellidoPaterno();
+        myArray[4] = GetApellidoMaterno();
+        myArray[5] = GetEdad() + "";
+        return myArray;
+    }
+
+    public void ArrayToEstudiante(string[] lineas){
+        int lineaCarnet = int.Parse(lineas[0]);
+        int lineaCodigoEstudiante = int.Parse(lineas[1]);
+        string lineaNombre = lineas[2];
+        string lineaApellidoPaterno = lineas[3];
+        string lineaApellidoMaterno = lineas[4];
+        int lineaEdad = int.Parse(lineas[5]);
+        
+        SetCarnet(lineaCarnet);
+        SetCodigoEstudiante(lineaCodigoEstudiante);
+        SetNombre(lineaNombre);
+        SetApellidoPaterno(lineaApellidoPaterno);
+        SetApellidoMaterno(lineaApellidoMaterno);
+        SetEdad(lineaEdad);
     }
 }
