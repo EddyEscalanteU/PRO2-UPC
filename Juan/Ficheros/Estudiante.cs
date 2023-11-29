@@ -86,7 +86,8 @@ public class Estudiante
     {
         edad = myEdad;
     }
-    public void Mostrar(){
+    public void Mostrar()
+    {
         string resultado = "Estudiante: [\n";
         resultado+= "Carnet = " + GetCarnet() + " ;\n";
         resultado+= "CodigoEstudiante = " + GetCodigoEstudiante()+ " ;\n";
@@ -96,7 +97,32 @@ public class Estudiante
         resultado+= "Edad = " + GetEdad()+ " ;\n";
         resultado+= "]";
         Console.WriteLine(resultado);
-
+    }
+    public string[] EstudianteToArray()
+    {
+        string[] myArray = new  string[6];
+        myArray[0] = GetCarnet() + "";
+        myArray[1] = GetCodigoEstudiante() + "";
+        myArray[2] = GetNombre() + "";
+        myArray[3] = GetApellidoPaterno();
+        myArray[4] = GetApellidoMaterno();
+        myArray[5] = GetEdad() + "";
+        return myArray;
+    }
+    public void ArrayToEstudiante(string[] lineas)
+    {
+        int lineasCarnet = int.Parse(lineas[0]);
+        int lineasCodigoEstudiante = int.Parse(lineas[1]);
+        string lineasNombre = lineas[2];
+        string lineasApellidoPaterno = lineas[3];
+        string lineasApellidoMaterno = lineas[4];
+        int lineasEdad = int.Parse(lineas[5]);
+        SetCarnet(lineasCarnet);
+        SetCodigoEstudiante(lineasCodigoEstudiante);
+        SetNombre(lineasNombre);
+        SetApellidoPaterno(lineasApellidoPaterno);
+        SetApellidoMaterno(lineasApellidoMaterno);
+        SetEdad(lineasEdad);
     }
 }
 
