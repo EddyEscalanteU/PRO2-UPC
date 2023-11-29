@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\bcarrasco\\Fichas\\Fichas.csproj": {}
+    "C:\\Users\\FANATIC\\Documents\\GitHub\\PRO2-UPC\\bcarrasco\\Fichas\\Fichas.csproj": {}
   },
   "projects": {
-    "D:\\bcarrasco\\Fichas\\Fichas.csproj": {
+    "C:\\Users\\FANATIC\\Documents\\GitHub\\PRO2-UPC\\bcarrasco\\Fichas\\Fichas.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\bcarrasco\\Fichas\\Fichas.csproj",
+        "projectUniqueName": "C:\\Users\\FANATIC\\Documents\\GitHub\\PRO2-UPC\\bcarrasco\\Fichas\\Fichas.csproj",
         "projectName": "Fichas",
-        "projectPath": "D:\\bcarrasco\\Fichas\\Fichas.csproj",
-        "packagesPath": "C:\\Users\\alumno\\.nuget\\packages\\",
-        "outputPath": "D:\\bcarrasco\\Fichas\\obj\\",
+        "projectPath": "C:\\Users\\FANATIC\\Documents\\GitHub\\PRO2-UPC\\bcarrasco\\Fichas\\Fichas.csproj",
+        "packagesPath": "C:\\Users\\FANATIC\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\FANATIC\\Documents\\GitHub\\PRO2-UPC\\bcarrasco\\Fichas\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\alumno\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\FANATIC\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -53,7 +53,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.404\\RuntimeIdentifierGraph.json"
         }
       }
     }

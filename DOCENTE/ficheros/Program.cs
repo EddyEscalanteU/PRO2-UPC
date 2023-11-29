@@ -12,8 +12,8 @@
             e1.Mostrar();
             e2.Mostrar();
             */
-            string path = "D:/GitHub/PRO2-UPC/DOCENTE/ficheros/archivo.txt";
-            Fichero f =  new Fichero(path);
+            //string path = "D:/GitHub/PRO2-UPC/DOCENTE/ficheros/archivo.txt";
+            //Fichero f =  new Fichero(path);
 
             //string texto = f.ReadAllText(path);
             //Console.WriteLine(texto);
@@ -37,7 +37,7 @@
             e1.ArrayToEstudiante(estudianteArchivo);
             e1.Mostrar();
             */
-            
+           /* 
             Estudiante e1 = new Estudiante(13032202, 13032202, 
             "Jasseph", "Del Castillo", "Ferrufino", 21);
 
@@ -52,6 +52,29 @@
 
             f.WriteLine(path1, student1);
             f.WriteLine(path2, student2);
+
+            string[] estudianteFichero = f.ReadAllLinesV2(path1);
+            Estudiante e3 = new Estudiante();
+            e3.ArrayToEstudiante(estudianteFichero);
+            e3.Mostrar();
+            */
+            DateTime timeInicio = DateTime.Now;
+            Console.WriteLine("Inicio: " + timeInicio);
+            Fichero f =  new Fichero();
+            for(int i = 1; i<=10000;i++){
+                Estudiante e = new Estudiante(9775810, 2023, 
+                "Douglas ", "Carrasco ", " Cruz", 19);
+                
+                string[] arrayEstudiante = e.EstudianteToArray();
+
+                string pathFor = "D:/GitHub/PRO2-UPC/DOCENTE/ficheros/for/" + i + ".txt";
+                f.WriteLine(pathFor, arrayEstudiante);
+            }
+            DateTime timeFin = DateTime.Now;
+            Console.WriteLine("Fin: " + timeFin);
+            
+            Console.WriteLine("Total: " + timeFin.Subtract(timeInicio));
+
         }
     }
 }

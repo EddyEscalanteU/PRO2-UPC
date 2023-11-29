@@ -123,27 +123,24 @@ public class Estudiante
         myArray[1] = GetCodigoEstudiante() + "";
         myArray[2] = GetNombre();
         myArray[3] = GetApellidoPaterno();
-        myArray[1] = GetApellidoPaterno();
-        myArray[1] = GetCodigoEstudiante() + "";
+        myArray[4] = GetApellidoMaterno();
+        myArray[5] = GetEdad() + "";
         return myArray;
     }
 
-    public void ArrayToEstudiantes(string[] lineas){
+    public void ArrayToEstudiante(string[] lineas){
         int lineaCarnet = int.Parse(lineas[0]);
         int lineaCodigoEstudiante = int.Parse(lineas[1]);
         string lineaNombre = lineas[2];
         string lineaApellidoPaterno = lineas[3];
         string lineaApellidoMaterno = lineas[4];
         int lineaEdad = int.Parse(lineas[5]);
-
+        
         SetCarnet(lineaCarnet);
         SetCodigoEstudiante(lineaCodigoEstudiante);
         SetNombre(lineaNombre);
         SetApellidoPaterno(lineaApellidoPaterno);
         SetApellidoMaterno(lineaApellidoMaterno);
         SetEdad(lineaEdad);
-
-
-
     }
-}
+ }
