@@ -116,4 +116,34 @@ public class Estudiante
         resultado+= "]";
         Console.WriteLine(resultado);
     }
+
+    public string[] EstudianteToArray(){
+        string[] myArray = new string[6];
+        myArray[0] = GetCarnet() + "";
+        myArray[1] = GetCodigoEstudiante() + "";
+        myArray[2] = GetNombre();
+        myArray[3] = GetApellidoPaterno();
+        myArray[1] = GetApellidoPaterno();
+        myArray[1] = GetCodigoEstudiante() + "";
+        return myArray;
+    }
+
+    public void ArrayToEstudiantes(string[] lineas){
+        int lineaCarnet = int.Parse(lineas[0]);
+        int lineaCodigoEstudiante = int.Parse(lineas[1]);
+        string lineaNombre = lineas[2];
+        string lineaApellidoPaterno = lineas[3];
+        string lineaApellidoMaterno = lineas[4];
+        int lineaEdad = int.Parse(lineas[5]);
+
+        SetCarnet(lineaCarnet);
+        SetCodigoEstudiante(lineaCodigoEstudiante);
+        SetNombre(lineaNombre);
+        SetApellidoPaterno(lineaApellidoPaterno);
+        SetApellidoMaterno(lineaApellidoMaterno);
+        SetEdad(lineaEdad);
+
+
+
+    }
 }
