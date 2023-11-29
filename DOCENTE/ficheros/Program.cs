@@ -20,19 +20,38 @@
 
             //f.ReadAllLines(path);
 
+            //f.WriteAllText(path, nombreCompleto);
+
+            /*
+            Estudiante e1 = new Estudiante(14274252, 2023, 
+            "The Bryan", "Carrasco", "Cruz", 19);
+
+            string[] student = e1.EstudianteToArray();
+  
+            f.WriteLine(path, student);
+
+            */
+/*
+            string[] estudianteArchivo = f.ReadAllLinesV2(path);
+            Estudiante e1 = new Estudiante();
+            e1.ArrayToEstudiante(estudianteArchivo);
+            e1.Mostrar();
+            */
+            
             Estudiante e1 = new Estudiante(13032202, 13032202, 
             "Jasseph", "Del Castillo", "Ferrufino", 21);
 
-            string nombreCompleto = e1.GetNombre() +
-                                    " " + e1.GetApellidoPaterno() +
-                                    " " + e1.GetApellidoMaterno();
+            Estudiante e2 = new Estudiante(14274252, 14274252, 
+            "Bryan", "Carrasco", "Cruz", 19);
 
-            //f.WriteAllText(path, nombreCompleto);
-             string[] textLines = { "This is the first line",  
-                               "This is the second line", 
-                              "This is the third line" }; 
+            string[] student1 = e1.EstudianteToArray();
+            string[] student2 = e2.EstudianteToArray();
   
-            f.WriteLine(path, textLines);
+            string path1 = "D:/GitHub/PRO2-UPC/DOCENTE/ficheros/" + e1.GetNombre() + ".txt";
+            string path2 = "D:/GitHub/PRO2-UPC/DOCENTE/ficheros/" + e2.GetNombre() + ".txt";
+
+            f.WriteLine(path1, student1);
+            f.WriteLine(path2, student2);
         }
     }
 }
