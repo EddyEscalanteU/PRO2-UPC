@@ -1,34 +1,34 @@
-namespace MyNamespace
+namespace MyNamespaceNamespace
 {
     public class Estudiante
     {
         // Atributos privados
-        private string carnet;
-        private string codigoEstudiante;
-        private string nombre;
-        private string apellidoPaterno;
-        private string apellidoMaterno;
-        private int edad;
+        private int carnet;
+        private string MicodigoEstudiante;
+        private string Minombre;
+        private string MiapellidoPaterno;
+        private string MiapellidoMaterno;
+        private int Miedad;
 
         // Procedimiento
-        public string GetCarnet()
+        public int GetCarnet()
         {
             return carnet;
         }
 
-        public void SetCarnet(string value)
+        public void SetCarnet(int value)
         {
             carnet = value;
         }
 
         public string GetCodigoEstudiante()
         {
-            return codigoEstudiante;
+            return MicodigoEstudiante;
         }
 
         public void SetCodigoEstudiante(string value)
         {
-            codigoEstudiante = value;
+            MicodigoEstudiante = value;
         }
 
         public string GetNombre()
@@ -70,5 +70,20 @@ namespace MyNamespace
         {
             edad = value;
         }
+
+        public void Mostrar(){
+
+            string resultado = "Estudiante: [/n";
+            resultado+= "Carnet= " + GetCarnet() + ";";
+            resultado+= "CodigoEstudiante = " + GetCodigoEstudiante() + ";/n";
+            resultado+= "Nombre = " + GetNombre() + ";/n";
+            resultado+= "ApellidoPaterno = " + GetApellidoPaterno() + ";/n";
+            resultado+= "ApellidoPaterno = " + GetApellidoMaterno() + ";/n";
+            resultado+= "Edad = " + GetEdad() + ";/n";
+            resultado+= "]";
+
+        }
+
+
     }
 }
