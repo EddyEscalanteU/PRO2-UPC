@@ -59,30 +59,30 @@
             e3.Mostrar();
             */
 
-            for(int i = 1000; i<=250000; i = i + 1000){
+            for(int i = 1000; i<=50000; i = i + 1000){
                 CrearArchivos(i+"", i);
             }
         }
 
         public static void CrearArchivos(string subFolder, int cant){    
-            
-            string pathFor = "D:/GitHub/PRO2-UPC/DOCENTE/ficheros/for/" + subFolder;
-            bool exists = Directory.Exists(pathFor);
-
-            if(!exists){
-                Directory.CreateDirectory(pathFor);
-            }       
-
             DateTime timeInicio = DateTime.Now;
             //Console.WriteLine("Inicio: " + timeInicio);
             Fichero f =  new Fichero();
-            for(int i = 1; i<=cant;i++){
+            for(int i = 1; i<=cant;i++){               
+                string pathFor = "D:/GitHub/PRO2-UPC/DOCENTE/ficheros/for/" + subFolder;
+                bool exists = Directory.Exists(pathFor);
+
+                if(!exists){
+                    Directory.CreateDirectory(pathFor);
+                }    
+
                 Estudiante e = new Estudiante(9775810, 2023, 
                 "Douglas ", "Carrasco ", " Cruz", 19);
                 
                 string[] arrayEstudiante = e.EstudianteToArray();
 
-                pathFor = "/" + i + ".txt";
+                pathFor = pathFor + "/" + i + ".txt";
+                Console.WriteLine(pathFor);
                 f.WriteLine(pathFor, arrayEstudiante);
             }
             DateTime timeFin = DateTime.Now;
