@@ -96,7 +96,16 @@
                 
             }
             */
-            //Console.WriteLine();
+            Console.WriteLine("Examen Final");
+            //PREGUNTA RECURSIVO TO ITERATIVO
+            int cant = 10;
+            ClaseArrayCadenas AC1 = new ClaseArrayCadenas(cant);
+            //AC1.GenerarSerieExamenRecursivo(true, 5, 10, cant);
+            //AC1.MostrarArray();
+
+            //PREGUNTA ITERATIVO TO RECURSIVO
+            ClaseArrayCadenas AC2 = new ClaseArrayCadenas();
+            AC2.GenerarAbcdarioIntercalado();
         }
 
 
