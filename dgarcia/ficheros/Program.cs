@@ -37,7 +37,7 @@
             e1.ArrayToEstudiante(estudianteArchivo);
             e1.Mostrar();
             */
-            /*
+           /* 
             Estudiante e1 = new Estudiante(13032202, 13032202, 
             "Jasseph", "Del Castillo", "Ferrufino", 21);
 
@@ -47,34 +47,98 @@
             string[] student1 = e1.EstudianteToArray();
             string[] student2 = e2.EstudianteToArray();
   
-            string path1 = "D:/UPC/PRO2-UPC/dgarcia/ficheros/" + e1.GetNombre() + ".txt";
-            string path2 = "D:/UPC/PRO2-UPC/dgarcia/ficheros/" + e2.GetNombre() + ".txt";
+            string path1 = "D:/GitHub/PRO2-UPC/DOCENTE/ficheros/" + e1.GetNombre() + ".txt";
+            string path2 = "D:/GitHub/PRO2-UPC/DOCENTE/ficheros/" + e2.GetNombre() + ".txt";
 
             f.WriteLine(path1, student1);
             f.WriteLine(path2, student2);
-            string[] estudianteFichero  = f.ReadAllLinesV2(path1);
+
+            string[] estudianteFichero = f.ReadAllLinesV2(path1);
             Estudiante e3 = new Estudiante();
             e3.ArrayToEstudiante(estudianteFichero);
             e3.Mostrar();
             */
-            DateTime timeInicio = DateTime.Now;
-            Console.WriteLine("Inicio: " + timeInicio); 
-            Fichero f = new Fichero();
-            for (int i = 1; i <= 10000; i++)
-            {
-                Estudiante e = new Estudiante(9775810 , 2023,
-                "Douglas ", "Carrasco ", "Cruz ", 19);
 
+           /* for(int i = 1000; i<=50000; i = i + 1000){
+                CrearArchivos(i+"", i);
+            }
+            */
+            /*
+            string path = "D:/emilio/fichero1.txt";
+            FicheroDocente fd = new FicheroDocente(path);
+            fd.EscribirTexto("hola mundo");
+            fd.path="D:/emilio/fichero2.txt";
+            string[] arrayEmilio = {"hola" , "mundo"};
+            fd.EscribirArray(arrayEmilio);
+            */
+            /*
+            int cant = 10;
+            ClaseArrayCadenas AC = new ClaseArrayCadenas(cant);
+            string[] resultadoSerie = AC.GenerarSerieExamenRecursivo(true, 1, 2, cant);
+            AC.MostrarArray();
+
+            string path = "D:/emilio/ficheroArray.txt";
+            FicheroDocente fd = new FicheroDocente(path);
+            fd.EscribirArray(resultadoSerie);
+            //Console.WriteLine();
+            */
+            
+            for(int a = 0; a<20;a++){
+            int cant = 10;
+            ClaseArrayCadenas AC = new ClaseArrayCadenas(cant);
+            long res =  AC.Factorial(cant);
+            //Console.WriteLine("res: " + res);
+            AC.MostrarArray();
+            
+            string path = "D:/fichero/FactorialArchivo" + a + ".txt";
+            FicheroDocente fd = new FicheroDocente(path);
+            fd.EscribirArray(AC.ArrayCadenas);
+                
+            }
+            
+            //Console.WriteLine();
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+        public static void CrearArchivos(string subFolder, int cant){    
+            DateTime timeInicio = DateTime.Now;
+            //Console.WriteLine("Inicio: " + timeInicio);
+            Fichero f =  new Fichero();
+            for(int i = 1; i<=cant;i++){               
+                string pathFor = "D:/UPC/PRO2-UPC/dgarcia/ficheros/for/" + subFolder;
+                bool exists = Directory.Exists(pathFor);
+
+                if(!exists){
+                    Directory.CreateDirectory(pathFor);
+                }    
+
+                Estudiante e = new Estudiante(9775810, 2023, 
+                "Douglas ", "Carrasco ", " Cruz", 19);
+                
                 string[] arrayEstudiante = e.EstudianteToArray();
 
-                string pathFor = "D:/UPC/PRO2-UPC/dgarcia/ficheros/for/" + i + ".txt";
-
+                pathFor = pathFor + "/" + i + ".txt";
+                Console.WriteLine(pathFor);
                 f.WriteLine(pathFor, arrayEstudiante);
             }
             DateTime timeFin = DateTime.Now;
-            Console.WriteLine("Fin: " + timeFin); 
-
-            Console.WriteLine("Total: " + timeFin.Subtract(timeInicio));
+            //Console.WriteLine("Fin: " + timeFin);
+            
+            Console.WriteLine("Total: " + "(" + cant + ") " + timeFin.Subtract(timeInicio));
         }
     }
 }
+
+
+//string path = "D:/UPC/PRO2-UPC/dgarcia/ficheros/archivo.txt";
+//string pathFor = "D:/UPC/PRO2-UPC/dgarcia/ficheros/for/" + subFolder;

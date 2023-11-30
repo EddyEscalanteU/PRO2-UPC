@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\bcarrasco\\Fichas\\Fichas.csproj": {}
+    "C:\\Users\\alumno\\Documents\\GitHub\\PRO2-UPC\\bcarrasco\\Fichas\\Fichas.csproj": {}
   },
   "projects": {
-    "D:\\bcarrasco\\Fichas\\Fichas.csproj": {
+    "C:\\Users\\alumno\\Documents\\GitHub\\PRO2-UPC\\bcarrasco\\Fichas\\Fichas.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\bcarrasco\\Fichas\\Fichas.csproj",
+        "projectUniqueName": "C:\\Users\\alumno\\Documents\\GitHub\\PRO2-UPC\\bcarrasco\\Fichas\\Fichas.csproj",
         "projectName": "Fichas",
-        "projectPath": "D:\\bcarrasco\\Fichas\\Fichas.csproj",
+        "projectPath": "C:\\Users\\alumno\\Documents\\GitHub\\PRO2-UPC\\bcarrasco\\Fichas\\Fichas.csproj",
         "packagesPath": "C:\\Users\\alumno\\.nuget\\packages\\",
-        "outputPath": "D:\\bcarrasco\\Fichas\\obj\\",
+        "outputPath": "C:\\Users\\alumno\\Documents\\GitHub\\PRO2-UPC\\bcarrasco\\Fichas\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\alumno\\AppData\\Roaming\\NuGet\\NuGet.Config"
