@@ -21,9 +21,9 @@ public class Fichero_Juan{
     {
         File.WriteAllLines(ruta, array);
     }
-    public void WriteLine(string path, string[] lineas)
+    public void WriteLine(string ruta, string[] lineas)
     {
-        File.WriteAllLines(path, lineas);
+        File.WriteAllLines(ruta, lineas);
     }
     //-----------------LECTURA DE TODO EL ARCHIVO
     public string LeerTodoTexto(string ruta)
