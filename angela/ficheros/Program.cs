@@ -61,13 +61,13 @@
             DateTime timeInicio = DateTime.Now;
             Console.WriteLine("Inicio: " + timeInicio);
             Fichero f =  new Fichero();
-            for(int i = 1; i<=10000;i++){
+            for(int i = 1; i<=1000;i++){
                 Estudiante e = new Estudiante(9775810, 2023, 
                 "Douglas ", "Carrasco ", " Cruz", 19);
                 
                 string[] arrayEstudiante = e.EstudianteToArray();
 
-                string pathFor = "D:/ficheros/for/" + i + ".txt";
+                string pathFor = "D:/UPC/PRO2-UPC/angela/ficheros/for/" + i + ".txt";
                 f.WriteLine(pathFor, arrayEstudiante);
             }
             DateTime timeFin = DateTime.Now;

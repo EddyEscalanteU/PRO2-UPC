@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\ficheros\\ficheros.csproj": {}
+    "D:\\UPC\\PRO2-UPC\\angela\\ficheros\\ficheros.csproj": {}
   },
   "projects": {
-    "D:\\ficheros\\ficheros.csproj": {
+    "D:\\UPC\\PRO2-UPC\\angela\\ficheros\\ficheros.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\ficheros\\ficheros.csproj",
+        "projectUniqueName": "D:\\UPC\\PRO2-UPC\\angela\\ficheros\\ficheros.csproj",
         "projectName": "ficheros",
-        "projectPath": "D:\\ficheros\\ficheros.csproj",
-        "packagesPath": "C:\\Users\\ALUMNO\\.nuget\\packages\\",
-        "outputPath": "D:\\ficheros\\obj\\",
+        "projectPath": "D:\\UPC\\PRO2-UPC\\angela\\ficheros\\ficheros.csproj",
+        "packagesPath": "C:\\Users\\Angela\\.nuget\\packages\\",
+        "outputPath": "D:\\UPC\\PRO2-UPC\\angela\\ficheros\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ALUMNO\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Angela\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
