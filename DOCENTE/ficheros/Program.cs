@@ -82,11 +82,21 @@
             fd.EscribirArray(resultadoSerie);
             //Console.WriteLine();
             */
+            /*
+            for(int a = 0; a<20;a++){
             int cant = 10;
             ClaseArrayCadenas AC = new ClaseArrayCadenas(cant);
             long res =  AC.Factorial(cant);
             //Console.WriteLine("res: " + res);
             AC.MostrarArray();
+            
+            string path = "D:/emilio/FactorialArchivo" + a + ".txt";
+            FicheroDocente fd = new FicheroDocente(path);
+            fd.EscribirArray(AC.ArrayCadenas);
+                
+            }
+            */
+            //Console.WriteLine();
         }
 
 

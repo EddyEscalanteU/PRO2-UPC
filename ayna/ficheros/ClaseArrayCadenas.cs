@@ -1,3 +1,4 @@
+
 public class ClaseArrayCadenas
 {
     public string[] ArrayCadenas;
@@ -97,7 +98,7 @@ public class ClaseArrayCadenas
         for(int i =0; i< cantidadElementos; i++){
             if(sw){
                 ArrayCadenas[i] = numA + "";
-                numA = numA + 5;
+                numA = numA  + 5;
                 sw = false;
             }else{
                 ArrayCadenas[i] = numB + "";
@@ -108,60 +109,4 @@ public class ClaseArrayCadenas
         return ArrayCadenas;
     }
  
-    public string[] GenerarSerieExamenRecursivo(bool sw, int numA, int numB, int cantidadElementos){
-        if(ArrayCadenas.Length == cantidadElementos){
-            return ArrayCadenas;
-        }
-            if(sw){
-                ArrayCadenas[cantidadElementos-1] = numA + "";
-                numA = numA + 5;
-                sw = false;
-            }else{
-                ArrayCadenas[cantidadElementos-1] = numB + "";
-                numB = numB + 2;
-                sw = true;
-            }
-
-        GenerarSerieExamenRecursivo(sw, numA, numB, cantidadElementos);
-            cantidadElementos--;
-            Console.WriteLine(cantidadElementos); 
-        return ArrayCadenas;
-    }
-
-
-
-
-
-
-        public long Factorial(long n){
-            if(n < 0){
-                return 0;//ERROR negativo
-            }else{
-                if(n == 0 || n == 1){
-                    //Console.WriteLine(n + " Llamada a la recursion ");
-                    ArrayCadenas[n - 1] = 1 + "";
-                    //Console.WriteLine("FIN de la recursion");
-                    return 1;
-                }else{
-                    long fact =  n * Factorial(n-1);
-                    ArrayCadenas[n - 1] = fact + " OK";
-                    //Console.WriteLine(n + " Llamada a la recursion " + fact);
-                    return fact;
-                    //Console.WriteLine("Despues de la recursion");
-                }
-            }
-        }  
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
