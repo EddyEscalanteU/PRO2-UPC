@@ -15,7 +15,7 @@
             //string texto = f.ReadAllText(path);
             //Console.WriteLine(texto);
             //f.ReadAllLines(path);
-            //Estudiante el = new Estudiante(8888717, 8888717, "Juan Pablo", "Tapeosid", "Chamo", 21);
+            //Estudiante el = new Estudiante(8888717, 8888717, "Juan Pablo", "Tapeosi", "Chamo", 21);
             //string[] student = el.EstudianteToArray();
             
             /*string nombreCompleto = el.GetCarnet() + 
@@ -91,11 +91,15 @@
             Fichero_Juan d = new Fichero_Juan(path);
             d.EscribirArray(resultado);*/
 
-            int cant = 50;
+            int cant = 10;
             ClaseArrayCadenas AC = new ClaseArrayCadenas(cant);
             long res =  AC.Factorial(cant);
             //Console.WriteLine("res: " + res);
             AC.MostrarArray();
+
+            string path = "C:/juan/Factorialfichero.txt";
+            Fichero_Juan d = new Fichero_Juan(path);
+            d.EscribirArray(AC.ArrayCadenas);
 
         }
 
