@@ -59,10 +59,35 @@
             e3.Mostrar();
             */
 
-            for(int i = 1000; i<=50000; i = i + 1000){
+           /* for(int i = 1000; i<=50000; i = i + 1000){
                 CrearArchivos(i+"", i);
             }
+            */
+            /*
+            string path = "D:/emilio/fichero1.txt";
+            FicheroDocente fd = new FicheroDocente(path);
+            fd.EscribirTexto("hola mundo");
+            fd.path="D:/emilio/fichero2.txt";
+            string[] arrayEmilio = {"hola" , "mundo"};
+            fd.EscribirArray(arrayEmilio);
+            */
+            int cant = 10;
+            ClaseArrayCadenas AC = new ClaseArrayCadenas(cant);
+            string[] resultado = AC.GenerarSerieExamen(cant);
+            AC.MostrarArray();
+            //Console.WriteLine();
         }
+
+
+
+
+
+
+
+
+
+
+
 
         public static void CrearArchivos(string subFolder, int cant){    
             DateTime timeInicio = DateTime.Now;
