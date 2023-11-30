@@ -33,7 +33,7 @@ public class Estudiante{
     }
     //procedimiento
     public void SetCarnet(int myCarnet){
-        carnet = myCarnet;
+        Carnet = myCarnet;
     }
 
     //----------------------------CodigoEstudiante
