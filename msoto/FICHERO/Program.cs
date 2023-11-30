@@ -18,7 +18,7 @@
             //f.WriteAllText(path,nombreCompleto);
 
            /* 
-            Estudiante e1 = new Estudiante( 9769742, 9769742*, "Maria", "Soto", "Zanabria", 0);
+            Estudiante e1 = new Estudiante( 9769742, 2023, "Maria", "Soto", "Zanabria", 0);
 
             string[] student = e1.EstudianteToArray();
             f.WriteLine(path, student);
