@@ -70,38 +70,20 @@
             fd.path="D:/emilio/fichero2.txt";
             string[] arrayEmilio = {"hola" , "mundo"};
             fd.EscribirArray(arrayEmilio);
-           
+            */
             int cant = 10;
             ClaseArrayCadenas AC = new ClaseArrayCadenas(cant);
-            string[] resultado = AC.GenerarSerieExamen(cant);
+            string[] resultadoSerie = AC.GenerarSerieExamen(cant);
             AC.MostrarArray();
 
-            string path = "C:/Users/ALUMNO/Documents/GitHub/PRO2-UPC/jcastillo/Ficheros/Jasseph/ficheroArray.txt";
-            FicheroDocente fd = new FicheroDocente(path);
-            fd.EscribirArray(resultado);
-            //Console.WriteLine();C:\Users\ALUMNO\Documents\GitHub\PRO2-UPC\jcastillo\Ficheros\Jasseph
-            */
-
-              int cant = 50;
-            ClaseArrayCadenas AC = new ClaseArrayCadenas(cant);
-            long res =  AC.Factorial(cant);
-            //Console.WriteLine("res: " + res);
-            AC.MostrarArray();
-
-            string path = "C:/Users/ALUMNO/Documents/GitHub/PRO2-UPC/jcastillo/Ficheros/Jasseph/Factorialarchivo.txt";
-            FicheroDocente fd = new FicheroDocente(path);
-            fd.EscribirArray(AC.ArrayCadenas);
-        }   
-
-            
+            string path = "D:/UPC/PRO2-UPC/ayna/Fichero/Nelson/ficheroArray.txt";
+            FicheroNelson fd = new FicheroNelson(path);
+            fd.EscribirArray(resultadoSerie);
+            //Console.WriteLine();
+        }
 
 
-
-
-
-
-
-
+        
 
 
 
@@ -110,7 +92,7 @@
             //Console.WriteLine("Inicio: " + timeInicio);
             Fichero f =  new Fichero();
             for(int i = 1; i<=cant;i++){               
-                string pathFor = "D:/GitHub/PRO2-UPC/DOCENTE/ficheros/for/" + subFolder;
+                string pathFor = "D:/UPC/PRO2-UPC/ayna/ficheros/for" + subFolder;
                 bool exists = Directory.Exists(pathFor);
 
                 if(!exists){
@@ -133,3 +115,4 @@
         }
     }
 }
+

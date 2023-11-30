@@ -1,4 +1,4 @@
-﻿﻿namespace ProgramacionDos{
+﻿namespace ProgramacionDos{
     public class Program{
         public static void Main(string[] args)
         {
@@ -70,30 +70,14 @@
             fd.path="D:/emilio/fichero2.txt";
             string[] arrayEmilio = {"hola" , "mundo"};
             fd.EscribirArray(arrayEmilio);
-           
+            */
             int cant = 10;
             ClaseArrayCadenas AC = new ClaseArrayCadenas(cant);
             string[] resultado = AC.GenerarSerieExamen(cant);
             AC.MostrarArray();
+            //Console.WriteLine();
+        }
 
-            string path = "C:/Users/ALUMNO/Documents/GitHub/PRO2-UPC/jcastillo/Ficheros/Jasseph/ficheroArray.txt";
-            FicheroDocente fd = new FicheroDocente(path);
-            fd.EscribirArray(resultado);
-            //Console.WriteLine();C:\Users\ALUMNO\Documents\GitHub\PRO2-UPC\jcastillo\Ficheros\Jasseph
-            */
-
-              int cant = 50;
-            ClaseArrayCadenas AC = new ClaseArrayCadenas(cant);
-            long res =  AC.Factorial(cant);
-            //Console.WriteLine("res: " + res);
-            AC.MostrarArray();
-
-            string path = "C:/Users/ALUMNO/Documents/GitHub/PRO2-UPC/jcastillo/Ficheros/Jasseph/Factorialarchivo.txt";
-            FicheroDocente fd = new FicheroDocente(path);
-            fd.EscribirArray(AC.ArrayCadenas);
-        }   
-
-            
 
 
 
