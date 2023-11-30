@@ -71,11 +71,22 @@
             string[] arrayEmilio = {"hola" , "mundo"};
             fd.EscribirArray(arrayEmilio);
             */
+            /*
             int cant = 10;
             ClaseArrayCadenas AC = new ClaseArrayCadenas(cant);
-            string[] resultado = AC.GenerarSerieExamen(cant);
+            string[] resultadoSerie = AC.GenerarSerieExamenRecursivo(true, 1, 2, cant);
             AC.MostrarArray();
+
+            string path = "D:/emilio/ficheroArray.txt";
+            FicheroDocente fd = new FicheroDocente(path);
+            fd.EscribirArray(resultadoSerie);
             //Console.WriteLine();
+            */
+            int cant = 10;
+            ClaseArrayCadenas AC = new ClaseArrayCadenas(cant);
+            long res =  AC.Factorial(cant);
+            //Console.WriteLine("res: " + res);
+            AC.MostrarArray();
         }
 
 
