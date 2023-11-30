@@ -59,30 +59,66 @@
             e3.Mostrar();
             */
 
-            for(int i = 1000; i<=250000; i = i + 1000){
+           /* for(int i = 1000; i<=50000; i = i + 1000){
                 CrearArchivos(i+"", i);
             }
+            */
+            /*
+            string path = "D:/emilio/fichero1.txt";
+            FicheroDocente fd = new FicheroDocente(path);
+            fd.EscribirTexto("hola mundo");
+            fd.path="D:/emilio/fichero2.txt";
+            string[] arrayEmilio = {"hola" , "mundo"};
+            fd.EscribirArray(arrayEmilio);
+            */
+            /*
+            int cant = 10;
+            ClaseArrayCadenas AC = new ClaseArrayCadenas(cant);
+            string[] resultadoSerie = AC.GenerarSerieExamenRecursivo(true, 1, 2, cant);
+            AC.MostrarArray();
+
+            string path = "D:/emilio/ficheroArray.txt";
+            FicheroDocente fd = new FicheroDocente(path);
+            fd.EscribirArray(resultadoSerie);
+            //Console.WriteLine();
+            */
+            int cant = 10;
+            ClaseArrayCadenas AC = new ClaseArrayCadenas(cant);
+            long res =  AC.Factorial(cant);
+            //Console.WriteLine("res: " + res);
+            AC.MostrarArray();
         }
 
+
+
+
+
+
+
+
+
+
+
+
         public static void CrearArchivos(string subFolder, int cant){    
-            
-            string pathFor = "D:/GitHub/PRO2-UPC/DOCENTE/ficheros/for/" + subFolder;
-            bool exists = Directory.Exists(pathFor);
-
-            if(!exists){
-                Directory.CreateDirectory(pathFor);
-            }       
-
             DateTime timeInicio = DateTime.Now;
             //Console.WriteLine("Inicio: " + timeInicio);
             Fichero f =  new Fichero();
-            for(int i = 1; i<=cant;i++){
+            for(int i = 1; i<=cant;i++){               
+                string pathFor = "D:/GitHub/PRO2-UPC/DOCENTE/ficheros/for/" + subFolder;
+                bool exists = Directory.Exists(pathFor);
+
+                if(!exists){
+                    Directory.CreateDirectory(pathFor);
+                }    
+
                 Estudiante e = new Estudiante(9775810, 2023, 
                 "Douglas ", "Carrasco ", " Cruz", 19);
                 
                 string[] arrayEstudiante = e.EstudianteToArray();
 
-                pathFor = "/" + i + ".txt";
+                pathFor = pathFor + "/" + i + ".txt";
+                Console.WriteLine(pathFor);
                 f.WriteLine(pathFor, arrayEstudiante);
             }
             DateTime timeFin = DateTime.Now;
