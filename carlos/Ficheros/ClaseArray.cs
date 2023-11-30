@@ -144,7 +144,7 @@ public class ClaseArrayCadenas
                     return 1;
                 }else{
                     long fact =  n * Factorial(n-1);
-                    ArrayCadenas[n - 1] = fact + "";
+                    ArrayCadenas[n - 1] = fact + " OK";
                     //Console.WriteLine(n + " Llamada a la recursion " + fact);
                     return fact;
                     //Console.WriteLine("Despues de la recursion");
