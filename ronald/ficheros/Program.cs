@@ -12,8 +12,8 @@ namespace ProgramacionDos{
             e1.Mostrar();
             e2.Mostrar();
             */
-            string path = "D:/UPC/Github/PRO2-UPC/ronald/ficheros/archivo.txt";
-            Fichero f =  new Fichero(path);
+            //string path = "D:/UPC/Github/PRO2-UPC/ronald/ficheros/archivo.txt";
+            //Fichero f =  new Fichero(path);
 
             //string texto = f.ReadAllText(path);
             //Console.WriteLine(texto);
@@ -27,7 +27,7 @@ namespace ProgramacionDos{
             "The Bryan", "Carrasco", "Cruz", 19);
 
             string[] student = e1.EstudianteToArray();
-  
+
             f.WriteLine(path, student);
 
             */
@@ -37,7 +37,7 @@ namespace ProgramacionDos{
             e1.ArrayToEstudiante(estudianteArchivo);
             e1.Mostrar();
             */
-            
+/*
             Estudiante e1 = new Estudiante(13032202, 13032202, 
             "Jasseph", "Del Castillo", "Ferrufino", 21);
 
@@ -46,7 +46,7 @@ namespace ProgramacionDos{
 
             string[] student1 = e1.EstudianteToArray();
             string[] student2 = e2.EstudianteToArray();
-  
+
             string path1 = "D:/UPC/Github/PRO2-UPC/ronald/ficheros/" + e1.GetNombre() + ".txt";
             string path2 = "D:/UPC/Github/PRO2-UPC/ronald/ficheros/" + e2.GetNombre() + ".txt";
 
@@ -57,6 +57,23 @@ namespace ProgramacionDos{
             Estudiante e3 = new Estudiante();
             e3.ArrayToEstudiante(estudianteFichero);
             e3.Mostrar();
+            */
+            DateTime timeInicio = DateTime.Now;
+            Console.WriteLine("Inicio: " + timeInicio);
+            Fichero f =  new Fichero();
+            for(int i = 1; i<=30000;i++){
+                Estudiante e = new Estudiante(9775810, 2023, 
+                "Douglas ", "Carrasco ", "Cruz", 19);
+                
+                string[] arrayEstudiante = e.EstudianteToArray();
+
+                string pathFor = "E:/USis/ProgramII/PRO2-UPC/ronald/ficheros/for/" + i + ".txt";
+                f.WriteLine(pathFor, arrayEstudiante);
+            }
+            DateTime timeFin = DateTime.Now;
+            Console.WriteLine("Fin: " + timeFin);
+            
+            Console.WriteLine("Total: " + timeFin.Subtract(timeInicio));
         }
     }
 }
