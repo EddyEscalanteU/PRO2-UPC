@@ -18,7 +18,7 @@
             //f.WriteAllText(path,nombreCompleto);
 
            /* 
-            Estudiante e1 = new Estudiante( 9769742, 9769742*, "Maria", "Soto", "Zanabria", 0);
+            Estudiante e1 = new Estudiante( 9769742, 2023, "Maria", "Soto", "Zanabria", 0);
 
             string[] student = e1.EstudianteToArray();
             f.WriteLine(path, student);
@@ -45,6 +45,54 @@
             e3.ArrayToEstudiante(estudianteFichero);
             e3.Mostrar();
             */
+
+            /* for(int i = 1000; i<=50000; i = i + 1000){
+                CrearArchivos(i+"", i);
+            }
+            */
+            /*
+            string path = "C:/Users/usuario/Desktop/UPC/PROGRAMACION ll/PRO2-UPC/msoto/FICHEROS/fichero1.txt";
+            FicheroSoto fd = new FicheroSoto(path);
+            fd.EscribirTexto("HOLA GENIO");
+            fd.path="C:/Users/usuario/Desktop/UPC/PROGRAMACION ll/PRO2-UPC/msoto/FICHEROS/fichero2.txt";
+            string[] arraySoto = {"HOLA" , "GENIO"};
+            fd.EscribirArray(arraySoto);
+            */
+            /*
+            int cant = 10;
+            ClaseArrayCadenas AC = new ClaseArrayCadenas(cant);
+            string[] resultadoSerie = AC.GenerarSerieExamenRecursivo(true, 1, 2, cant);
+            AC.MostrarArray();
+
+            string path = "C:/Users/usuario/Desktop/UPC/PROGRAMACION ll/PRO2-UPC/msoto/FICHEROS/ficheroArray.txt";
+            FicheroSoto fd = new FicheroSoto(path);
+            fd.EscribirArray(resultadoSerie);
+            //Console.WriteLine();
+            */
+
+            
+            for(int a = 0; a<20;a++){
+            int cant = 10;
+            ClaseArrayCadenas AC = new ClaseArrayCadenas(cant);
+            long res =  AC.Factorial(cant);
+            //Console.WriteLine("res: " + res);
+            AC.MostrarArray();
+            
+            string path = "C:/Users/usuario/Desktop/UPC/PROGRAMACION ll/PRO2-UPC/msoto/FICHEROS/FactorialArchivo" + a + ".txt";
+            FicheroSoto fd = new FicheroSoto(path);
+            fd.EscribirArray(AC.ArrayCadenas);
+                
+            }
+            
+            //Console.WriteLine();
+        
+
+        }
+
+
+
+
+            
 
            DateTime timeInicio = DateTime.Now;
             Console.WriteLine("Inicio: " + timeInicio);

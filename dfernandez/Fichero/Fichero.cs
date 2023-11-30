@@ -1,51 +1,62 @@
+using System;
+using System.IO;
 
-public class Ficherodouglas
+public class Fichero
 {
-    //La ubicacion del archivo o fichero
+    //La ubicación del archivo o fichero
     public string path;
-    //el constructor
-    public Ficherodouglas()
+
+    //El constructor vacio
+    public Fichero()
     {
         path = "";
     }
-    public Ficherodouglas(string myPath)
+
+    //El contructor con parametro
+    public Fichero(string myPath)
     {
         path = myPath;
     }
-    //Escribir todo el contenido en el archivo
+
+    //Escribe todo el contenido en el archivo
     public void WriteAllText(string path, string contenido)
     {
         File.WriteAllText(path, contenido);
     }
-        //Escribe las lineas en el archivo
+
+    //Escribe las lineas en el archivo
     public void WriteLine(string path, string[] lineas)
     {
         File.WriteAllLines(path, lineas);
     }
+
     //Lectura de todo el archivo
-    public string ReaAllText(string path){
+    public string ReadAllText(string path)
+    {
         if (File.Exists(path))
         {
             string readText = File.ReadAllText(path);
             return readText;
         }
-        return "El archivo no existe Patch:" + path;
+        return "El archivo no existe Path: " + path;
     }
-    //lectura de la linea por linea del archivo
-    public void ReaAllLines(string path)
+
+    //Lectura de linea por linea del archivo
+    public void ReadAllLines(string path)
     {
         if (File.Exists(path))
         {
             string[] lineas = File.ReadAllLines(path);
-            foreach (string linea in lineas){
+
+            foreach (string linea in lineas)
+            {
+                //Console.WriteLine("Line:");
                 Console.WriteLine(linea);
             }
+        }else{
+            Console.WriteLine("El archivo no existe Path: " + path);
         }
-    else{
-        Console.WriteLine("El archivo no existe Path:" + path);
     }
-    
-}
 
     public string[] ReadAllLinesV2(string path)
     {

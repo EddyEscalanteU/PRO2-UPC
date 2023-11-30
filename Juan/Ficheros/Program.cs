@@ -91,7 +91,7 @@
             Fichero_Juan d = new Fichero_Juan(path);
             d.EscribirArray(resultado);*/
 
-            int cant = 10;
+            /*int cant = 10;
             ClaseArrayCadenas AC = new ClaseArrayCadenas(cant);
             long res =  AC.Factorial(cant);
             //Console.WriteLine("res: " + res);
@@ -99,7 +99,20 @@
 
             string path = "C:/juan/Factorialfichero.txt";
             Fichero_Juan d = new Fichero_Juan(path);
-            d.EscribirArray(AC.ArrayCadenas);
+            d.EscribirArray(AC.ArrayCadenas);*/
+            
+            for(int a = 1; a<=20;a++){
+            int cant = 10;
+            ClaseArrayCadenas AC = new ClaseArrayCadenas(cant);
+            long res =  AC.Factorial(cant);
+            //Console.WriteLine("res: " + res);
+            AC.MostrarArray();
+            
+            string path = "C:/juan/Factorialfichero" + a + ".txt";
+            Fichero_Juan fd = new Fichero_Juan(path);
+            fd.EscribirArray(AC.ArrayCadenas);
+                
+            }
 
         }
 
