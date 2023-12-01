@@ -110,11 +110,11 @@ namespace ProgramacionDos{
             //Console.WriteLine("res: " + res);
             AC.MostrarArray();
             
-            /*
-            string path = "D:/emilio/FactorialArchivo" + a + ".txt";
-            FicheroDocente fd = new FicheroDocente(path);
+            
+            string path = "E:/USis/ProgramII/PRO2-UPC/ronald/ficheros/for/FactorialRecursivo" + a + ".txt";
+            FicheroRonald fd = new FicheroRonald(path);
             fd.EscribirArray(AC.ArrayCadenas);
-            */   
+            
             }
 
             /*
