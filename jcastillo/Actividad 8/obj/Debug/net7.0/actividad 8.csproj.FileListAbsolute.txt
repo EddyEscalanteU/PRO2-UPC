@@ -1,0 +1,14 @@
+C:\Users\PC\Documents\GitHub\PRO2-UPC\PRO2-UPC\damaya\actividad 8\bin\Debug\net7.0\actividad 8.exe
+C:\Users\PC\Documents\GitHub\PRO2-UPC\PRO2-UPC\damaya\actividad 8\bin\Debug\net7.0\actividad 8.deps.json
+C:\Users\PC\Documents\GitHub\PRO2-UPC\PRO2-UPC\damaya\actividad 8\bin\Debug\net7.0\actividad 8.runtimeconfig.json
+C:\Users\PC\Documents\GitHub\PRO2-UPC\PRO2-UPC\damaya\actividad 8\bin\Debug\net7.0\actividad 8.dll
+C:\Users\PC\Documents\GitHub\PRO2-UPC\PRO2-UPC\damaya\actividad 8\bin\Debug\net7.0\actividad 8.pdb
+C:\Users\PC\Documents\GitHub\PRO2-UPC\PRO2-UPC\damaya\actividad 8\obj\Debug\net7.0\actividad 8.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\Documents\GitHub\PRO2-UPC\PRO2-UPC\damaya\actividad 8\obj\Debug\net7.0\actividad 8.AssemblyInfoInputs.cache
+C:\Users\PC\Documents\GitHub\PRO2-UPC\PRO2-UPC\damaya\actividad 8\obj\Debug\net7.0\actividad 8.AssemblyInfo.cs
+C:\Users\PC\Documents\GitHub\PRO2-UPC\PRO2-UPC\damaya\actividad 8\obj\Debug\net7.0\actividad 8.csproj.CoreCompileInputs.cache
+C:\Users\PC\Documents\GitHub\PRO2-UPC\PRO2-UPC\damaya\actividad 8\obj\Debug\net7.0\actividad 8.dll
+C:\Users\PC\Documents\GitHub\PRO2-UPC\PRO2-UPC\damaya\actividad 8\obj\Debug\net7.0\refint\actividad 8.dll
+C:\Users\PC\Documents\GitHub\PRO2-UPC\PRO2-UPC\damaya\actividad 8\obj\Debug\net7.0\actividad 8.pdb
+C:\Users\PC\Documents\GitHub\PRO2-UPC\PRO2-UPC\damaya\actividad 8\obj\Debug\net7.0\actividad 8.genruntimeconfig.cache
+C:\Users\PC\Documents\GitHub\PRO2-UPC\PRO2-UPC\damaya\actividad 8\obj\Debug\net7.0\ref\actividad 8.dll
