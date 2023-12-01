@@ -106,7 +106,7 @@
             Console.WriteLine("Examen Final");
             int cant = 10;
             ClaseArrayCadenas AC1 = new ClaseArrayCadenas(cant);
-            AC1.GenerarSerieExamenIterativo(true, 5, 10, cant);
+            AC1.GenerarSerieExamenIterativo(true, 50, 100, cant);
             AC1.MostrarArray();
 
 

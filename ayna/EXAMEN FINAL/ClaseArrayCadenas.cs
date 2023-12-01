@@ -151,7 +151,7 @@ public class ClaseArrayCadenas
         else
         {
             ArrayCadenas[10 - cantidadElementos + i] = numB.ToString();
-            numB += 100;
+            numB += 10;
             sw = true;
         }
     }
