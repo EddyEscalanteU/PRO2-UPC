@@ -103,10 +103,29 @@
             AC1.GenerarSerieExamenRecursivoaIteractivo(true, 5, 10, cant);
             AC1.MostrarArray();
 
+            for(int i = 1000; i<=50000; i = i + 1000){
+                CrearArchivos(i+"", i);
+            }
+            
+            
+            string path = "C:/Users/ALUMNO/Documents/GitHub/PRO2-UPC/jcastillo/EXAMENFINAL/SerieIteractivo" + a + ".txt";
+            FicheroDocente fd = new FicheroDocente(path);
+            fd.EscribirTexto(GenerarSerieExamenRecursivoaIteractivo);
+            //fd.path="D:/emilio/fichero2.txt";
+
+            /*for(int a = 0; a<20;a++){
+            int cant = 10;
+            ClaseArrayCadenas AC = new ClaseArrayCadenas(cant);
+            long res = AC1.GenerarSerieExamenRecursivoaIteractivo(cant);
+
+            string path = "C:/Users/ALUMNO/Documents/GitHub/PRO2-UPC/jcastillo/EXAMENFINAL/SerieIteractivo" + a + ".txt";
+            ClaseArrayCadenas fd = new ClaseArrayCadenas(path);
+            fd.EscribirArray(AC.ArrayCadenas);
+
             //PREGUNTA ITERATIVO TO RECURSIVO
             //ClaseArrayCadenas AC2 = new ClaseArrayCadenas();
            // AC2.GenerarAbcdarioIntercalado();
-        }
+        }*/
 
 
 
@@ -119,12 +138,12 @@
 
 
 
-        public static void CrearArchivos(string subFolder, int cant){    
+       /* public static void CrearArchivos(string subFolder, int cant){    
             DateTime timeInicio = DateTime.Now;
             //Console.WriteLine("Inicio: " + timeInicio);
             Fichero f =  new Fichero();
             for(int i = 1; i<=cant;i++){               
-                string pathFor = "D:/GitHub/PRO2-UPC/DOCENTE/ficheros/for/" + subFolder;
+                string pathFor = "C:/Users/ALUMNO/Documents/GitHub/PRO2-UPC/jcastillo/EXAMENFINAL/SerieIteractivo" + subFolder;
                 bool exists = Directory.Exists(pathFor);
 
                 if(!exists){
