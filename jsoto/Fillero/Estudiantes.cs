@@ -1,5 +1,6 @@
 public class Estudiante
 {
+    //Atributos
     private int Carnet;
     private int CodigoEstudiante;
     private string Nombre;
@@ -7,99 +8,139 @@ public class Estudiante
     private string ApellidoMaterno;
     private int Edad;
 
+    //Constructor
     public Estudiante()
     {
         Carnet = 0;
         CodigoEstudiante = 0;
         Nombre = "";
-        ApellidoPaterno =  "";
+        ApellidoPaterno = "";
         ApellidoMaterno = "";
         Edad = 0;
-
     }
 
     public Estudiante(
         int myCarnet,
-         int myCodigoEstudiante,
-        string myNombre, 
-        string myApellidoPaterno, 
-        string myApellidoMaterno, 
-        int myEdad)
+        int myCodigoEstudiante,
+        string myNombre,
+        string myApellidoPaterno,
+        string myApellidoMaterno,
+        int myEdad
+    )
     {
-        Carnet =  myCarnet;
+        Carnet = myCarnet;
         CodigoEstudiante = myCodigoEstudiante;
         Nombre = myNombre;
         ApellidoPaterno = myApellidoPaterno;
         ApellidoMaterno = myApellidoMaterno;
         Edad = myEdad;
     }
-    //METODOS (PROCEDIMIENTOS Y FUNCIONES)
-    // -------------------CARNET 
-    //FUNCION 
-    public int Getcanet()
+
+    //Metodos(Procedimientos o Funciones)
+    //-----------------------Carnet
+    //funcion
+    public int GetCarnet()
     {
         return Carnet;
     }
-    //Procedimiento
+
+    //procedimiento
     public void SetCarnet(int myCarnet)
     {
         Carnet = myCarnet;
     }
 
-    //--------------CodigoEstudiante
-    //funcion
+    //-----------------------CodigoEstudiante
     public int GetCodigoEstudiante()
     {
         return CodigoEstudiante;
     }
-    //Procedimiento
+
     public void SetCodigoEstudiante(int myCodigoEstudiante)
     {
         CodigoEstudiante = myCodigoEstudiante;
     }
 
-    //----------------------Nombre
-    //funcion
+    //-----------------------Nombre
     public string GetNombre()
     {
         return Nombre;
     }
-    //Procedimiento
+
     public void SetNombre(string myNombre)
     {
         Nombre = myNombre;
     }
-    //-----------------Apellido Paterno
-    //funcion
-    public string SetApellidoPaterno()
+
+    //-----------------------ApellidoPaterno
+    public string GetApellidoPaterno()
     {
         return ApellidoPaterno;
     }
-    //Procedimiento
-    public void GetApellidoPaterno(string myApellidoPaterno)
+
+    public void SetApellidoPaterno(string myApellidoPaterno)
     {
         ApellidoPaterno = myApellidoPaterno;
     }
-    //--------------Appellido Materno
-    //funcion
-     public string SetApellidoMaterno()
+
+    //-----------------------ApellidoMaterno
+    public string GetApellidoMaterno()
     {
         return ApellidoMaterno;
     }
-    //Procedimiento
-    public void GetApellidoMaterno(string myApellidoMaterno)
+
+    public void SetApellidoMaterno(string myApellidoMaterno)
     {
-        ApellidoPaterno = myApellidoMaterno;
+        ApellidoMaterno = myApellidoMaterno;
     }
-    //-------------------- Edad
-    //funcion
+
+    //-----------------------Edad
     public int GetEdad()
     {
         return Edad;
     }
-    //Procedimiento
+
     public void SetEdad(int myEdad)
     {
-        Carnet = myEdad;
+        Edad = myEdad;
     }
-}
+
+    public void Mostrar(){
+        string resultado = "Estudiante: [\n";
+        resultado+= "Carnet = " + GetCarnet() + " ;\n";
+        resultado+= "CodigoEstudiante = " + GetCodigoEstudiante() + " ;\n";
+        resultado+= "Nombre = " + GetNombre() + " ;\n";
+        resultado+= "ApellidoPaterno = " + GetApellidoPaterno() + " ;\n";
+        resultado+= "ApellidoMaterno = " + GetApellidoMaterno() + " ;\n";
+        resultado+= "Edad = " + GetEdad() + " ;\n";
+        resultado+= "]";
+        Console.WriteLine(resultado);
+    }
+
+    public string[] EstudianteToArray(){
+        string[] myArray = new string[6];
+        myArray[0] = GetCarnet() + "";
+        myArray[1] = GetCodigoEstudiante() + "";
+        myArray[2] = GetNombre();
+        myArray[3] = GetApellidoPaterno();
+        myArray[4] = GetApellidoMaterno();
+        myArray[5] = GetEdad() + "";
+        return myArray;
+    }
+
+    public void ArrayToEstudiante(string[] lineas){
+        int lineaCarnet = int.Parse(lineas[0]);
+        int lineaCodigoEstudiante = int.Parse(lineas[1]);
+        string lineaNombre = lineas[2];
+        string lineaApellidoPaterno = lineas[3];
+        string lineaApellidoMaterno = lineas[4];
+        int lineaEdad = int.Parse(lineas[5]);
+        
+        SetCarnet(lineaCarnet);
+        SetCodigoEstudiante(lineaCodigoEstudiante);
+        SetNombre(lineaNombre);
+        SetApellidoPaterno(lineaApellidoPaterno);
+        SetApellidoMaterno(lineaApellidoMaterno);
+        SetEdad(lineaEdad);
+    }
+ }

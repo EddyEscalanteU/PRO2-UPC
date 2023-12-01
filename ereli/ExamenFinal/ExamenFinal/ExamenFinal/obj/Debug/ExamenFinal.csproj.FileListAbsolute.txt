@@ -1,0 +1,7 @@
+C:\UPC\PRO2-UPC-HOMEWORK\Practica\ExamenFinal\ExamenFinal\bin\Debug\ExamenFinal.exe.config
+C:\UPC\PRO2-UPC-HOMEWORK\Practica\ExamenFinal\ExamenFinal\bin\Debug\ExamenFinal.exe
+C:\UPC\PRO2-UPC-HOMEWORK\Practica\ExamenFinal\ExamenFinal\bin\Debug\ExamenFinal.pdb
+C:\UPC\PRO2-UPC-HOMEWORK\Practica\ExamenFinal\ExamenFinal\obj\Debug\ExamenFinal.csproj.AssemblyReference.cache
+C:\UPC\PRO2-UPC-HOMEWORK\Practica\ExamenFinal\ExamenFinal\obj\Debug\ExamenFinal.csproj.CoreCompileInputs.cache
+C:\UPC\PRO2-UPC-HOMEWORK\Practica\ExamenFinal\ExamenFinal\obj\Debug\ExamenFinal.exe
+C:\UPC\PRO2-UPC-HOMEWORK\Practica\ExamenFinal\ExamenFinal\obj\Debug\ExamenFinal.pdb
